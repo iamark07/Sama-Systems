@@ -32,6 +32,14 @@ window.addEventListener('scroll', function () {
       logo.classList.remove('md:w-36');
       logo.classList.add('w-28');
     }
+    else {
+        // Jab mobile mode hai aur scroll 150px se zyada hai
+        if (mobileMenu) {
+          mobileMenu.style.height = 'calc(100dvh - 69.67px)';
+          mobileMenu.style.top = '69.67px';
+        }
+      }
+  
   } else {
     header.classList.remove('py-4');
     header.classList.add('py-7');
@@ -41,6 +49,13 @@ window.addEventListener('scroll', function () {
       logo.classList.remove('w-28');
       logo.classList.add('md:w-36');
     }
+    else {
+        // Jab mobile mode hai aur scroll 150px se kam hai
+        if (mobileMenu) {
+          mobileMenu.style.height = 'calc(100dvh - 92.96px)';
+          mobileMenu.style.top = '92.96px';
+        }
+      }  
   }
 });
 
