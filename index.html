@@ -35,8 +35,760 @@
 
 <body class="overflow-x-hidden">
 
+    <!-- Header Section Start -->
+    <header class="sticky z-40 top-0 w-full shadow-md">
+        <div class="container mx-auto flex justify-between w-full">
+            <!-- Logo -->
+            <div class="z-30 flex items-center py-7 px-6 md:px-10">
+                <img src="assets/img/logo.png" alt="Sama Logo" class="w-28 lg:w-36" />
+                <!-- Use your logo path above -->
+            </div>
+
+            <!-- Desktop Menu -->
+            <nav class="flex justify-items-end z-50 text-white px-5 md:px-10 py-7 justify-end md:pr-10 relative">
+
+                <ul class="gap-8 hidden md:flex items-center z-50">
+                    <li>
+                        <a href="#" class="hover:underline">Home</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Services</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Careers</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline">Quote</a>
+                    </li>
+                    <!-- Mobile menu button -->
+                </ul>
+                <div class="md:hidden z-50">
+                    <button id="menu-btn" class="z-30 focus:outline-none">
+                        <i class="ri-menu-2-line text-white text-3xl"></i>
+                    </button>
+                </div>
+            </nav>
+            <!-- Mobile Menu -->
+            <div id="mobile-menu"
+                class="w-full md:hidden flex text-white fixed top-[92.96px] -left-full transition-all duration-300 z-50"
+                style="height: calc(100dvh - 92.96px);">
+
+                <!-- Side Drawer -->
+                <div class="bg-[#001430] p-6 w-[60%] shadow-lg">
+                    <ul class="flex flex-col gap-4 text-lg font-medium">
+                        <li>
+                            <a href="#"
+                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Home</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Services</a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Careers</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 hover:text-yellow-400 transition-all">Quote</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Overlay (click to close menu) -->
+                <div id="menu-overlay" class="w-[40%] "></div>
+            </div>
+        </div>
+
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <section class="text-[#001430] overflow-hidden">
+
+        <div class="container mx-auto px-6 md:px-10 py-16 grid grid-cols-1 md:grid-cols-2 gap-16 items-center relative">
+            <div class="absolute top-0 left-0 w-full bg-cover h-full -z-10 opacity-25"
+                style="background-image: url(assets/img/bg-image.avif);"></div>
+
+            <!-- Left Content -->
+            <div class="space-y-6">
+                <h1 class="text-2xl md:text-4xl">
+                    Empowering Your Digital
+                    Future With <span
+                        class="text-[#001430] font-extrabold leading-tight underline decoration-[#001430] decoration-4 underline-offset-8">Sama
+                        Systems</span>
+                </h1>
+                <p class="text-gray-600">
+                    A Brand For Software Developmet | iOS Development | Android Development
+                </p>
+
+                <div class="flex justify-center sm:justify-start space-x-4 sm:space-x-6 pt-5">
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-6 py-3 bg-[#001430] text-white font-semibold rounded-full shadow-md hover:bg-[#002d62] transition duration-300 text-xs sm:text-base">
+                        <i class="ri-rocket-line sm:text-xl"></i> Get Started
+                    </a>
+                    <a href="#"
+                        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#001430] text-[#001430] font-semibold rounded-full hover:bg-[#001430] hover:text-white transition duration-300 text-xs sm:text-base">
+                        <i class="ri-phone-line sm:text-xl"></i> Contact Us
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Image/Decorative Content -->
+            <div class="relative flex justify-center items-center">
+                <!-- Decorative Circle -->
+                <!-- <div class="absolute -top-10 -left-10 w-40 h-40 bg-[#001430] opacity-10 rounded-full"></div> -->
+
+                <!-- Main Image -->
+                <img src="assets/img/hero-section-img.jpg" alt="IT Solutions" class="w-full h-auto rounded-2xl z-10">
+
+                <!-- Icon floating -->
+                <div
+                    class="absolute bottom-4 right-4 bg-[#001430] text-white p-4 rounded-full shadow-lg animate-bounce-slow">
+                    <i class="ri-lightbulb-flash-line text-2xl"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Introduction Section Start -->
+    <section class="relative bg-white text-[#001430] overflow-hidden py-24">
+        <div class="container mx-auto px-6 md:px-10">
+            <!-- Light Background Decorations -->
+            <div class="absolute top-0 left-0 w-40 h-40 bg-[#001430] opacity-5 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-0 right-0 w-60 h-60 bg-[#001430] opacity-10 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10">
+                <div class="text-center space-y-4">
+
+                    <!-- Top small label -->
+                    <div
+                        class="inline-flex items-center gap-2 px-4 py-1 bg-[#f2f4f8] text-sm font-medium text-[#001430] rounded-full">
+                        <i class="ri-flag-line"></i>
+                        Introduction
+                    </div>
+
+                    <!-- Main Heading -->
+                    <div class="flex items-center justify-center pt-5">
+                        <img src="assets/img/logo.png" alt="" class="w-32 md:w-52">
+                    </div>
+
+                    <!-- Sub Heading -->
+                    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mx-auto">
+                        A Software Development Company & Digital Agency.
+                    </h2>
+
+                    <!-- Decorative Divider -->
+                    <div class="flex justify-center">
+                        <span class="inline-block w-24 h-1 bg-[#001430] rounded-full"></span>
+                    </div>
+
+                    <!-- Content Blocks -->
+                    <div class="pt-10 grid md:grid-cols-3 gap-10 text-left">
+
+                        <!-- Block Template -->
+                        <div
+                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
+
+                            <!-- Glow Border Effect -->
+                            <div
+                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
+                            </div>
+
+                            <!-- Corner Accent Circle -->
+                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
+
+                            <!-- Icon with Pulse Glow -->
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
+                                    <i class="ri-medal-line text-2xl z-10 relative"></i>
+                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-[#001430]">Top Rated Company</h3>
+                            </div>
+
+                            <p class="text-gray-600 leading-relaxed">
+                                SAMA Systems, being the Top Rated Software Development Company across the globe, has the
+                                potential to bring
+                                specialized and optimized solutions for you. With 5+ years of experience.
+                            </p>
+                        </div>
+
+                        <!-- Block 2 -->
+                        <div
+                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
+                            <div
+                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
+                            </div>
+                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
+                                    <i class="ri-hand-coin-line text-2xl z-10 relative"></i>
+                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-[#001430]">Outsourcing Expertise</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                Our Software Development Team has worked with multiple Companies and enterprises and
+                                assisted them to ease their IT outsourcing experience, as well as reduce cost or time to
+                                market.
+                            </p>
+                        </div>
+
+                        <!-- Block 3 -->
+                        <div
+                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
+                            <div
+                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
+                            </div>
+                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
+                            <div class="flex items-center gap-4 mb-4">
+                                <div
+                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
+                                    <i class="ri-global-line text-2xl z-10 relative"></i>
+                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
+                                </div>
+                                <h3 class="text-xl font-semibold text-[#001430]">Global Trust</h3>
+                            </div>
+                            <p class="text-gray-600 leading-relaxed">
+                                By providing several Software development services, SAMA Systems has turned into a
+                                reliable brand for businesses across the globe.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="mt-16 py-20 bg-[#f9fafb] rounded-2xl shadow-md">
+                <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-16 items-center">
+
+                    <!-- Left Content -->
+                    <div class="space-y-12">
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Development Icon -->
+                                <i class="ri-code-s-slash-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">Development</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Cutting-edge research, development, and customized solutions for your evolving
+                                    project needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Designing Icon -->
+                                <i class="ri-pencil-ruler-2-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">Attractive Designing</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Responsive web & mobile designs built using modern technologies to enhance user
+                                    experience.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Cross Platform Icon -->
+                                <i class="ri-device-line text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">Cross Platform</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Delivering seamless performance across multiple platforms, expanding your business
+                                    reach.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Center Image -->
+                    <div class="relative group">
+                        <img src="assets/img/image.jpg" alt="Workstation"
+                            class="rounded-3xl h-[400px] object-cover w-full object-center md:w-fit md:h-fit shadow-2xl group-hover:scale-105 transition duration-700">
+                        <div
+                            class="absolute top-0 left-0 w-full h-full rounded-3xl border-4 border-transparent group-hover:border-[#001430]/30 transition duration-700">
+                        </div>
+                    </div>
+
+                    <!-- Right Content -->
+                    <div class="space-y-12">
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Innovation Icon -->
+                                <i class="ri-lightbulb-flash-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">Innovation Focus</h3>
+                                <p class="text-gray-600 text-sm">
+                                    We prioritize innovation, helping you stay ahead in an ever-evolving digital
+                                    landscape.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Scalability Icon -->
+                                <i class="ri-bar-chart-2-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">Scalability</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Scalable architecture designed to grow alongside your expanding business needs.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div
+                            class="flex flex-col sm:flex-row items-center sm:items-start gap-5 justify-center sm:justify-start text-center">
+                            <div
+                                class="text-[#001430] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                <!-- Customer Support Icon -->
+                                <i class="ri-customer-service-2-line text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2">24/7 Support</h3>
+                                <p class="text-gray-600 text-sm">
+                                    Dedicated support teams ensuring smooth operations and resolving issues proactively.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Introduction Section End -->
+
+
+    <!-- Offerings Section Start-->
+    <section class="bg-[#f8f8f8] relative overflow-hidden h-fit">
+
+        <div class="container mx-auto px-6 md:px-10 py-24 relative">
+            <!-- Background Circles -->
+            <div class="absolute -top-[20%] -left-[5%] w-96 h-96 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
+            </div>
+            <div class="absolute top-[65%] left-[24%] w-48 h-48 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
+            </div>
+            <div class="absolute top-[20%] left-[80%] w-48 h-48 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
+            </div>
+            <div
+                class="absolute top-[90%] md:top-[70%] left-[65%] w-64 h-64 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
+            </div>
+            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
+                <svg class="relative block w-[calc(150%+1.3px)] h-[150px]" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path
+                        d="M321.39 56.19C195.94 83.32 48.14 102.67 0 104.48V0h1200v104.48c-48.14-1.81-195.94-21.16-321.39-48.29C754.94 29.32 607.14 8.67 480 8.67S205.06 29.32 321.39 56.19z"
+                        fill="#001430"></path>
+                </svg>
+            </div>
+            <!-- Section Title -->
+            <div class="mb-16 relative z-30">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
+
+                    <!-- Left Heading -->
+                    <div>
+                        <h2 class="text-2xl md:text-3xl text-gray-800 mb-0 md:mb-4 text-center md:text-start">Our <span
+                                class="font-semibold underline">Offerings</span></h2>
+                    </div>
+
+                    <!-- Right Subheading + Paragraph -->
+                    <div class="text-center md:text-end">
+                        <p class="text-xl font-semibold text-gray-700 mb-2">Services That Make Us Popular</p>
+                        <p class="text-gray-500 text-sm">Software we built for you are developed in Latest Technologies.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Offerings Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Single Offering Card -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#001430] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#001430] text-white text-xs font-semibold px-3 py-1 rounded-full">Top</span>
+                    <div
+                        class="flex mb-6 text-[#001430] bg-[#dce1e7] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-code-s-slash-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Software / App Development</h3>
+                    <p class="text-gray-500 text-center text-xs">iOS App & Android Application Development - Booking,
+                        Shopping Applications, etc.</p>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                </div>
+
+                <!-- Single Offering Card -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#001430] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#001430] text-white text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                    <div
+                        class="flex mb-6 text-[#001430] bg-[#dce1e7] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-layout-masonry-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Attractive UI / UX Design</h3>
+                    <p class="text-gray-500 text-center text-xs">ERP Software, Accounting Software, Library & Medicine
+                        Management Systems.</p>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                </div>
+
+                <!-- Single Offering Card -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#001430] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#001430] text-white text-xs font-semibold px-3 py-1 rounded-full">Trending</span>
+                    <div
+                        class="flex mb-6 text-[#001430] bg-[#dce1e7] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-bar-chart-2-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Digital Marketing</h3>
+                    <p class="text-gray-500 text-center text-xs">SEO, Social Media Marketing, Search Engine Optimization
+                        and Ranking Strategies.</p>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                </div>
+
+                <!-- Single Offering Card -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#001430] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#001430] text-white text-xs font-semibold px-3 py-1 rounded-full">Secure</span>
+                    <div
+                        class="flex mb-6 text-[#001430] bg-[#dce1e7] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-shield-check-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Security Assessment</h3>
+                    <p class="text-gray-500 text-center text-xs">Website Security, Dynamic and Static Website
+                        Development using the Latest Technologies.</p>
+                    <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Offering Section End -->
+
+    <!-- Why Choose Us Section Start-->
+    <section class="relative py-24 bg-white overflow-hidden">
+
+        <div class="container mx-auto px-6 md:px-10 relative z-10">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+
+                <!-- Left Block -->
+                <div class="order-2 md:order-1">
+                    <div class="mb-4">
+                        <h2 class="text-2xl md:text-3xl font-bold text-[#001430] leading-snug">
+                            Why <span class="text-gray-800">Choose Us</span>
+                        </h2>
+                    </div>
+                    <p class="text-gray-600 mb-8 text-sm md:text-base leading-relaxed">
+                        KBros Developers simply has the experience with the most diverse clients, networks, and
+                        different size organizations.
+                        Since day one, we have remained on the cutting-edge of Technologies, offering the most advanced
+                        applications and hardware possible.
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        <!-- Practical, cost-effective service -->
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
+                                <i class="ri-hand-coin-line"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm">Practical, cost-effective service...</span>
+                        </div>
+
+                        <!-- Solutions that make a difference -->
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
+                                <i class="ri-lightbulb-flash-line"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm">Solutions that make a difference...</span>
+                        </div>
+
+                        <!-- The right team for the job -->
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
+                                <i class="ri-team-line text-xl"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm">The right team for the job...</span>
+                        </div>
+
+                        <!-- Years of experience -->
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
+                                <i class="ri-trophy-line"></i>
+                            </div>
+                            <span class="text-gray-700 text-sm">Years of experience...</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Right Image -->
+                <div class="flex justify-center order-1 md:order-2">
+                    <div class="relative bg-[#001430] p-2 rounded-3xl shadow-lg">
+                        <img src="assets/img/sama-systems.png" alt="Sama Systems" class="w-full rounded-3xl" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section End-->
+
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+
+    <!-- Client Section Start-->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-10">
+
+            <!-- Heading -->
+            <div class="mb-10 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
+                <!-- Left Heading -->
+                <div>
+                    <h2 class="text-2xl md:text-3xl text-[#001430] mb-0 md:mb-4 text-start">
+                        Our <span class="font-bold underline">Clients</span>
+                    </h2>
+                </div>
+
+                <!-- Right Subheading + Paragraph -->
+                <div class="text-end">
+                    <p class="text-[#001430] text-lg md:text-2xl mt-4 mb-2 font-medium">You May Know Of</p>
+                    <p class="text-gray-500 text-sm">
+                        Find these on <span class="text-[#001430] font-semibold">Google</span>
+                    </p>
+                </div>
+            </div>
+
+            <!-- Client Logos Carousel -->
+            <div class="owl-carousel owl-theme">
+
+                <!-- Client Logos -->
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+                <div class="flex items-center justify-center p-4">
+                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11"
+                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+
+    <!-- Footer Start -->
+<footer class="relative bg-[#0A0E23] text-gray-400 pt-16 pb-8 overflow-hidden">
+    <div class="container mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+        <!-- Company Info -->
+        <div>
+            <h2 class="text-3xl font-bold text-white mb-4">Sama Systems</h2>
+            <p class="text-sm leading-relaxed text-gray-300">
+                A Customised Software Development <br />
+                Company & Digital Agency
+            </p>
+        </div>
+
+        <!-- Services -->
+        <div>
+            <h3 class="text-xl font-semibold text-white mb-6">Services</h3>
+            <ul class="space-y-3 text-sm text-gray-300">
+                <li class="hover:text-white hover:underline">ERP Software Development</li>
+                <li class="hover:text-white hover:underline">Library Management</li>
+                <li class="hover:text-white hover:underline">Accounting Software</li>
+                <li class="hover:text-white hover:underline">Medicine Management</li>
+                <li class="hover:text-white hover:underline">Digital Marketing</li>
+                <li class="hover:text-white hover:underline">Website Development</li>
+                <li class="hover:text-white hover:underline">Android Application</li>
+                <li class="hover:text-white hover:underline">iOS Application</li>
+            </ul>
+        </div>
+
+        <!-- Industries -->
+        <div>
+            <h3 class="text-xl font-semibold text-white mb-6">Industries</h3>
+            <ul class="space-y-3 text-sm text-gray-300">
+                <li class="hover:text-white hover:underline">Real Estate</li>
+                <li class="hover:text-white hover:underline">Acting & Modeling</li>
+                <li class="hover:text-white hover:underline">E-commerce</li>
+                <li class="hover:text-white hover:underline">Steel & Machines</li>
+                <li class="hover:text-white hover:underline">Fabric</li>
+                <li class="hover:text-white hover:underline">Religious</li>
+                <li class="hover:text-white hover:underline">Advertisement</li>
+                <li class="hover:text-white hover:underline">Information Technology</li>
+            </ul>
+        </div>
+
+        <!-- Contact -->
+        <div>
+            <h3 class="text-xl font-semibold text-white mb-6">Contact</h3>
+            <ul class="space-y-3 text-sm">
+                <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                <li><a href="mailto:connect@samasystems.ca" class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                <li>
+                    <a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada" target="_blank" class="text-gray-300 hover:text-white">
+                        Head Office: 140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada
+                    </a>
+                </li>
+                <li>
+                    <a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094" target="_blank" class="text-gray-300 hover:text-white">
+                        India Office: A-446 Meet Nagar, Shahdara, Delhi 110094
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Social Icons -->
+            <div class="flex gap-4 mt-8">
+                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                    <i class="ri-instagram-line"></i>
+                </a>
+                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                    <i class="ri-twitter-x-line"></i>
+                </a>
+                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                    <i class="ri-linkedin-fill"></i>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300">
+        Copyrights © 2024 Sairam Solutions LTD. All rights reserved.
+    </div>
+
+    <!-- Background Effect -->
+    <!-- <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-700 opacity-10 pointer-events-none"></div> -->
+</footer>
+<!-- Footer End -->
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Initialize Carousel -->
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: false,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 6
+                    }
+                }
+            });
+        });
+    </script>
 
     <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
+
 </html>

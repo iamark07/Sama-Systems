@@ -8,3 +8,35 @@
   font-style: normal;
   scroll-behavior: smooth;
 }
+
+
+/* header section */
+header {
+  background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
+}
+
+@media screen and (min-width: 340px) and (max-width: 767px) {
+  header {
+    background-image: -webkit-linear-gradient(30deg, #fff 50%, #001633 50%);
+  }
+}
+
+
+/* hero section  */
+@keyframes bounceSlow {
+
+  0%,
+  100% {
+      transform: translateY(0);
+  }
+
+  50% {
+      transform: translateY(-10px);
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite;
+}
+
+
