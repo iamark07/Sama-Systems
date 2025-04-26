@@ -12,7 +12,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet"> -->
 
     <!-- scroll animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -36,76 +40,71 @@
 <body class="overflow-x-hidden">
 
     <!-- Header Section Start -->
-    <header class="sticky z-40 top-0 w-full shadow-md">
-        <div class="container mx-auto flex justify-between w-full">
-            <!-- Logo -->
-            <div class="z-30 flex items-center py-7 px-6 md:px-10">
-                <img src="assets/img/logo.png" alt="Sama Logo" class="w-28 lg:w-36" />
-                <!-- Use your logo path above -->
-            </div>
-
-            <!-- Desktop Menu -->
-            <nav class="flex justify-items-end z-50 text-white px-5 md:px-10 py-7 justify-end md:pr-10 relative">
-
-                <ul class="gap-8 hidden md:flex items-center z-50">
-                    <li>
-                        <a href="#" class="hover:underline">Home</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Portfolio</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Services</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Careers</a>
-                    </li>
-                    <li>
-                        <a href="#" class="hover:underline">Quote</a>
-                    </li>
-                    <!-- Mobile menu button -->
-                </ul>
-                <div class="md:hidden z-50">
-                    <button id="menu-btn" class="z-30 focus:outline-none">
-                        <i class="ri-menu-2-line text-white text-3xl"></i>
-                    </button>
+    <header id="main-header" class="sticky z-40 top-0 w-full shadow-md transition-all duration-300">
+        <div class="container mx-auto w-full">
+            <div id="header-content" class="header-bg w-full py-7 flex justify-between transition-all duration-300">
+                <!-- Logo -->
+                <div class="z-30 flex items-center px-6 md:px-10">
+                    <img id="logo-img" src="assets/img/logo.png" alt="Sama Logo"
+                        class="w-36 transition-all duration-300" />
                 </div>
-            </nav>
-            <!-- Mobile Menu -->
-            <div id="mobile-menu"
-                class="w-full md:hidden flex text-white fixed top-[92.96px] -left-full transition-all duration-300 z-50"
-                style="height: calc(100dvh - 92.96px);">
 
-                <!-- Side Drawer -->
-                <div class="bg-[#001430] p-6 w-[60%] shadow-lg">
-                    <ul class="flex flex-col gap-4 text-lg font-medium">
-                        <li>
-                            <a href="#"
-                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Home</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Portfolio</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Services</a>
-                        </li>
-                        <li>
-                            <a href="#"
-                                class="block py-2 border-b border-gray-500 hover:text-yellow-400 transition-all">Careers</a>
-                        </li>
-                        <li>
-                            <a href="#" class="block py-2 hover:text-yellow-400 transition-all">Quote</a>
-                        </li>
+                <!-- Desktop Menu -->
+                <nav class="flex justify-items-end z-50 text-white px-5 md:px-10 justify-end md:pr-10 relative">
+                    <ul class="gap-8 hidden md:flex items-center z-50">
+                        <li><a href="#" class="hover:underline">Home</a></li>
+                        <li><a href="#" class="hover:underline">Portfolio</a></li>
+                        <li><a href="#" class="hover:underline">Services</a></li>
+                        <li><a href="#" class="hover:underline">Careers</a></li>
+                        <li><a href="#" class="hover:underline">Quote</a></li>
                     </ul>
-                </div>
+                    <div class="md:hidden z-50">
+                        <button id="menu-btn" class="z-30 focus:outline-none">
+                            <i class="ri-menu-2-line text-white text-3xl"></i>
+                        </button>
+                    </div>
+                </nav>
 
-                <!-- Overlay (click to close menu) -->
-                <div id="menu-overlay" class="w-[40%] "></div>
+                <!-- Mobile Menu -->
+                <div id="mobile-menu"
+                    class="w-full md:hidden flex text-white fixed top-[92.96px] -left-full transition-all duration-300 z-50"
+                    style="height: calc(100dvh - 92.96px);">
+                    <div class="bg-[#001430] p-6 w-[60%] shadow-lg relative">
+                        <ul class="flex flex-col gap-4 text-lg font-medium">
+                            <li><a href="#" class="text-sm block py-2 border-b border-gray-500 hover:text-yellow-400">Home</a>
+                            </li>
+                            <li><a href="#"
+                                    class="text-sm block py-2 border-b border-gray-500 hover:text-yellow-400">Portfolio</a></li>
+                            <li><a href="#"
+                                    class="text-sm block py-2 border-b border-gray-500 hover:text-yellow-400">Services</a></li>
+                            <li><a href="#"
+                                    class="text-sm block py-2 border-b border-gray-500 hover:text-yellow-400">Careers</a></li>
+                            <li><a href="#" class="block py-2 hover:text-yellow-400">Quote</a></li>
+                        </ul>
+                        <!-- Social Icons -->
+                        <div class="flex gap-4 mt-8 absolute bottom-3 left-1/2 -translate-x-1/2">
+                            <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                                class="border border-gray-300 rounded-full min-w-8 min-h-8 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                                <i class="ri-facebook-fill text-sm"></i>
+                            </a>
+                            <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                                class="border border-gray-300 rounded-full min-w-8 min-h-8 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                                <i class="ri-instagram-line text-sm"></i>
+                            </a>
+                            <a href="https://x.com/KbrosTechno" target="_blank"
+                                class="border border-gray-300 rounded-full min-w-8 min-h-8 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                                <i class="ri-twitter-x-line text-sm"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                                class="border border-gray-300 rounded-full min-w-8 min-h-8 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                                <i class="ri-linkedin-fill text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="menu-overlay" class="w-[40%]"></div>
+                </div>
             </div>
         </div>
-
     </header>
     <!-- Header Section End -->
 
@@ -118,10 +117,10 @@
 
             <!-- Left Content -->
             <div class="space-y-6">
-                <h1 class="text-2xl md:text-4xl">
+                <h1 class="text-2xl md:text-5xl Oswald">
                     Empowering Your Digital
                     Future With <span
-                        class="text-[#001430] font-extrabold leading-tight underline decoration-[#001430] decoration-4 underline-offset-8">Sama
+                        class="Oswald text-[#001430] font-semibold leading-tight underline decoration-[#001430] decoration-4 underline-offset-8">Sama
                         Systems</span>
                 </h1>
                 <p class="text-gray-600">
@@ -130,11 +129,11 @@
 
                 <div class="flex justify-center sm:justify-start space-x-4 sm:space-x-6 pt-5">
                     <a href="#"
-                        class="inline-flex items-center gap-2 px-6 py-3 bg-[#001430] text-white font-semibold rounded-full shadow-md hover:bg-[#002d62] transition duration-300 text-xs sm:text-base">
+                        class="Oswald inline-flex items-center gap-2 px-6 py-3 bg-[#001430] text-white font-semibold rounded-full shadow-md hover:bg-[#002d62] transition duration-300 text-xs sm:text-base">
                         <i class="ri-rocket-line sm:text-xl"></i> Get Started
                     </a>
                     <a href="#"
-                        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-[#001430] text-[#001430] font-semibold rounded-full hover:bg-[#001430] hover:text-white transition duration-300 text-xs sm:text-base">
+                        class="Oswald inline-flex items-center gap-2 px-6 py-3 border-2 border-[#001430] text-[#001430] font-semibold rounded-full hover:bg-[#001430] hover:text-white transition duration-300 text-xs sm:text-base">
                         <i class="ri-phone-line sm:text-xl"></i> Contact Us
                     </a>
                 </div>
@@ -172,7 +171,7 @@
 
                     <!-- Top small label -->
                     <div
-                        class="inline-flex items-center gap-2 px-4 py-1 bg-[#f2f4f8] text-sm font-medium text-[#001430] rounded-full">
+                        class="Raleway inline-flex items-center gap-2 px-4 py-2 bg-[#f2f4f8] text-sm font-medium text-[#001430] rounded-full">
                         <i class="ri-flag-line"></i>
                         Introduction
                     </div>
@@ -183,17 +182,17 @@
                     </div>
 
                     <!-- Sub Heading -->
-                    <h2 class="text-xl md:text-2xl font-semibold text-gray-700 mx-auto">
+                    <h2 class="Raleway text-xl md:text-2xl font-semibold text-gray-700 mx-auto">
                         A Software Development Company & Digital Agency.
                     </h2>
 
                     <!-- Decorative Divider -->
-                    <div class="flex justify-center">
+                    <div class="flex justify-center Raleway">
                         <span class="inline-block w-24 h-1 bg-[#001430] rounded-full"></span>
                     </div>
 
                     <!-- Content Blocks -->
-                    <div class="pt-10 grid md:grid-cols-3 gap-10 text-left">
+                    <div class="pt-10 grid md:grid-cols-3 gap-10 text-left Raleway">
 
                         <!-- Block Template -->
                         <div
@@ -284,7 +283,7 @@
                                 <i class="ri-code-s-slash-line text-2xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-[#001430] mb-2">Development</h3>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2 Montserrat">Development</h3>
                                 <p class="text-gray-600 text-sm">
                                     Cutting-edge research, development, and customized solutions for your evolving
                                     project needs.
@@ -300,7 +299,7 @@
                                 <i class="ri-pencil-ruler-2-line text-2xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-[#001430] mb-2">Attractive Designing</h3>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2 Montserrat">Attractive Designing</h3>
                                 <p class="text-gray-600 text-sm">
                                     Responsive web & mobile designs built using modern technologies to enhance user
                                     experience.
@@ -316,7 +315,7 @@
                                 <i class="ri-device-line text-xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-[#001430] mb-2">Cross Platform</h3>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2 Montserrat">Cross Platform</h3>
                                 <p class="text-gray-600 text-sm">
                                     Delivering seamless performance across multiple platforms, expanding your business
                                     reach.
@@ -344,7 +343,7 @@
                                 <i class="ri-lightbulb-flash-line text-2xl"></i>
                             </div>
                             <div>
-                                <h3 class="text-xl font-bold text-[#001430] mb-2">Innovation Focus</h3>
+                                <h3 class="text-xl font-bold text-[#001430] mb-2 Montserrat">Innovation Focus</h3>
                                 <p class="text-gray-600 text-sm">
                                     We prioritize innovation, helping you stay ahead in an ever-evolving digital
                                     landscape.
@@ -389,7 +388,6 @@
     </section>
     <!-- Introduction Section End -->
 
-
     <!-- Offerings Section Start-->
     <section class="bg-[#f8f8f8] relative overflow-hidden h-fit">
 
@@ -433,7 +431,7 @@
             </div>
 
             <!-- Offerings Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 Montserrat">
                 <!-- Single Offering Card -->
                 <div
                     class="group relative px-5 py-8 border-t-4 border-[#001430] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
@@ -504,7 +502,7 @@
     <!-- Offering Section End -->
 
     <!-- Why Choose Us Section Start-->
-    <section class="relative py-24 bg-white overflow-hidden">
+    <section class="relative py-24 bg-[#f4f4f4] overflow-hidden">
 
         <div class="container mx-auto px-6 md:px-10 relative z-10">
             <div class="grid md:grid-cols-2 gap-16 items-center">
@@ -665,95 +663,103 @@
     <!-- Client Section End -->
 
     <!-- Footer Start -->
-<footer class="relative bg-[#0A0E23] text-gray-400 pt-16 pb-8 overflow-hidden">
-    <div class="container mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+    <footer class="relative bg-[#0A0E23] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div
+            class="container mx-auto px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
 
-        <!-- Company Info -->
-        <div>
-            <h2 class="text-3xl font-bold text-white mb-4">Sama Systems</h2>
-            <p class="text-sm leading-relaxed text-gray-300">
-                A Customised Software Development <br />
-                Company & Digital Agency
-            </p>
-        </div>
-
-        <!-- Services -->
-        <div>
-            <h3 class="text-xl font-semibold text-white mb-6">Services</h3>
-            <ul class="space-y-3 text-sm text-gray-300">
-                <li class="hover:text-white hover:underline">ERP Software Development</li>
-                <li class="hover:text-white hover:underline">Library Management</li>
-                <li class="hover:text-white hover:underline">Accounting Software</li>
-                <li class="hover:text-white hover:underline">Medicine Management</li>
-                <li class="hover:text-white hover:underline">Digital Marketing</li>
-                <li class="hover:text-white hover:underline">Website Development</li>
-                <li class="hover:text-white hover:underline">Android Application</li>
-                <li class="hover:text-white hover:underline">iOS Application</li>
-            </ul>
-        </div>
-
-        <!-- Industries -->
-        <div>
-            <h3 class="text-xl font-semibold text-white mb-6">Industries</h3>
-            <ul class="space-y-3 text-sm text-gray-300">
-                <li class="hover:text-white hover:underline">Real Estate</li>
-                <li class="hover:text-white hover:underline">Acting & Modeling</li>
-                <li class="hover:text-white hover:underline">E-commerce</li>
-                <li class="hover:text-white hover:underline">Steel & Machines</li>
-                <li class="hover:text-white hover:underline">Fabric</li>
-                <li class="hover:text-white hover:underline">Religious</li>
-                <li class="hover:text-white hover:underline">Advertisement</li>
-                <li class="hover:text-white hover:underline">Information Technology</li>
-            </ul>
-        </div>
-
-        <!-- Contact -->
-        <div>
-            <h3 class="text-xl font-semibold text-white mb-6">Contact</h3>
-            <ul class="space-y-3 text-sm">
-                <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
-                <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
-                <li><a href="mailto:connect@samasystems.ca" class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
-                <li>
-                    <a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada" target="_blank" class="text-gray-300 hover:text-white">
-                        Head Office: 140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada
-                    </a>
-                </li>
-                <li>
-                    <a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094" target="_blank" class="text-gray-300 hover:text-white">
-                        India Office: A-446 Meet Nagar, Shahdara, Delhi 110094
-                    </a>
-                </li>
-            </ul>
-
-            <!-- Social Icons -->
-            <div class="flex gap-4 mt-8">
-                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
-                    <i class="ri-facebook-fill"></i>
-                </a>
-                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
-                    <i class="ri-instagram-line"></i>
-                </a>
-                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
-                    <i class="ri-twitter-x-line"></i>
-                </a>
-                <a href="#" class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
-                    <i class="ri-linkedin-fill"></i>
-                </a>
+            <!-- Company Info -->
+            <div class="Poiret_One">
+                <h2 class="text-3xl font-bold text-white mb-4">Sama Systems</h2>
+                <p class="text-sm leading-relaxed text-gray-300">
+                    A Customised Software Development <br />
+                    Company & Digital Agency
+                </p>
             </div>
+
+            <!-- Services -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-6">Services</h3>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="hover:text-white hover:underline">ERP Software Development</li>
+                    <li class="hover:text-white hover:underline">Library Management</li>
+                    <li class="hover:text-white hover:underline">Accounting Software</li>
+                    <li class="hover:text-white hover:underline">Medicine Management</li>
+                    <li class="hover:text-white hover:underline">Digital Marketing</li>
+                    <li class="hover:text-white hover:underline">Website Development</li>
+                    <li class="hover:text-white hover:underline">Android Application</li>
+                    <li class="hover:text-white hover:underline">iOS Application</li>
+                </ul>
+            </div>
+
+            <!-- Industries -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-6">Industries</h3>
+                <ul class="space-y-3 text-sm text-gray-300">
+                    <li class="hover:text-white hover:underline">Real Estate</li>
+                    <li class="hover:text-white hover:underline">Acting & Modeling</li>
+                    <li class="hover:text-white hover:underline">E-commerce</li>
+                    <li class="hover:text-white hover:underline">Steel & Machines</li>
+                    <li class="hover:text-white hover:underline">Fabric</li>
+                    <li class="hover:text-white hover:underline">Religious</li>
+                    <li class="hover:text-white hover:underline">Advertisement</li>
+                    <li class="hover:text-white hover:underline">Information Technology</li>
+                </ul>
+            </div>
+
+            <!-- Contact -->
+            <div>
+                <h3 class="text-xl font-semibold text-white mb-6">Contact</h3>
+                <ul class="space-y-3 text-sm">
+                    <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                    <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                    <li><a href="mailto:connect@samasystems.ca"
+                            class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                    <li>
+                        <a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                            target="_blank" class="text-gray-300 hover:text-white">
+                            Head Office: 140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094" target="_blank"
+                            class="text-gray-300 hover:text-white">
+                            India Office: A-446 Meet Nagar, Shahdara, Delhi 110094
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- Social Icons -->
+                <div class="flex gap-4 mt-8">
+                    <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                        class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                        class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                        <i class="ri-instagram-line"></i>
+                    </a>
+                    <a href="https://x.com/KbrosTechno" target="_blank"
+                        class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                        <i class="ri-twitter-x-line"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                        class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                        <i class="ri-linkedin-fill"></i>
+                    </a>
+                </div>
+            </div>
+
         </div>
 
-    </div>
+        <!-- Bottom Bar -->
+        <div class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300">
+            Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights reserved.
+        </div>
 
-    <!-- Bottom Bar -->
-    <div class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300">
-        Copyrights © 2024 Sairam Solutions LTD. All rights reserved.
-    </div>
-
-    <!-- Background Effect -->
-    <!-- <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-700 opacity-10 pointer-events-none"></div> -->
-</footer>
-<!-- Footer End -->
+        <!-- Background Effect -->
+        <!-- <div class="absolute inset-0 bg-gradient-to-br from-cyan-500 to-blue-700 opacity-10 pointer-events-none"></div> -->
+    </footer>
+    <!-- Footer End -->
 
 
     <!-- Owl Carousel JS -->

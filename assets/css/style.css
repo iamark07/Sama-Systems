@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -9,34 +11,56 @@
   scroll-behavior: smooth;
 }
 
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.Poiret_One {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.Oswald {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
 
 /* header section */
-header {
+.header-bg {
   background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
 }
 
 @media screen and (min-width: 340px) and (max-width: 767px) {
-  header {
+  .header-bg {
     background-image: -webkit-linear-gradient(30deg, #fff 50%, #001633 50%);
   }
 }
 
-
 /* hero section  */
 @keyframes bounceSlow {
-
   0%,
   100% {
-      transform: translateY(0);
+    transform: translateY(0);
   }
 
   50% {
-      transform: translateY(-10px);
+    transform: translateY(-10px);
   }
 }
 
 .animate-bounce-slow {
   animation: bounceSlow 3s infinite;
 }
-
-
