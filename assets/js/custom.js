@@ -22,16 +22,25 @@ menuOverlay.addEventListener("click", toggleMenu);
 const header = document.getElementById("header-content");
 const logo = document.getElementById("logo-img");
 
-window.addEventListener("scroll", function () {
+window.addEventListener('scroll', function () {
   if (window.scrollY > 150) {
-    header.classList.remove("py-7");
-    header.classList.add("py-4");
-    logo.classList.remove("w-36");
-    logo.classList.add("w-28");
+    header.classList.remove('py-7');
+    header.classList.add('py-4');
+
+    // Sirf jab screen width 767px se badi ho
+    if (window.innerWidth > 767) {
+      logo.classList.remove('md:w-36');
+      logo.classList.add('w-28');
+    }
   } else {
-    header.classList.remove("py-4");
-    header.classList.add("py-7");
-    logo.classList.remove("w-28");
-    logo.classList.add("w-36");
+    header.classList.remove('py-4');
+    header.classList.add('py-7');
+
+    // Sirf jab screen width 767px se badi ho
+    if (window.innerWidth > 767) {
+      logo.classList.remove('w-28');
+      logo.classList.add('md:w-36');
+    }
   }
 });
+
