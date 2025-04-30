@@ -1,61 +1,19 @@
-// header menu slider features
-
-const menuBtn = document.getElementById("menu-btn");
+const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
-const menuOverlay = document.getElementById("menu-overlay");
+const menuClose = document.getElementById("menu-close");
+const overlay = document.getElementById("overlay");
 
-// Toggle menu open/close
-function toggleMenu() {
-  if (mobileMenu.classList.contains("-left-full")) {
-    mobileMenu.classList.remove("-left-full");
-    mobileMenu.classList.add("left-0");
-  } else {
-    mobileMenu.classList.remove("left-0");
-    mobileMenu.classList.add("-left-full");
-  }
-}
-
-menuBtn.addEventListener("click", toggleMenu);
-menuOverlay.addEventListener("click", toggleMenu);
-
-// header size small when screen scroll
-const header = document.getElementById("header-content");
-const logo = document.getElementById("logo-img");
-
-window.addEventListener('scroll', function () {
-  if (window.scrollY > 150) {
-    header.classList.remove('py-7');
-    header.classList.add('py-4');
-
-    // Sirf jab screen width 767px se badi ho
-    if (window.innerWidth > 767) {
-      logo.classList.remove('md:w-36');
-      logo.classList.add('w-28');
-    }
-    else {
-        // Jab mobile mode hai aur scroll 150px se zyada hai
-        if (mobileMenu) {
-          mobileMenu.style.height = 'calc(100dvh - 69.67px)';
-          mobileMenu.style.top = '69.67px';
-        }
-      }
-  
-  } else {
-    header.classList.remove('py-4');
-    header.classList.add('py-7');
-
-    // Sirf jab screen width 767px se badi ho
-    if (window.innerWidth > 767) {
-      logo.classList.remove('w-28');
-      logo.classList.add('md:w-36');
-    }
-    else {
-        // Jab mobile mode hai aur scroll 150px se kam hai
-        if (mobileMenu) {
-          mobileMenu.style.height = 'calc(100dvh - 92.96px)';
-          mobileMenu.style.top = '92.96px';
-        }
-      }  
-  }
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.remove("-translate-x-full");
+  overlay.classList.remove("hidden");
 });
 
+menuClose.addEventListener("click", () => {
+  mobileMenu.classList.add("-translate-x-full");
+  overlay.classList.add("hidden");
+});
+
+overlay.addEventListener("click", () => {
+  mobileMenu.classList.add("-translate-x-full");
+  overlay.classList.add("hidden");
+});
