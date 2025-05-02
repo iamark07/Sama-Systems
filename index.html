@@ -44,33 +44,35 @@
 
 
     <!-- Hero Section -->
-    <section
-        class="w-full h-screen bg-gradient-to-br from-[#001633] to-[#002a61] relative flex items-center justify-center">
+    <section class="py-40 md:py-52 relative flex items-center justify-center"
+        style="background-image: url(assets/img/hero-bg-1.png); background-size: 100% 100%;">
         <!-- Header -->
-        <header class="w-full fixed top-0 z-40 bg-opacity-50 backdrop-blur-xl border-b border-[#00bcd4]/20">
-            <div class="container mx-auto px-6 md:px-10 py-6 flex justify-between items-center">
-                <h2 class="text-xl sm:text-2xl font-semibold text-white">Sama Systems</h2>
-                <!-- <img src="assets/img/logo.png" alt="" class="w-24 md:w-32"> -->
+        <header class="w-full fixed top-0 z-40 bg-opacity-20 backdrop-blur-3xl">
+            <div class="container mx-auto">
+                <div class="header-bg flex justify-between items-center px-6 md:px-10 py-6">
+                    <!-- <h2 class="text-xl sm:text-2xl font-semibold text-white">Sama Systems</h2> -->
+                    <img src="assets/img/logo.png" alt="" class="w-24 md:w-32">
 
-                <!-- Desktop Menu -->
-                <nav class="hidden lg:flex space-x-6 text-sm font-medium text-gray-100">
-                    <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">About</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">Solutions</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">Contact</a>
-                </nav>
+                    <!-- Desktop Menu -->
+                    <nav class="hidden lg:flex space-x-6 text-sm font-medium text-gray-100">
+                        <!-- <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a> -->
+                        <a href="#" class="hover:text-[#00bcd4] transition">About</a>
+                        <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
+                        <a href="#" class="hover:text-[#00bcd4] transition">Solutions</a>
+                        <a href="#" class="hover:text-[#00bcd4] transition">Contact</a>
+                    </nav>
 
-                <!-- Get in Touch Button (Desktop) -->
-                <button
-                    class="hidden lg:inline-block bg-gradient-to-r from-[#00bcd4] via-[#00bcd4] to-[#001633] hover:opacity-90 text-white px-8 py-3 rounded-full text-sm duration-300 shadow-sm shadow-[#00bcd4] transition">
-                    Get in Touch
-                </button>
+                    <!-- Get in Touch Button (Desktop) -->
+                    <button
+                        class="hidden lg:inline-block bg-[#c9457e] hover:opacity-90 text-white rounded-md px-8 py-3 text-sm duration-300 transition">
+                        Free Cosultation
+                    </button>
 
-                <!-- Hamburger Icon (Mobile) -->
-                <button id="menu-toggle" class="lg:hidden text-[#ffffff] text-3xl">
-                    <i class="ri-menu-line"></i>
-                </button>
+                    <!-- Hamburger Icon (Mobile) -->
+                    <button id="menu-toggle" class="lg:hidden text-[#ffffff] text-3xl">
+                        <i class="ri-menu-line"></i>
+                    </button>
+                </div>
             </div>
         </header>
 
@@ -85,14 +87,14 @@
                     </button>
                 </div>
                 <nav class="flex flex-col space-y-5 text-sm font-medium">
-                    <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a>
+                    <!-- <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a> -->
                     <a href="#" class="hover:text-[#00bcd4] transition">About</a>
                     <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
                     <a href="#" class="hover:text-[#00bcd4] transition">Solutions</a>
                     <a href="#" class="hover:text-[#00bcd4] transition">Contact</a>
                 </nav>
                 <button
-                    class="bg-gradient-to-r from-[#00bcd4] via-[#00bcd4] to-[#001633] hover:opacity-90 text-white px-8 py-3 rounded-full text-sm duration-300 shadow-sm shadow-[#00bcd4] transition">
+                    class="bg-[#c9457e] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
                     Get in Touch
                 </button>
             </div>
@@ -112,9 +114,70 @@
                 Sama Systems empowers businesses with cutting-edge technology to innovate, scale, and lead in the
                 digital era.
             </p>
-            <div class="flex justify-center space-x-4">
+            <!-- Container -->
+            <div class="py-6 flex justify-center">
+                <div
+                    class="flex flex-wrap items-center gap-x-5 gap-y-3 sm:gap-5 text-lg justify-center sm:text-2xl font-bold">
+
+                    <!-- AI -->
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
+                        style="text-shadow: 0 2px 10px rgba(0, 255, 255, 0.6);">
+                        Analytics
+                    </span>
+
+                    <!-- Separator -->
+                    <span class="text-white">|</span>
+
+                    <!-- CLOUD -->
+                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300"
+                        style="text-shadow: 0 2px 10px rgba(255, 200, 120, 0.7);">
+                        Marketing
+                    </span>
+
+                    <!-- Separator -->
+                    <span class="text-white consultation_line">|</span>
+
+                    <!-- DATA -->
+                    <span class="ml-0 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400"
+                        style="text-shadow: 0 2px 10px rgba(200, 100, 255, 0.7);">
+                        Consultation
+                    </span>
+
+                </div>
+            </div>
+            <!-- Rating Badges -->
+            <div class="mt-10 flex flex-wrap justify-center items-center gap-8 px-4">
+                <!-- GoodFirms -->
+                <div class="flex items-center space-x-2">
+                    <img src="assets/img/goodfirms.png" alt="GoodFirms" class="w-8 h-8 object-contain">
+                    <div class="text-white text-sm sm:text-base">
+                        <span class="font-semibold">Goodfirms rating</span><br>
+                        <span class="text-yellow-400">5/5 ★★★★★</span>
+                    </div>
+                </div>
+
+                <!-- Clutch -->
+                <div class="flex items-center space-x-2">
+                    <img src="assets/img/clutch.png" alt="Clutch" class="w-8 h-8 object-contain">
+                    <div class="text-white text-sm sm:text-base">
+                        <span class="font-semibold">Reviewed on</span><br>
+                        <span class="text-red-400">Clutch 4.9 ★★★★★</span>
+                    </div>
+                </div>
+
+                <!-- Upwork -->
+                <div class="flex items-center space-x-2">
+                    <img src="assets/img/upwork.png" alt="Upwork" class="w-8 h-8 object-contain">
+                    <div class="text-white text-sm sm:text-base">
+                        <span class="font-semibold text-green-400">Top Rated</span><br>
+                        <span class="text-green-300">on Upwork ★★★★★</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-10 flex justify-center space-x-4">
                 <button
-                    class="bg-gradient-to-r from-[#00bcd4] via-[#00bcd4] to-[#001633] hover:opacity-90 text-white px-8 py-3 rounded-full text-sm duration-300 shadow-sm shadow-[#00bcd4] transition">
+                    class="bg-[#c9457e] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
                     Explore Services
                 </button>
                 <!-- <button class="border border-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-md text-white transition">
@@ -124,7 +187,7 @@
         </div>
 
         <!-- Animated Background Circles -->
-        <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
+        <!-- <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
             <div
                 class="absolute z-20 w-72 h-72 bg-[#00bcd4] opacity-20 rounded-full md:-top-20 -top-40 md:-left-20 -left-36 blur-3xl">
             </div>
@@ -132,49 +195,49 @@
                 class="absolute z-20 w-72 h-72 bg-[#00bcd4] opacity-30 rounded-full md-:bottom-20 -bottom-40 md:-right-10 -right-36 blur-3xl">
             </div>
 
-        </div>
+        </div> -->
     </section>
 
     <!--  Who We Are section-->
-    <section class="bg-gradient-to-tr from-[#001633] to-[#002a61] py-20 text-gray-200">
+    <section class="bg-gradient-to-tr from-[#001633] to-[#000b26] py-20 text-gray-200">
         <div class="container mx-auto px-6 md:px-10">
-            <h2 class="text-2xl sm:text-5xl font-extrabold text-center text-[#00bcd4] mb-16">
+            <h2 class="text-2xl sm:text-5xl font-extrabold text-center text-[#c9457e] mb-16">
                 Who We Are
             </h2>
 
             <div class="space-y-12 text-lg leading-relaxed flex flex-col items-center">
-                <div class="relative pl-8 border-l-4 border-[#00bcd4]">
+                <div class="w-full relative pl-8 border-l-4 border-[#c9457e]">
                     <p class="font-medium">
-                        We are a team of passionate fullstack developers committed to crafting digital experiences that
-                        not only look great but perform flawlessly. We believe in blending clean code with modern design
-                        to build powerful, scalable, and intuitive web solutions.
+                        Get the Services of a Trusted Software Development Company at an Affordable Price to Take Your
+                        Business a Level Up!
                     </p>
                 </div>
 
                 <div
-                    class="relative bg-white p-8 rounded-xl shadow-lg border-l-[6px] border-[#00bcd4] hover:shadow-xl transition duration-300">
+                    class="relative bg-white p-8 rounded-xl shadow-lg border-l-[6px] border-[#c9457e] hover:shadow-xl transition duration-300">
                     <p class="font-semibold text-gray-700">
-                        🚀 We don't just write code — we engineer experiences. Whether it's frontend frameworks like
-                        React and Vue, or backend technologies like Laravel and Node.js, our expertise covers the entire
-                        development lifecycle.
+                        🚀 SAMA Systems, being the Top Rated Software Development Company across the globe, has the
+                        potential to bring specialized and optimized solutions for you. With 5+ years of experience.
                     </p>
                 </div>
 
-                <div class="relative pr-8 border-r-4 border-[#00bcd4] text-right">
+                <div class="relative pr-8 border-r-4 border-[#c9457e]">
                     <p class="font-medium">
-                        Collaboration is our core strength. We understand that every project is unique, so we dive deep
-                        into your vision to deliver tailor-made solutions with precision, performance, and purpose.
+                        Our Software Development Team has worked with multiple Companies and enterprises and assisted
+                        them to ease their IT outsourcing experience, as well as reduce cost or time to market. By
+                        providing several Software development services, SAMA Systems has turned into a reliable brand
+                        for businesses across the globe.
                     </p>
                 </div>
 
                 <div
-                    class="w-full   bg-[#00bcd4] text-white p-6 rounded-xl shadow-md text-center text-xl font-semibold tracking-wide italic">
+                    class="w-full   bg-[#c9457e] text-white p-6 rounded-xl shadow-md text-center text-xl font-semibold tracking-wide italic">
                     “We believe in building not just websites — but meaningful digital journeys.”
                 </div>
 
                 <!-- Get in Touch Button (Desktop) -->
                 <button
-                    class="hidden lg:inline-block bg-gradient-to-r from-[#00bcd4] via-[#00bcd4] to-[#00bcd4] hover:opacity-90 text-white px-8 py-3 rounded-full text-sm duration-300 shadow-sm shadow-[#00bcd4] transition">
+                    class="hidden lg:inline-block bg-[#c9457e] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
                     Know More
                 </button>
             </div>
@@ -182,7 +245,7 @@
     </section>
 
     <!-- SECTION: Your Journey, Made Effortless -->
-    <section class="bg-gradient-to-br from-[#001633] to-[#002a61] py-24 text-gray-200">
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] py-24 text-gray-200">
         <div class="container mx-auto px-6 md:px-10">
             <!-- Heading -->
             <h2 class="text-2xl sm:text-5xl font-extrabold text-center text-[#00bcd4] mb-32 leading-tight">
@@ -192,8 +255,8 @@
             <!-- Grid Section -->
             <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-lg leading-relaxed">
                 <!-- Column 1 -->
-                <div class="border-l-4 border-[#00bcd4] pl-6">
-                    <h3 class="text-2xl font-semibold mb-3 text-[#00bcd4]">No Complex Steps</h3>
+                <div class="border-l-4 border-[#c9457e] pl-6">
+                    <h3 class="text-2xl font-semibold mb-3 text-[#c9457e]">No Complex Steps</h3>
                     <p>
                         We’ve eliminated unnecessary friction. From the moment you show interest to your first real use,
                         every step is guided, simple, and quick.
@@ -218,8 +281,8 @@
                 </div>
 
                 <!-- Column 3 -->
-                <div class="border-l-4 border-[#00bcd4] pl-6">
-                    <h3 class="text-2xl font-semibold mb-3 text-[#00bcd4]">Ready to Go in Minutes</h3>
+                <div class="border-l-4 border-[#c9457e] pl-6">
+                    <h3 class="text-2xl font-semibold mb-3 text-[#c9457e]">Ready to Go in Minutes</h3>
                     <p>
                         No long forms. No delays. In just a few steps, you're in—engaged and empowered to start
                         building, managing, or exploring.
@@ -456,12 +519,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
 
 
     <!-- <section class="w-full bg-white py-24">
@@ -722,8 +779,6 @@
 
 
 
-
-
     <!-- Introduction Section Start -->
     <section class="relative bg-white text-[#001430] overflow-hidden py-24">
         <div class="container mx-auto px-6 md:px-10">
@@ -954,11 +1009,11 @@
     <!-- Introduction Section End -->
 
     <!-- Offerings Section Start-->
-    <section class="bg-[#f8f8f8] relative overflow-hidden h-fit">
+    <section class="relative h-fit overflow-x-hidden">
 
-        <div class="container mx-auto px-6 md:px-10 py-24 relative">
+        <div class="container mx-auto px-6 md:px-10 py-40 relative">
             <!-- Background Circles -->
-            <div class="absolute -top-[20%] -left-[5%] w-96 h-96 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
+            <div class="absolute top-[0%] -left-[5%] w-96 h-96 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
             </div>
             <div class="absolute top-[65%] left-[24%] w-48 h-48 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
             </div>
@@ -966,14 +1021,6 @@
             </div>
             <div
                 class="absolute top-[90%] md:top-[70%] left-[65%] w-64 h-64 bg-[#001430] rounded-full inset-0 bg-opacity-5 z-0">
-            </div>
-            <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-[0] rotate-180">
-                <svg class="relative block w-[calc(150%+1.3px)] h-[150px]" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path
-                        d="M321.39 56.19C195.94 83.32 48.14 102.67 0 104.48V0h1200v104.48c-48.14-1.81-195.94-21.16-321.39-48.29C754.94 29.32 607.14 8.67 480 8.67S205.06 29.32 321.39 56.19z"
-                        fill="#001430"></path>
-                </svg>
             </div>
             <!-- Section Title -->
             <div class="mb-16 relative z-30">
@@ -1010,7 +1057,7 @@
                     <p class="text-gray-500 text-center text-xs">iOS App & Android Application Development - Booking,
                         Shopping Applications, etc.</p>
                     <span
-                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-300"></span>
                 </div>
 
                 <!-- Single Offering Card -->
@@ -1026,7 +1073,7 @@
                     <p class="text-gray-500 text-center text-xs">ERP Software, Accounting Software, Library & Medicine
                         Management Systems.</p>
                     <span
-                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-300"></span>
                 </div>
 
                 <!-- Single Offering Card -->
@@ -1042,7 +1089,7 @@
                     <p class="text-gray-500 text-center text-xs">SEO, Social Media Marketing, Search Engine Optimization
                         and Ranking Strategies.</p>
                     <span
-                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-300"></span>
                 </div>
 
                 <!-- Single Offering Card -->
@@ -1058,7 +1105,7 @@
                     <p class="text-gray-500 text-center text-xs">Website Security, Dynamic and Static Website
                         Development using the Latest Technologies.</p>
                     <span
-                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-500"></span>
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#001430] transition-all duration-300"></span>
                 </div>
 
             </div>
@@ -1070,22 +1117,22 @@
     <section class="relative py-24 bg-[#f4f4f4] overflow-hidden">
 
         <div class="container mx-auto px-6 md:px-10 relative z-10">
-            <div class="grid md:grid-cols-2 gap-16 items-center">
+            <div class="grid grid-cols-1 gap-16 items-center">
 
                 <!-- Left Block -->
                 <div class="order-2 md:order-1">
                     <div class="mb-4">
-                        <h2 class="text-2xl md:text-3xl font-bold text-[#001430] leading-snug">
+                        <h2 class="text-2xl md:text-3xl font-[600] text-[#001430] leading-snug text-center">
                             Why <span class="text-gray-800">Choose Us</span>
                         </h2>
                     </div>
-                    <p class="text-gray-600 mb-8 text-sm md:text-base leading-relaxed">
+                    <p class="text-gray-600 mb-8 text-sm md:text-base leading-relaxed text-center">
                         KBros Developers simply has the experience with the most diverse clients, networks, and
                         different size organizations.
                         Since day one, we have remained on the cutting-edge of Technologies, offering the most advanced
                         applications and hardware possible.
                     </p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                    <div class="grid grid-cols-4 gap-5">
                         <!-- Practical, cost-effective service -->
                         <div class="flex items-center space-x-4">
                             <div
@@ -1126,11 +1173,11 @@
                 </div>
 
                 <!-- Right Image -->
-                <div class="flex justify-center order-1 md:order-2">
+                <!-- <div class="flex justify-center order-1 md:order-2">
                     <div class="relative bg-[#001430] p-2 rounded-3xl shadow-lg">
                         <img src="assets/img/sama-systems.png" alt="Sama Systems" class="w-full rounded-3xl" />
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -1146,76 +1193,76 @@
                 <!-- Left Heading -->
                 <div>
                     <h2 class="text-2xl md:text-3xl text-[#001430] mb-0 md:mb-4 text-start">
-                        Our <span class="font-bold underline">Clients</span>
+                        Our <span class="font-[600]">Clients</span>
                     </h2>
                 </div>
 
                 <!-- Right Subheading + Paragraph -->
                 <div class="text-end">
                     <p class="text-[#001430] text-lg md:text-2xl mt-4 mb-2 font-medium">You May Know Of</p>
-                    <p class="text-gray-500 text-sm">
-                        Find these on <span class="text-[#001430] font-semibold">Google</span>
+                    <p class="text-gray-500 text-sm flex gap-2 justify-end items-center">
+                        Find these on <img src="assets/img/Google.png" alt="" class="w-16">
                     </p>
                 </div>
             </div>
 
             <!-- Client Logos Carousel -->
-            <div class="owl-carousel owl-theme">
+            <div class="owl-carousel owl-theme" id="clients-logo">
 
                 <!-- Client Logos -->
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10" class="object-contain">
                 </div>
 
-                <div class="flex items-center justify-center p-4">
-                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11"
-                        class="object-contain transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                <div
+                    class="flex items-center justify-center p-4 rounded-md transition-transform duration-300 hover:scale-105 hover:shadow-lg">
+                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11" class="object-contain">
                 </div>
 
             </div>
@@ -1240,7 +1287,7 @@
 
             <!-- Services -->
             <div>
-                <h3 class="text-xl font-semibold text-white mb-6">Services</h3>
+                <h3 class="text-xl font-[500] text-white mb-6">Services</h3>
                 <ul class="space-y-3 text-sm text-gray-300">
                     <li class="hover:text-white hover:underline">ERP Software Development</li>
                     <li class="hover:text-white hover:underline">Library Management</li>
@@ -1255,7 +1302,7 @@
 
             <!-- Industries -->
             <div>
-                <h3 class="text-xl font-semibold text-white mb-6">Industries</h3>
+                <h3 class="text-xl font-[500] text-white mb-6">Industries</h3>
                 <ul class="space-y-3 text-sm text-gray-300">
                     <li class="hover:text-white hover:underline">Real Estate</li>
                     <li class="hover:text-white hover:underline">Acting & Modeling</li>
@@ -1270,7 +1317,7 @@
 
             <!-- Contact -->
             <div>
-                <h3 class="text-xl font-semibold text-white mb-6">Contact</h3>
+                <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
                 <ul class="space-y-3 text-sm">
                     <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
                     <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
@@ -1330,7 +1377,7 @@
     <!-- Initialize Carousel -->
     <script>
         $(document).ready(function () {
-            $(".owl-carousel").owlCarousel({
+            $("#clients-logo").owlCarousel({
                 loop: true,
                 margin: 30,
                 autoplay: true,

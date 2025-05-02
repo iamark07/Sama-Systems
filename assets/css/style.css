@@ -47,6 +47,12 @@
   }
 }
 
+@media screen and (min-width: 340px) and (max-width: 400px) {
+.consultation_line{
+  display: none;
+}
+}
+
 /* hero section  */
 @keyframes bounceSlow {
   0%,
@@ -63,3 +69,7 @@
   animation: bounceSlow 3s infinite;
 }
 
+
+#clients-logo .owl-stage-outer{
+  padding: 50px 0px;
+}
