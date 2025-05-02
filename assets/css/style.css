@@ -47,11 +47,6 @@
   }
 }
 
-@media screen and (min-width: 340px) and (max-width: 400px) {
-.consultation_line{
-  display: none;
-}
-}
 
 /* hero section  */
 @keyframes bounceSlow {
@@ -59,10 +54,16 @@
   100% {
     transform: translateY(0);
   }
-
+  
   50% {
     transform: translateY(-10px);
   }
+}
+
+@media screen and (min-width: 340px) and (max-width: 400px) {
+.consultation_line{
+  display: none;
+}
 }
 
 .animate-bounce-slow {
@@ -72,4 +73,19 @@
 
 #clients-logo .owl-stage-outer{
   padding: 50px 0px;
+}
+
+
+/* testimonal section */
+
+#testimonal .owl-stage-outer {
+  padding: 10px 0px;
+}
+
+#testimonal .owl-nav button:hover{
+  background: none;
+}
+
+#testimonal .owl-dots .owl-dot.active span{
+  background: #c9457e;
 }
