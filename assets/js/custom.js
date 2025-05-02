@@ -1,10 +1,28 @@
 // add shadow on scroll feature 
 window.addEventListener('scroll', function () {
   const header = document.getElementById('main-header');
-  if (window.scrollY > 10) {
-      header.classList.add('shadow-md');
+  const logo = document.getElementById('site-logo');
+  const isScrolled = window.scrollY > 10;
+  const isDesktop = window.innerWidth >= 768;
+
+  if (isScrolled) {
+    header.classList.remove('py-6');
+    header.classList.add('py-4');
+
+    if (isDesktop) {
+      header.classList.add('shadow-md', 'bg-opacity-95', 'backdrop-blur');
+      logo.classList.remove('md:w-32');
+      logo.classList.add('w-24');
+    }
   } else {
-      header.classList.remove('shadow-md');
+    header.classList.remove('py-4');
+    header.classList.add('py-6');
+
+    if (isDesktop) {
+      header.classList.remove('shadow-md', 'bg-opacity-95', 'backdrop-blur');
+      logo.classList.remove('w-24');
+      logo.classList.add('md:w-32');
+    }
   }
 });
 
