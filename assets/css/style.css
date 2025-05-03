@@ -9,10 +9,17 @@
   scroll-behavior: smooth;
 }
 
+.roboto {
+  font-family: "Roboto", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 200;
+  /* font-style: normal; */
+}
+
 .Montserrat {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
-  font-weight: 200;
+  font-weight: 100;
   font-style: normal;
 }
 
@@ -36,8 +43,21 @@
   font-style: normal;
 }
 
+/* @keyframes blobbing {
+  0%, 100% {
+    transform: translate(100px, 100px) scale(1);
+  }
+  50% {
+    transform: translate(105px, 95px) scale(1.05);
+  }
+}
+
+.animate-blobbing {
+  animation: blobbing 8s ease-in-out infinite;
+} */
+
 /* header section */
-.header-bg {
+/* .header-bg {
   background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
 }
 
@@ -45,7 +65,7 @@
   .header-bg {
     background-image: -webkit-linear-gradient(30deg, #fff 50%, #001633 50%);
   }
-}
+} */
 
 
 /* hero section  */
