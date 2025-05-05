@@ -14,8 +14,8 @@ window.addEventListener("scroll", function () {
 
     if (isDesktop) {
       header.classList.add("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("md:w-40");
-      logo.classList.add("w-32");
+      logo.classList.remove("md:w-32");
+      logo.classList.add("w-28");
     } else {
       header.classList.add("shadow-md");
     }
@@ -28,8 +28,8 @@ window.addEventListener("scroll", function () {
 
     if (isDesktop) {
       header.classList.remove("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("w-32");
-      logo.classList.add("md:w-40");
+      logo.classList.remove("w-28");
+      logo.classList.add("md:w-32");
     } else {
       header.classList.remove("shadow-md");
     }
