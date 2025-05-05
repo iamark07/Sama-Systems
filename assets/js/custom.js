@@ -10,23 +10,12 @@ window.addEventListener("scroll", function () {
     header.classList.remove("py-6");
     header.classList.add("py-4");
 
-    // Replace gradient classes (transparent ➜ #001633)
-    header.classList.remove(
-      "bg-[linear-gradient(to_right,_white_0%,_transparent_80%,_transparent_100%)]",
-      "md:bg-[linear-gradient(to_right,_white_0%,_transparent_50%,_transparent_100%)]",
-      "lg:bg-[linear-gradient(to_right,_white_0%,_white_15%,_transparent_30%,_transparent_50%,_transparent_75%,_transparent_100%)]"
-    );
 
-    header.classList.add(
-      "bg-[linear-gradient(to_right,_white_0%,_rgba(0,22,51,0.7)_80%,_rgba(0,22,51,0.7)_100%)]",
-      "md:bg-[linear-gradient(to_right,_white_0%,_rgba(0,22,51,0.7)_50%,_rgba(0,22,51,0.7)_100%)]",
-      "lg:bg-[linear-gradient(to_right,_white_0%,_white_15%,_rgba(0,22,51,0.7)_30%,_rgba(0,22,51,0.7)_50%,_rgba(0,22,51,0.7)_75%,_rgba(0,22,51,0.7)_100%)]"
-    );
 
     if (isDesktop) {
       header.classList.add("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("md:w-32");
-      logo.classList.add("w-24");
+      logo.classList.remove("md:w-40");
+      logo.classList.add("w-32");
     } else {
       header.classList.add("shadow-md");
     }
@@ -36,22 +25,11 @@ window.addEventListener("scroll", function () {
     header.classList.add("py-6");
 
     // Revert gradient back to transparent
-    header.classList.remove(
-      "bg-[linear-gradient(to_right,_white_0%,_rgba(0,22,51,0.7)_80%,_rgba(0,22,51,0.7)_100%)]",
-      "md:bg-[linear-gradient(to_right,_white_0%,_rgba(0,22,51,0.7)_50%,_rgba(0,22,51,0.7)_100%)]",
-      "lg:bg-[linear-gradient(to_right,_white_0%,_white_15%,_rgba(0,22,51,0.7)_30%,_rgba(0,22,51,0.7)_50%,_rgba(0,22,51,0.7)_75%,_rgba(0,22,51,0.7)_100%)]"
-    );
-
-    header.classList.add(
-      "bg-[linear-gradient(to_right,_white_0%,_transparent_80%,_transparent_100%)]",
-      "md:bg-[linear-gradient(to_right,_white_0%,_transparent_50%,_transparent_100%)]",
-      "lg:bg-[linear-gradient(to_right,_white_0%,_white_15%,_transparent_30%,_transparent_50%,_transparent_75%,_transparent_100%)]"
-    );
 
     if (isDesktop) {
       header.classList.remove("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("w-24");
-      logo.classList.add("md:w-32");
+      logo.classList.remove("w-32");
+      logo.classList.add("md:w-40");
     } else {
       header.classList.remove("shadow-md");
     }
