@@ -43,8 +43,7 @@
     <section class="py-40 md:py-52 relative flex items-center justify-center"
         style="background-image: url(assets/img/hero-bg-1.png); background-size: 100% 100%;">
         <!-- Header -->
-        <header id="main-header"
-            class="header-bg w-full fixed top-0 z-40 py-6 transition-all duration-300 bg-white">
+        <header id="main-header" class="header-bg w-full fixed top-0 z-40 py-6 transition-all duration-300 bg-white">
             <div class="container mx-auto">
                 <div class=" flex justify-between items-center px-6 md:px-10">
                     <!-- <h2 class="text-xl sm:text-2xl font-semibold text-white">Sama Systems</h2> -->
@@ -213,9 +212,9 @@
     <!-- Hero Section end-->
 
     <!--  Who We Are section start-->
-    <section class="bg-gradient-to-tr from-[#001633] to-[#000b26] py-20 text-gray-200">
+    <section class="bg-[#f5f5f5] py-20 text-gray-800">
         <div class="container mx-auto px-6 md:px-10">
-            <h2 class="text-3xl sm:text-5xl font-[600] text-center text-[#ff0063] mb-16">
+            <h2 class="text-3xl sm:text-5xl font-[600] text-center text-black mb-16">
                 Who We Are
             </h2>
 
@@ -229,7 +228,7 @@
 
                 <div
                     class="relative bg-white p-8 rounded-xl shadow-lg border-l-[6px] border-[#ff0063] hover:shadow-xl transition duration-300">
-                    <p class="font-semibold text-gray-700">
+                    <p class="font-semibold text-gray-800">
                         🚀 SAMA Systems, being the Top Rated Software Development Company across the globe, has the
                         potential to bring specialized and optimized solutions for you. With 5+ years of experience.
                     </p>
@@ -251,7 +250,7 @@
 
                 <!-- Get in Touch Button (Desktop) -->
                 <button
-                    class="hidden lg:inline-block bg-[#ff0063] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
+                    class="hidden lg:inline-block bg-[#ff0063] hover:opacity-90 text-white px-8 py-3 text-sm duration-300 shadow-sm transition">
                     Know More
                 </button>
             </div>
@@ -260,7 +259,7 @@
     <!--  Who We Are section end-->
 
     <!-- Your Journey section start -->
-    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] py-24 text-gray-200">
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] py-52 text-gray-200">
         <div class="container mx-auto px-6 md:px-10">
             <!-- Heading -->
             <h2 class="text-2xl sm:text-4xl font-extrabold text-center text-[#00bcd4] mb-32 leading-tight">
@@ -268,7 +267,7 @@
             </h2>
 
             <!-- Grid Section -->
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-sm sm:text-lg leading-relaxed">
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-sm leading-relaxed">
                 <!-- Column 1 -->
                 <div class="border-l-4 border-[#ff0063] pl-6">
                     <h3 class="text-2xl font-semibold mb-3 text-[#ff0063]">No Complex Steps</h3>
@@ -310,7 +309,7 @@
             </div>
 
             <!-- Quote or Highlight CTA -->
-            <div class="mt-20 text-center text-xl italic text-gray-200">
+            <div class="mt-20 text-center italic text-gray-200">
                 “We’ve designed the start of your journey to be so clear, you’ll wonder why others still make it
                 complicated.”
             </div>
@@ -319,224 +318,174 @@
     <!-- Your Journey section end -->
 
     <!-- what we do best section start -->
-    <section class="w-full bg-gradient-to-tr from-[#001633] to-[#000b26] py-24 relative">
-        <div class="absolute top-0 left-0 w-full h-full">
+    <section class="w-full bg-[#f5f5f5] relative">
+        <!-- <div class="absolute top-0 left-0 w-full h-full">
             <img src="assets/img/hero-bg.jpg" alt="" class="w-full h-full opacity-20">
-        </div>
-        <div class="container mx-auto px-6 md:px-10 relative z-10">
+        </div> -->
+        <div class="container mx-auto px-6 md:px-10 relative z-10 py-32">
+            <div class="absolute top-0 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="absolute bottom-3 right-10 md:right-1/2">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute top-32 right-10 hidden md:block">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
             <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-5xl font-semibold text-white">What We Do Best</h2>
-                <p class="text-[#00bcd4] text-sm sm:text-lg mt-4">
+                <h2 class="text-2xl md:text-4xl font-semibold text-black">What We Do Best</h2>
+                <p class="text-gray-800 text-sm sm:text-base mt-4">
                     Solving complex business problems with elegant digital solutions.
                 </p>
             </div>
 
-            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-10">
-                <!-- Card Template Start -->
+            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 relative z-20">
+                <!-- Custom Software -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] gap-3 flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-code-s-slash-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-code-s-slash-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Custom Software
-                        </h3>
-
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">
-                                Tailored business software crafted for efficiency and scale.
-                            </p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Custom Software</h3>
+                        <p class="text-center text-gray-700 text-sm">Tailored business software crafted for efficiency
+                            and scale.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
-                <!-- Card Template End -->
 
                 <!-- Web Development -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-global-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-global-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Web Development
-                        </h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Robust, responsive websites for modern business
-                                presence.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-xl"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Web Development</h3>
+                        <p class="text-center text-gray-700 text-sm">Robust, responsive websites for modern business
+                            presence.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Mobile Apps -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-smartphone-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-smartphone-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Mobile Apps
-                        </h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Seamless cross-platform experiences with powerful
-                                performance.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-xl"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Mobile Apps</h3>
+                        <p class="text-center text-gray-700 text-sm">Seamless cross-platform experiences with powerful
+                            performance.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- UI/UX Design -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-pantone-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-pantone-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            UI/UX Design
-                        </h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Crafting intuitive interfaces with delightful user
-                                journeys.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">UI/UX Design</h3>
+                        <p class="text-center text-gray-700 text-sm">Crafting intuitive interfaces with delightful user
+                            journeys.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- IT Consulting -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-lightbulb-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-lightbulb-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            IT Consulting
-                        </h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Expert advice to align tech strategy with business
-                                goals.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">IT Consulting</h3>
+                        <p class="text-center text-gray-700 text-sm">Expert advice to align tech strategy with business
+                            goals.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Cloud & DevOps -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-cloud-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-cloud-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Cloud & DevOps
-                        </h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Scale with confidence using secure cloud and CI/CD
-                                tools.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Cloud & DevOps</h3>
+                        <p class="text-center text-gray-700 text-sm">Scale with confidence using secure cloud and CI/CD
+                            tools.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Product Engineering -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-tools-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-tools-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Product
-                            Engineering</h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">From MVP to scalable product, engineered for
-                                excellence.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Product Engineering</h3>
+                        <p class="text-center text-gray-700 text-sm">From MVP to scalable product, engineered for
+                            excellence.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
 
                 <!-- Quality Assurance -->
                 <div
-                    class="group relative bg-[#0b274a] text-white rounded-2xl shadow-xl p-10 transition-all duration-300 overflow-hidden border border-[#00bcd4]/40">
-                    <div
-                        class="w-full transition-all duration-500 group-hover:translate-y-[-10px] translate-y-[50px] flex flex-col items-center">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
+                    <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-white/20 text-white backdrop-blur-md text-sm font-semibold rounded-full group-hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                            <i class="ri-shield-check-line text-xl"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-shield-check-line"></i>
                         </div>
-                        <h3
-                            class="mt-3 text-xl group-hover:text-lg font-bold text-center mb-4 transition-all duration-500 text-nowrap">
-                            Quality
-                            Assurance</h3>
-                        <div
-                            class="opacity-0 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 text-center flex flex-col items-center">
-                            <p class="text-sm text-gray-200 mb-4">Rigorous testing to deliver reliable, bug-free
-                                software.</p>
-                            <a href="#"
-                                class="w-10 h-10 flex items-center justify-center bg-white text-[#001633] rounded-full hover:bg-[#00bcd4] hover:text-white transition duration-300">
-                                <i class="ri-external-link-line text-lg"></i>
-                            </a>
-                        </div>
+                        <h3 class="text-2xl font-semibold text-center transition">Quality Assurance</h3>
+                        <p class="text-center text-gray-700 text-sm">Rigorous testing to deliver reliable, bug-free
+                            software.</p>
+                        <a href="#"
+                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
                     </div>
                 </div>
-
             </div>
         </div>
+
     </section>
     <!-- what we do best section end -->
 
@@ -651,8 +600,8 @@
     <section class="w-full bg-gradient-to-br from-[#001633] to-[#000b26] py-24 text-white">
         <div class="container mx-auto px-6 md:px-10">
             <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-5xl font-bold">Technologies We Use</h2>
-                <p class="text-[#00bcd4] mt-4 text-sm sm:text-lg">
+                <h2 class="text-2xl md:text-4xl font-bold">Technologies We Use</h2>
+                <p class="text-[#00bcd4] mt-4 text-sm sm:text-base">
                     We leverage top-notch technologies to deliver exceptional digital experiences.
                 </p>
             </div>
@@ -921,18 +870,17 @@
     </section>
     <!-- Offering Section End -->
 
-
     <!-- Introduction Section Start -->
-    <section class="relative bg-gradient-to-br from-[#001633] to-[#000b26]  text-white overflow-hidden py-24">
+    <section class="relative bg-[#f5f5f5]  text-gray-800 overflow-hidden py-24">
         <div class="container mx-auto px-6 md:px-10">
 
             <div class="absolute top-0 left-0 w-40 h-40 bg-[#001430] opacity-5 rounded-full blur-3xl"></div>
             <div class="absolute bottom-0 right-0 w-60 h-60 bg-[#001430] opacity-10 rounded-full blur-3xl"></div>
 
-            <div class="relative z-10">
+            <!-- <div class="relative z-10">
                 <div class="text-center space-y-4">
 
-                    <!-- <div
+                    <div
                         class="Raleway inline-flex items-center gap-2 px-4 py-2 bg-[#f2f4f8] text-sm font-medium text-[#001430] rounded-full">
                         <i class="ri-flag-line"></i>
                         Introduction
@@ -1025,11 +973,11 @@
                             </p>
                         </div>
 
-                    </div> -->
+                    </div>
 
                 </div>
-            </div>
-            <div class="mt-16 py-20 bg-[#000b26] border-[3px] border-[#ff0063] rounded-2xl shadow-md">
+            </div> -->
+            <div class="mt-16 py-20 bg-white rounded-2xl shadow-md">
 
                 <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-16 items-center">
 
@@ -1038,16 +986,17 @@
                         <!-- STEP 1 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP 1
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 1
                             </div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-code-s-slash-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2 Montserrat">Development</h3>
-                                    <p class="text-gray-200 text-sm">Cutting-edge research, development, and customized
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Development</h3>
+                                    <p class="text-gray-800 text-sm">Cutting-edge research, development, and customized
                                         solutions for your evolving project needs.</p>
                                 </div>
                             </div>
@@ -1056,17 +1005,18 @@
                         <!-- STEP 2 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP
                                 2</div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-pencil-ruler-2-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2 Montserrat">Attractive Designing
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Attractive Designing
                                     </h3>
-                                    <p class="text-gray-200 text-sm">Responsive web & mobile designs built using modern
+                                    <p class="text-gray-800 text-sm">Responsive web & mobile designs built using modern
                                         technologies to enhance user experience.</p>
                                 </div>
                             </div>
@@ -1075,16 +1025,17 @@
                         <!-- STEP 3 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP
                                 3</div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-device-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2 Montserrat">Cross Platform</h3>
-                                    <p class="text-gray-200 text-sm">Delivering seamless performance across multiple
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Cross Platform</h3>
+                                    <p class="text-gray-800 text-sm">Delivering seamless performance across multiple
                                         platforms, expanding your business reach.</p>
                                 </div>
                             </div>
@@ -1104,16 +1055,17 @@
                         <!-- STEP 4 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP
                                 4</div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-lightbulb-flash-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2 Montserrat">Innovation Focus</h3>
-                                    <p class="text-gray-200 text-sm">We prioritize innovation, helping you stay ahead in
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Innovation Focus</h3>
+                                    <p class="text-gray-800 text-sm">We prioritize innovation, helping you stay ahead in
                                         an ever-evolving digital landscape.</p>
                                 </div>
                             </div>
@@ -1122,16 +1074,17 @@
                         <!-- STEP 5 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP
                                 5</div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-bar-chart-2-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2">Scalability</h3>
-                                    <p class="text-gray-200 text-sm">Scalable architecture designed to grow alongside
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Scalability</h3>
+                                    <p class="text-gray-800 text-sm">Scalable architecture designed to grow alongside
                                         your expanding business needs.</p>
                                 </div>
                             </div>
@@ -1140,16 +1093,17 @@
                         <!-- STEP 6 -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white bg-[#ff0063] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">STEP
+                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP
                                 6</div>
                             <div class="flex flex-col gap-5 items-center text-center">
                                 <div
-                                    class="text-[#ff0063] bg-white min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
                                     <i class="ri-customer-service-2-line text-2xl"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#ff0063] mb-2">24/7 Support</h3>
-                                    <p class="text-gray-200 text-sm">Dedicated support teams ensuring smooth operations
+                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">24/7 Support</h3>
+                                    <p class="text-gray-800 text-sm">Dedicated support teams ensuring smooth operations
                                         and resolving issues proactively.</p>
                                 </div>
                             </div>
@@ -1160,7 +1114,7 @@
             </div>
         </div>
     </section>
-    <!-- Introduction Section End -->  
+    <!-- Introduction Section End -->
 
     <!-- Why Choose Us Section Start-->
     <!-- <section class="relative py-24 bg-[#f4f4f4] overflow-hidden">
@@ -1311,7 +1265,7 @@
 
             <div class="owl-carousel owl-theme w-full sm:w-[600px] md:w-[700px] lg:w-[900px]" id="testimonal">
                 <!-- Testimonial Item -->
-                <div class="bg-white flex flex-col md:flex-row border-[3px] border-[#ff0063]">
+                <div class="bg-white flex flex-col md:flex-row">
                     <!-- Reviewer Image -->
                     <div class="flex-shrink-0">
                         <img src="assets/img/testimonal-clients/client-1.jpg" loading="lazy" alt="Client"
@@ -1344,7 +1298,7 @@
                 </div>
 
                 <!-- Testimonial Item -->
-                <div class="bg-white flex flex-col md:flex-row border-[3px] border-[#ff0063]">
+                <div class="bg-white flex flex-col md:flex-row">
                     <!-- Reviewer Image -->
                     <div class="flex-shrink-0">
                         <img src="assets/img/testimonal-clients/client-2.jpg" loading="lazy" alt="Client"
@@ -1381,12 +1335,12 @@
     <!-- testimonal section end -->
 
     <!-- world map section start -->
-    <section class="bg-white py-20">
+    <section class="bg-[#f8f8f8] py-20">
         <div class="container mx-auto grid md:grid-cols-3 gap-12 px-6 md:px-10">
 
             <!-- World Map Image - Bigger & Focus -->
             <div class="relative col-span-3 lg:col-span-2">
-                <img src="assets/img/world-map-1.png" alt="World Map" class="w-full" />
+                <img src="assets/img/map.jpg" alt="World Map" class="w-full" />
 
                 <!-- Location Dots -->
                 <div
@@ -1397,10 +1351,16 @@
                 </div>
 
                 <div
-                    class="absolute top-[37%] sm:top-[40%] md:top-[22%] lg:top-[35%] xl:top-[40%] left-[18%] sm:left-[20%] md:left-[18%] xl:left-[19%]">
+                    class="absolute top-[31%] sm:top-[32%] md:top-[34%] lg:top-[27%] xl:top-[32%] left-[18%] sm:left-[19%] md:left-[19%] xl:left-[18%]">
                     <span
                         class="block w-4 h-4 bg-[#00bcd4] rounded-full border-2 border-white shadow-md animate-ping"></span>
                     <span class="absolute top-1 left-1 w-2 h-2 bg-[#00bcd4] rounded-full"></span>
+                </div>
+                <div
+                    class="absolute top-[39%] sm:top-[40%] md:top-[40%] lg:top-[36%] xl:top-[40%] left-[19%] sm:left-[20%] md:left-[20%] xl:left-[20%]">
+                    <span
+                        class="block w-4 h-4 bg-[#18dc77] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#18dc77] rounded-full"></span>
                 </div>
 
                 <!-- <div class="absolute top-[55%] left-[62%]">
@@ -1421,16 +1381,20 @@
                 <div class="space-y-3 text-sm">
                     <div>
                         <h3 class="text-base font-semibold text-[#00bcd4]">🇨🇦 Head Office</h3>
-                        <p class="text-gray-500">140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada</p>
+                        <!-- <p class="text-gray-500">140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada</p> -->
                     </div>
                     <div>
                         <h3 class="text-base font-semibold text-[#ff0063]">🇮🇳 India Office</h3>
-                        <p class="text-gray-500">A-446 Meet Nagar, Shahdara, Delhi 110094</p>
+                        <!-- <p class="text-gray-500">A-446 Meet Nagar, Shahdara, Delhi 110094</p> -->
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-[#18dc77]">🇺🇸 USA Office</h3>
+                        <!-- <p class="text-gray-500">1234 Sunset Blvd, Los Angeles, CA 90026, USA</p> -->
                     </div>
                 </div>
 
                 <a href="https://maps.app.goo.gl/2ikVxJpkY35dRWKbA" target="_blank"><button
-                        class="mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 rounded-md transition-all shadow">
+                        class="mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 transition-all shadow">
                         Explore Offices
                     </button></a>
             </div>
@@ -1446,8 +1410,8 @@
         </div>
         <div class="container mx-auto px-6 md:px-10 z-10 relative">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-4xl font-[600] mb-4">Connect with Our Team</h2>
-                <p class="text-gray-400 md:text-lg">
+                <h2 class="text-2xl md:text-3xl font-[600] mb-4">Connect with Our Team</h2>
+                <p class="text-gray-400 text-sm">
                     Have questions or need details? Fill in your info and we’ll be in touch shortly.
                 </p>
             </div>
@@ -1455,28 +1419,28 @@
                 <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[700px] lg:w-[900px]">
                     <!-- First Row -->
                     <input type="text" placeholder="First Name"
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
                     <input type="text" placeholder="Last Name"
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
 
                     <!-- Second Row -->
                     <input type="email" placeholder="Email Address"
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2" />
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2" />
 
                     <!-- Third Row -->
                     <input type="tel" placeholder="Mobile Number"
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
                     <input type="text" placeholder="Company or Brand"
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
 
                     <!-- Fourth Row -->
                     <textarea rows="4" placeholder="Tell us about your query..."
-                        class="bg-gray-900 border border-gray-700 text-white p-4 rounded focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2"></textarea>
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2"></textarea>
 
                     <!-- Submit Button -->
                     <div class="md:col-span-2 text-center">
                         <button type="submit"
-                            class="bg-[#ff0063] hover:opacity-90 transition-all px-8 py-3 rounded text-white font-semibold">
+                            class="bg-[#ff0063] hover:opacity-90 transition-all px-8 py-3 text-[14px] text-white">
                             Send Message
                         </button>
                         <p class="text-sm text-gray-400 mt-4">
