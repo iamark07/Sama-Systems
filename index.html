@@ -1115,21 +1115,22 @@
             <div class="absolute bottom-0 left-5">
                 <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
             </div>
-            <h2 class="text-3xl md:text-4xl font-[600] text-[#ffffff] mb-4">
+            <h2 class="text-3xl md:text-4xl font-[600] text-[#ffffff] mb-4 relative z-10">
                 Stats & <span class="text-[#ff0063] font-[600]">Achievements</span>
             </h2>
-            <p class="text-gray-300 mb-12 max-w-xl mx-auto">
+            <p class="text-gray-300 mb-12 max-w-xl mx-auto relative z-10">
                 We take pride in our global reach, technical expertise, and customer satisfaction.
             </p>
 
-            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-10">
+            <div class="grid sm:grid-cols-2 md:grid-cols-4 gap-8 pt-10 relative z-10">
                 <!-- Projects Delivered -->
                 <div class="flex flex-col items-center">
                     <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
                         <i class="ri-code-s-slash-line text-[#ff006e] text-2xl"></i>
                     </div>
-                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="120" data-suffix="+">0</h3>
-                    <p class="mt-2 text-gray-200 text-lg font-medium">Projects Delivered</p>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-extrabold text-[#ff006e]" data-target="120"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium">Projects Delivered</p>
                 </div>
 
                 <!-- Countries Served -->
@@ -1137,8 +1138,9 @@
                     <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
                         <i class="ri-earth-line text-[#ff006e] text-2xl"></i>
                     </div>
-                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="10" data-suffix="+">0</h3>
-                    <p class="mt-2 text-gray-200 text-lg font-medium">Countries Served</p>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-extrabold text-[#ff006e]" data-target="10"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium">Countries Served</p>
                 </div>
 
                 <!-- Technologies Used -->
@@ -1146,8 +1148,9 @@
                     <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
                         <i class="ri-stack-line text-[#ff006e] text-2xl"></i>
                     </div>
-                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="25" data-suffix="+">0</h3>
-                    <p class="mt-2 text-gray-200 text-lg font-medium">Technologies Used</p>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-extrabold text-[#ff006e]" data-target="25"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium">Technologies Used</p>
                 </div>
 
                 <!-- Client Retention -->
@@ -1155,13 +1158,65 @@
                     <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
                         <i class="ri-user-heart-line text-[#ff006e] text-2xl"></i>
                     </div>
-                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="95" data-suffix="%">0</h3>
-                    <p class="mt-2 text-gray-200 text-lg font-medium">Client Retention</p>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-extrabold text-[#ff006e]" data-target="95"
+                        data-suffix="%">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium">Client Retention</p>
                 </div>
             </div>
         </div>
     </section>
     <!-- stats section end -->
+
+    <!-- Blog / Insights Teaser Start -->
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] py-20 text-white">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-[600] text-white">Latest <span
+                        class="text-[#ff0063] font-[600]">Insights</span></h2>
+                <p class="text-gray-400 mt-3 max-w-xl mx-auto">Explore our recent thoughts on technology, innovation,
+                    and trends.</p>
+            </div>
+
+            <div class="space-y-10">
+                <!-- Blog Post 1 -->
+                <div
+                    class="relative border-l-4 border-[#ff0063] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3 class="text-xl md:text-2xl font-semibold group-hover:text-[#ff0063] transition-colors">How AI is
+                        Transforming Modern Business</h3>
+                    <p class="text-gray-400 mt-2">Discover the key ways artificial intelligence is reshaping operations,
+                        customer experiences, and growth strategies.</p>
+                    <a href="#" class="inline-block mt-3 text-[#ff0063] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div
+                    class="relative border-l-4 border-[#00bcd4] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3 class="text-xl md:text-2xl font-semibold group-hover:text-[#00bcd4] transition-colors">Top 10
+                        Web
+                        Development Trends in 2025</h3>
+                    <p class="text-gray-400 mt-2">Stay ahead of the curve with this breakdown of the most important
+                        trends in modern web development.</p>
+                    <a href="#" class="inline-block mt-3 text-[#00bcd4] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div
+                    class="relative border-l-4 border-[#ff0063] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3 class="text-xl md:text-2xl font-semibold group-hover:text-[#ff0063] transition-colors">The
+                        Future of Cloud
+                        and DevOps</h3>
+                    <p class="text-gray-400 mt-2">Learn how cloud-native architectures and DevOps practices are changing
+                        how teams build and deploy software.</p>
+                    <a href="#" class="inline-block mt-3 text-[#ff0063] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog / Insights Teaser End -->
+
 
 
 
@@ -1485,8 +1540,8 @@
             <div class="mb-10 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
                 <!-- Left Heading -->
                 <div>
-                    <h2 class="text-2xl md:text-3xl text-[#001430] mb-0 md:mb-4 text-start">
-                        Our <span class="font-[600]">Clients</span>
+                    <h2 class="text-2xl md:text-3xl text-[#001430] font-[600] mb-0 md:mb-4 text-start">
+                        Our <span class="font-[600] text-[#ff006e]">Clients</span>
                     </h2>
                 </div>
 
@@ -1562,6 +1617,20 @@
         </div>
     </section>
     <!-- Client Section End -->
+
+    <!-- CTA Section Start -->
+    <section class="bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-20 text-center">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <p class="text-lg md:text-xl font-medium mb-8">Book a free discovery call today and start your journey with
+                us.</p>
+            <a href="#contact"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
+                a Free Call</a>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
 
     <!-- Footer Start -->
     <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
