@@ -39,75 +39,58 @@
 
 <body class="overflow-x-hidden">
 
-    <!-- Hero Section start-->
-    <section class="py-40 md:py-52 relative flex items-center justify-center"
-        style="background-image: url(assets/img/hero-bg-1.png); background-size: 100% 100%;">
-        <!-- Header -->
-        <header id="main-header" class="header-bg w-full fixed top-0 z-40 py-6 transition-all duration-300 bg-white">
-            <div class="container mx-auto">
-                <div class=" flex justify-between items-center px-6 md:px-10">
-                    <!-- <h2 class="text-xl sm:text-2xl font-semibold text-white">Sama Systems</h2> -->
-                    <!-- <div class="relative w-fit">
-                        <svg class="absolute -top-10 -left-10 w-52 h-52 animate-blobbing z-0 opacity-90" viewBox="0 0 200 200"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill="#ffffff"
-                                d="M43.6,-71.2C56.5,-62.9,67.4,-50.6,72.5,-36.9C77.5,-23.3,76.7,-8.4,71.4,4.9C66.1,18.1,56.3,29.8,45.7,38.7C35.1,47.7,23.8,53.8,10.7,61.6C-2.4,69.5,-17.2,79.2,-28.5,77.1C-39.9,74.9,-47.8,61,-58.6,48.2C-69.3,35.5,-82.8,24,-84.3,10.6C-85.9,-2.7,-75.5,-18.1,-68.1,-34.8C-60.7,-51.5,-56.4,-69.4,-44.1,-76.7C-31.8,-84,-15.9,-80.8,-0.2,-80.4C15.6,-80.1,31.1,-82.8,43.6,-71.2Z"
-                                transform="translate(100 100)" />
-                        </svg>
-                    
-                        
-                        <img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
-                            class="w-24 md:w-32 relative z-10 transition-all duration-300">
-                    </div> -->
-                    <!-- Your Logo -->
-                    <img id="site-logo" src="assets/img/logo.png" lazy="loading" alt="Sama Systems Logo"
-                        class="w-28 md:w-32 relative z-10 transition-all duration-300">
+    <!-- Hero Section Start -->
+    <section class="relative flex items-center justify-center py-40 md:py-52 bg-cover bg-center"
+        style="background-image: url('assets/img/bg-1.png');">
+
+        <!-- Header Start -->
+        <header id="main-header" class="w-full fixed top-0 z-40 bg-white py-6 shadow transition-all duration-300">
+            <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+                <!-- Logo -->
+                <img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
 
 
-                    <!-- Desktop Menu -->
-                    <nav class="hidden lg:flex space-x-6 text-[14px] font-medium text-gray-900">
-                        <!-- <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a> -->
-                        <a href="#" class="hover:text-[#00bcd4] transition">About</a>
-                        <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
-                        <a href="#" class="hover:text-[#00bcd4] transition">Solutions</a>
-                        <a href="#" class="hover:text-[#00bcd4] transition">Contact</a>
-                    </nav>
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex gap-6 text-sm font-medium text-gray-900">
+                    <a href="#" class="hover:text-[#00bcd4] transition">About Us</a>
+                    <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
+                    <a href="#" class="hover:text-[#00bcd4] transition">Portfolio</a>
+                    <a href="#" class="hover:text-[#00bcd4] transition">Contact Us</a>
+                </nav>
 
-                    <!-- Get in Touch Button (Desktop) -->
-                    <button
-                        class="hidden lg:inline-block bg-[#ff006e] hover:opacity-90 text-white px-8 py-3 text-[14px] duration-300 transition">
-                        Free Cosultation
-                    </button>
+                <!-- CTA Desktop -->
+                <button
+                    class="hidden lg:inline-block bg-[#ff006e] text-white px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                    Free Consultation
+                </button>
 
-                    <!-- Hamburger Icon (Mobile) -->
-                    <button id="menu-toggle" class="lg:hidden text-[#ff006e] text-2xl py-1 px-2 border border-[#ffc1dc]">
-                        <i class="ri-menu-line"></i>
-                    </button>
-                </div>
+                <!-- Mobile Menu Button -->
+                <button id="menu-toggle" class="lg:hidden text-[#ff006e] text-2xl p-2 border border-[#ffc1dc]">
+                    <i class="ri-menu-line"></i>
+                </button>
             </div>
         </header>
+        <!-- Header End -->
 
-        <!-- Slide Menu (Mobile) -->
+        <!-- Mobile Slide Menu -->
         <div id="mobile-menu"
-            class="fixed top-0 left-0 w-52 sm:w-64 h-full bg-[#ffffff] text-gray-900 transform -translate-x-full transition-transform duration-200 z-50 shadow-lg">
-            <div class="py-6 pl-6 pr-3 space-y-10">
-                <div class="flex justify-between gap-3">
-                    <!-- <h2 class="sm:text-xl font-semibold">Sama Systems</h2> -->
-                    <img src="assets/img/logo.png" alt="" class="w-24">
-                    <button id="menu-close" class="text-gray-900 text-2xl">
+            class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+            <div class="p-6 space-y-10">
+                <div class="flex justify-between items-center">
+                    <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                    <button id="menu-close" class="text-2xl text-gray-800">
                         <i class="ri-close-line"></i>
                     </button>
                 </div>
-                <nav class="flex flex-col space-y-5 text-sm font-medium">
-                    <!-- <a href="#" class="text-[#00bcd4] hover:text-[#00bcd4] font-[600] transition">Home</a> -->
-                    <a href="#" class="hover:text-[#00bcd4] transition">About</a>
+                <nav class="flex flex-col gap-5 text-sm font-medium">
+                    <a href="#" class="hover:text-[#00bcd4] transition">About Us</a>
                     <a href="#" class="hover:text-[#00bcd4] transition">Services</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">Solutions</a>
-                    <a href="#" class="hover:text-[#00bcd4] transition">Contact</a>
+                    <a href="#" class="hover:text-[#00bcd4] transition">Portfolio</a>
+                    <a href="#" class="hover:text-[#00bcd4] transition">Contact Us</a>
                 </nav>
-                <button
-                    class="bg-[#ff0063] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
-                    Get in Touch
+                <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
+                    Free Consultation
                 </button>
             </div>
         </div>
@@ -115,106 +98,60 @@
         <!-- Overlay -->
         <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-
-        <!-- Hero Content Centered -->
-        <div class="text-center px-6 z-10 mt-20">
-            <h1 class="text-3xl md:text-8xl text-white font-[400] flex flex-col gap-4 mb-6 Oswald">
-                <span class="text-white font-semibold text-xl md:text-5xl">Your IT Partner</span>
+        <!-- Hero Content -->
+        <div class="text-center px-6 mt-20 z-10">
+            <h1 class="text-3xl md:text-5xl font-semibold text-white leading-tight Oswald mb-6">
+                Your One-Stop IT & Marketing Partner<br class="hidden md:block"> for Startups & Growing Brands
             </h1>
 
-            <p class="text-[#d6d6d6] max-w-2xl mx-auto sm:text-[17px] mb-8">
-                Sama Systems empowers businesses with cutting-edge technology to innovate, scale, and lead in the
-                digital era.
+            <p class="text-[#d6d6d6] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                From Code to Conversion — We Build, Deploy & Market Your Digital Presence Globally
             </p>
-            <!-- Container -->
-            <div class="py-6 flex justify-center">
-                <div
-                    class="flex flex-wrap items-center gap-x-5 gap-y-3 sm:gap-5 text-lg justify-center sm:text-2xl font-bold">
 
-                    <!-- AI -->
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
-                        style="text-shadow: 0 2px 10px rgba(0, 255, 255, 0.6);">
-                        IT
-                    </span>
-
-                    <!-- Separator -->
-                    <span class="text-white">|</span>
-
-                    <!-- CLOUD -->
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300"
-                        style="text-shadow: 0 2px 10px rgba(255, 200, 120, 0.7);">
-                        Marketing
-                    </span>
-
-                    <!-- Separator -->
-                    <span class="text-white consultation_line">|</span>
-
-                    <!-- DATA -->
-                    <span class="ml-0 text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400"
-                        style="text-shadow: 0 2px 10px rgba(200, 100, 255, 0.7);">
-                        Consultation
-                    </span>
-
-                </div>
+            <!-- Taglines -->
+            <div class="flex flex-wrap justify-center gap-5 text-lg sm:text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
+                    style="text-shadow: 0 2px 10px rgba(0,255,255,0.6);">IT</span>
+                <span class="text-white">|</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300"
+                    style="text-shadow: 0 2px 10px rgba(255,200,120,0.7);">Marketing</span>
+                <span class="text-white">|</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400"
+                    style="text-shadow: 0 2px 10px rgba(200,100,255,0.7);">Consultation</span>
             </div>
-            <!-- Rating Badges -->
-            <div class="mt-10 flex flex-wrap justify-center items-center gap-y-5 gap-x-3 md:gap-8">
-                <!-- GoodFirms -->
-                <div class="flex items-center">
-                    <!-- <img src="assets/img/goodfirms.png" alt="GoodFirms" class="w-8 h-8 object-contain"> -->
-                    <div class="text-white">
-                        <span class="font-semibold text-xs sm:text-base">Goodfirms rating</span><br>
-                        <span class="text-yellow-400 text-xs sm:text-sm">5/5 ★★★★★</span>
-                    </div>
-                </div>
 
-                <!-- Clutch -->
-                <div class="flex items-center space-x-2">
-                    <!-- <img src="assets/img/clutch.png" alt="Clutch" class="w-8 h-8 object-contain"> -->
-                    <div class="text-white text-sm sm:text-base">
-                        <span class="font-semibold text-xs sm:text-base">Reviewed on</span><br>
-                        <span class="text-red-400 text-xs sm:text-sm">Clutch 4.9 ★★★★★</span>
-                    </div>
+            <!-- Ratings -->
+            <div class="mt-10 flex flex-wrap justify-center gap-8 text-white text-sm sm:text-base">
+                <div class="text-center">
+                    <div class="font-semibold">Goodfirms rating</div>
+                    <div class="text-yellow-400">5/5 ★★★★★</div>
                 </div>
-
-                <!-- Upwork -->
-                <div class="flex items-center space-x-2">
-                    <!-- <img src="assets/img/upwork.png" alt="Upwork" class="w-8 h-8 object-contain"> -->
-                    <div class="text-white text-sm sm:text-base">
-                        <span class="font-semibold text-xs sm:text-base text-white">Top Rated</span><br>
-                        <span class="text-green-300 text-xs sm:text-sm">on Upwork ★★★★★</span>
-                    </div>
+                <div class="text-center">
+                    <div class="font-semibold">Reviewed on</div>
+                    <div class="text-red-400">Clutch 4.9 ★★★★★</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold">Top Rated</div>
+                    <div class="text-green-300">on Upwork ★★★★★</div>
                 </div>
             </div>
 
-            <div class="mt-10 flex justify-center space-x-4">
+            <!-- CTA Buttons -->
+            <div class="mt-10 flex justify-center gap-4">
                 <button
-                    class="bg-[#ff0063] hover:opacity-90 text-white px-8 py-3 rounded-md text-sm duration-300 shadow-sm transition">
-                    Explore Services
+                    class="bg-[#ff0063] text-white px-8 py-3 text-sm shadow hover:opacity-90 transition duration-300">
+                    View Our Portfolio
                 </button>
-                <!-- <button class="border border-cyan-500 hover:bg-cyan-600 px-6 py-3 rounded-md text-white transition">
-                    Learn More
-                </button> -->
             </div>
         </div>
-
-        <!-- Animated Background Circles -->
-        <!-- <div class="absolute top-0 left-0 w-full h-full pointer-events-none">
-            <div
-                class="absolute z-20 w-72 h-72 bg-[#00bcd4] opacity-20 rounded-full md:-top-20 -top-40 md:-left-20 -left-36 blur-3xl">
-            </div>
-            <div
-                class="absolute z-20 w-72 h-72 bg-[#00bcd4] opacity-30 rounded-full md-:bottom-20 -bottom-40 md:-right-10 -right-36 blur-3xl">
-            </div>
-
-        </div> -->
     </section>
-    <!-- Hero Section end-->
+    <!-- Hero Section End -->
+
 
     <!--  Who We Are section start-->
     <section class="bg-[#f5f5f5] py-20 text-gray-800">
         <div class="container mx-auto px-6 md:px-10">
-            <h2 class="text-3xl sm:text-5xl font-[600] text-center text-black mb-16">
+            <h2 class="text-2xl sm:text-4xl font-[600] text-center text-black mb-16">
                 Who We Are
             </h2>
 
@@ -270,7 +207,7 @@
             <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-sm leading-relaxed">
                 <!-- Column 1 -->
                 <div class="border-l-4 border-[#ff0063] pl-6">
-                    <h3 class="text-2xl font-semibold mb-3 text-[#ff0063]">No Complex Steps</h3>
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063]">No Complex Steps</h3>
                     <p>
                         We’ve eliminated unnecessary friction. From the moment you show interest to your first real use,
                         every step is guided, simple, and quick.
@@ -283,7 +220,7 @@
 
                 <!-- Column 2 -->
                 <div class="border-l-4 border-[#00bcd4] pl-6">
-                    <h3 class="text-2xl font-semibold mb-3 text-[#00bcd4]">Built Around You</h3>
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#00bcd4]">Built Around You</h3>
                     <p>
                         We understand that no two users are the same. That’s why our flow adapts—helping you find
                         exactly what you need, when you need it.
@@ -296,7 +233,7 @@
 
                 <!-- Column 3 -->
                 <div class="border-l-4 border-[#ff0063] pl-6">
-                    <h3 class="text-2xl font-semibold mb-3 text-[#ff0063]">Ready to Go in Minutes</h3>
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063]">Ready to Go in Minutes</h3>
                     <p>
                         No long forms. No delays. In just a few steps, you're in—engaged and empowered to start
                         building, managing, or exploring.
@@ -333,24 +270,25 @@
                 <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
             </div>
             <div class="text-center mb-16">
-                <h2 class="text-2xl md:text-4xl font-semibold text-black">What We Do Best</h2>
+                <h2 class="text-2xl md:text-4xl font-semibold text-black">Our Core Services</h2>
                 <p class="text-gray-800 text-sm sm:text-base mt-4">
                     Solving complex business problems with elegant digital solutions.
                 </p>
             </div>
 
-            <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-10 relative z-20">
-                <!-- Custom Software -->
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 relative z-20">
+
+                <!-- Web & App Development -->
                 <div
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
                             <i class="ri-code-s-slash-line"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Custom Software</h3>
-                        <p class="text-center text-gray-700 text-sm">Tailored business software crafted for efficiency
-                            and scale.</p>
+                        <h3 class="text-xl font-[600] text-center transition">Web & App Development</h3>
+                        <p class="text-center text-gray-700 text-sm">Modern websites and mobile apps built for
+                            performance and scalability.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
@@ -358,17 +296,17 @@
                     </div>
                 </div>
 
-                <!-- Web Development -->
+                <!-- ERP & Custom Software -->
                 <div
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
-                            <i class="ri-global-line"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-settings-3-line"></i> <!-- Changed icon -->
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Web Development</h3>
-                        <p class="text-center text-gray-700 text-sm">Robust, responsive websites for modern business
-                            presence.</p>
+                        <h3 class="text-xl font-[600] text-center transition">ERP & Custom Software</h3>
+                        <p class="text-center text-gray-700 text-sm">Bespoke software solutions tailored to your
+                            workflow and operations.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
@@ -376,17 +314,17 @@
                     </div>
                 </div>
 
-                <!-- Mobile Apps -->
+                <!-- DevOps & Hosting -->
                 <div
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
-                            <i class="ri-smartphone-line"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-server-line"></i> <!-- Changed icon -->
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Mobile Apps</h3>
-                        <p class="text-center text-gray-700 text-sm">Seamless cross-platform experiences with powerful
-                            performance.</p>
+                        <h3 class="text-xl font-[600] text-center transition">DevOps & Hosting</h3>
+                        <p class="text-center text-gray-700 text-sm">Continuous delivery and hosting services that
+                            ensure uptime and reliability.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
@@ -394,17 +332,17 @@
                     </div>
                 </div>
 
-                <!-- UI/UX Design -->
+                <!-- SEO & Digital Marketing -->
                 <div
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
-                            <i class="ri-pantone-line"></i>
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-megaphone-line"></i> <!-- Changed icon -->
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">UI/UX Design</h3>
-                        <p class="text-center text-gray-700 text-sm">Crafting intuitive interfaces with delightful user
-                            journeys.</p>
+                        <h3 class="text-xl font-[600] text-center transition">SEO & Digital Marketing</h3>
+                        <p class="text-center text-gray-700 text-sm">Boost visibility, rankings, and ROI through
+                            strategic online marketing.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
@@ -417,12 +355,12 @@
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
                             <i class="ri-lightbulb-line"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">IT Consulting</h3>
-                        <p class="text-center text-gray-700 text-sm">Expert advice to align tech strategy with business
-                            goals.</p>
+                        <h3 class="text-xl font-[600] text-center transition">IT Consulting</h3>
+                        <p class="text-center text-gray-700 text-sm">Guidance to align your technology roadmap with
+                            business success.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
@@ -435,54 +373,25 @@
                     class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
                     <div class="flex flex-col items-center space-y-5">
                         <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
                             <i class="ri-cloud-line"></i>
                         </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Cloud & DevOps</h3>
-                        <p class="text-center text-gray-700 text-sm">Scale with confidence using secure cloud and CI/CD
-                            tools.</p>
+                        <h3 class="text-xl font-[600] text-center transition">Cloud & DevOps</h3>
+                        <p class="text-center text-gray-700 text-sm">Streamline delivery with cloud solutions and
+                            automation pipelines.</p>
                         <a href="#"
                             class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
                             <i class="ri-external-link-line text-lg"></i>
                         </a>
                     </div>
                 </div>
-
-                <!-- Product Engineering -->
-                <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
-                    <div class="flex flex-col items-center space-y-5">
-                        <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
-                            <i class="ri-tools-line"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Product Engineering</h3>
-                        <p class="text-center text-gray-700 text-sm">From MVP to scalable product, engineered for
-                            excellence.</p>
-                        <a href="#"
-                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
-                            <i class="ri-external-link-line text-lg"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Quality Assurance -->
-                <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 rounded-3xl shadow-md p-8 transition-all duration-500 hover:scale-105">
-                    <div class="flex flex-col items-center space-y-5">
-                        <div
-                            class="w-16 h-16 flex items-center justify-center bg-[#fff7fa] shadow-md backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-xl transition group-hover:bg-[#ff006e]">
-                            <i class="ri-shield-check-line"></i>
-                        </div>
-                        <h3 class="text-2xl font-semibold text-center transition">Quality Assurance</h3>
-                        <p class="text-center text-gray-700 text-sm">Rigorous testing to deliver reliable, bug-free
-                            software.</p>
-                        <a href="#"
-                            class="mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
-                            <i class="ri-external-link-line text-lg"></i>
-                        </a>
-                    </div>
-                </div>
+            </div>
+            <!-- CTA Buttons -->
+            <div class="mt-16 flex justify-center gap-4">
+                <button
+                    class="bg-[#ff0063] text-white px-8 py-3 text-sm shadow hover:opacity-90 transition duration-300">
+                    Explore All Services
+                </button>
             </div>
         </div>
 
@@ -612,27 +521,32 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/html-5.png" alt="HTML5" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/html-5.png" alt="HTML5" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>HTML5</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/css.png" alt="CSS3" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/css.png" alt="CSS3" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>CSS3</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/js.png" alt="JavaScript" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/js.png" alt="JavaScript" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>JavaScript</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/react.png" alt="React" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/react.png" alt="React" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>React</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/vue-js.png" alt="Vue.js" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/vue-js.png" alt="Vue.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Vue.js</span>
                     </div>
                     <div
@@ -650,32 +564,38 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/node-js.png" alt="Node.js" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/node-js.png" alt="Node.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Node.js</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/php.png" alt="PHP" class="w-16 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/php.png" alt="PHP" class="w-16 h-10 mb-3"
+                            loading="lazy">
                         <span>PHP</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/mysql.png" alt="MySQL" class="w-16 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/mysql.png" alt="MySQL" class="w-16 h-10 mb-3"
+                            loading="lazy">
                         <span>MySQL</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/laravel.png" alt="Laravel" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/laravel.png" alt="Laravel" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Laravel</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/firebase.png" alt="Firebase" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/firebase.png" alt="Firebase" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Firebase</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/express-js.png" alt="Express.js" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/express-js.png" alt="Express.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Express.js</span>
                     </div>
                 </div>
@@ -687,17 +607,20 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/flutter.png" alt="Flutter" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/flutter.png" alt="Flutter" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Flutter</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/android.png" alt="Android" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/android.png" alt="Android" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Android</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/ios.png" alt="iOS" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/ios.png" alt="iOS" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>iOS</span>
                     </div>
                     <div
@@ -715,7 +638,8 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/aws.png" alt="AWS" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/aws.png" alt="AWS" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>AWS</span>
                     </div>
                     <div
@@ -726,7 +650,8 @@
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/azure.png" alt="Azure" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/azure.png" alt="Azure" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Azure</span>
                     </div>
                     <div
@@ -744,22 +669,26 @@
                 <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/github.png" alt="GitHub" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/github.png" alt="GitHub" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>GitHub</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/git.png" alt="Git" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/git.png" alt="Git" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Git</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/linux.png" alt="Linux" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/linux.png" alt="Linux" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Linux</span>
                     </div>
                     <div
                         class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
-                        <img src="assets/img/technologies-icons/git-bash.png" alt="Bash" class="w-10 h-10 mb-3" loading="lazy">
+                        <img src="assets/img/technologies-icons/git-bash.png" alt="Bash" class="w-10 h-10 mb-3"
+                            loading="lazy">
                         <span>Git Bash</span>
                     </div>
                 </div>
@@ -873,175 +802,70 @@
     <!-- Introduction Section Start -->
     <section class="relative bg-[#f5f5f5]  text-gray-800 overflow-hidden py-24">
         <div class="container mx-auto px-6 md:px-10">
-
-            <div class="absolute top-0 left-0 w-40 h-40 bg-[#001430] opacity-5 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-0 right-0 w-60 h-60 bg-[#001430] opacity-10 rounded-full blur-3xl"></div>
-
-            <!-- <div class="relative z-10">
-                <div class="text-center space-y-4">
-
-                    <div
-                        class="Raleway inline-flex items-center gap-2 px-4 py-2 bg-[#f2f4f8] text-sm font-medium text-[#001430] rounded-full">
-                        <i class="ri-flag-line"></i>
-                        Introduction
-                    </div>
-
-                    <div class="flex items-center justify-center pt-5">
-                        <img src="assets/img/logo.png" alt="" class="w-32 md:w-52">
-                    </div>
-
-
-                    <h2 class="Raleway text-xl md:text-2xl font-semibold text-gray-700 mx-auto">
-                        A Software Development Company & Digital Agency.
-                    </h2>
-
-                    <div class="flex justify-center Raleway">
-                        <span class="inline-block w-24 h-1 bg-[#001430] rounded-full"></span>
-                    </div>
-
-                    <div class="pt-10 grid md:grid-cols-3 gap-10 text-left Raleway">
-
-                       
-                        <div
-                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
-
-                            
-                            <div
-                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
-                            </div>
-
-                            
-                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
-
-                            
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
-                                    <i class="ri-medal-line text-2xl z-10 relative"></i>
-                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
-                                </div>
-                                <h3 class="text-xl font-semibold text-[#001430]">Top Rated Company</h3>
-                            </div>
-
-                            <p class="text-gray-600 leading-relaxed">
-                                SAMA Systems, being the Top Rated Software Development Company across the globe, has the
-                                potential to bring
-                                specialized and optimized solutions for you. With 5+ years of experience.
-                            </p>
-                        </div>
-
-                        
-                        <div
-                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
-                            <div
-                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
-                            </div>
-                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
-                                    <i class="ri-hand-coin-line text-2xl z-10 relative"></i>
-                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
-                                </div>
-                                <h3 class="text-xl font-semibold text-[#001430]">Outsourcing Expertise</h3>
-                            </div>
-                            <p class="text-gray-600 leading-relaxed">
-                                Our Software Development Team has worked with multiple Companies and enterprises and
-                                assisted them to ease their IT outsourcing experience, as well as reduce cost or time to
-                                market.
-                            </p>
-                        </div>
-
-                        
-                        <div
-                            class="group relative bg-[#f9fafb] p-8 rounded-2xl border border-transparent hover:border-[#001430] transition duration-300 shadow-md hover:shadow-2xl overflow-hidden">
-                            <div
-                                class="absolute inset-0 border-2 border-transparent group-hover:border-[#001430]/40 rounded-2xl pointer-events-none transition duration-500 blur-[2px]">
-                            </div>
-                            <div class="absolute top-0 right-0 w-6 h-6 bg-[#001430] rounded-bl-2xl"></div>
-                            <div class="flex items-center gap-4 mb-4">
-                                <div
-                                    class="bg-[#001430] text-white min-w-14 min-h-14 flex items-center justify-center rounded-full relative overflow-hidden">
-                                    <i class="ri-global-line text-2xl z-10 relative"></i>
-                                    <div class="absolute w-full h-full rounded-full bg-[#001430]/40 animate-ping"></div>
-                                </div>
-                                <h3 class="text-xl font-semibold text-[#001430]">Global Trust</h3>
-                            </div>
-                            <p class="text-gray-600 leading-relaxed">
-                                By providing several Software development services, SAMA Systems has turned into a
-                                reliable brand for businesses across the globe.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div> -->
             <div class="mt-16 py-20 bg-white rounded-2xl shadow-md">
 
                 <div class="container mx-auto px-6 grid lg:grid-cols-3 gap-16 items-center">
-
                     <!-- LEFT COLUMN -->
                     <div class="space-y-12">
-                        <!-- STEP 1 -->
+                        <!-- STEP 1 - Discovery -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
                                 STEP 1
                             </div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-code-s-slash-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-search-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Development</h3>
-                                    <p class="text-gray-800 text-sm">Cutting-edge research, development, and customized
-                                        solutions for your evolving project needs.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Discovery</h3>
+                                    <p class="text-gray-800 text-sm">Understanding your goals, audience, and business
+                                        needs to lay a strong foundation.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- STEP 2 -->
+                        <!-- STEP 2 - Planning -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
-                                STEP
-                                2</div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 2
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-pencil-ruler-2-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-draft-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Attractive Designing
-                                    </h3>
-                                    <p class="text-gray-800 text-sm">Responsive web & mobile designs built using modern
-                                        technologies to enhance user experience.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Planning</h3>
+                                    <p class="text-gray-800 text-sm">Creating a clear roadmap with timelines, goals, and
+                                        project strategies.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- STEP 3 -->
+                        <!-- STEP 3 - Design -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
-                                STEP
-                                3</div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 3
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-device-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-layout-4-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Cross Platform</h3>
-                                    <p class="text-gray-800 text-sm">Delivering seamless performance across multiple
-                                        platforms, expanding your business reach.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Design</h3>
+                                    <p class="text-gray-800 text-sm">Crafting visually engaging and user-friendly UI/UX
+                                        for seamless interaction.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 
+                    <!-- IMAGE CENTER -->
                     <div class="relative group">
                         <img src="assets/img/image.jpg" alt="Workstation" loading="lazy"
                             class="rounded-3xl h-[400px] object-cover w-full object-center md:w-fit md:h-fit shadow-2xl group-hover:scale-105 transition duration-700">
@@ -1052,186 +876,130 @@
 
                     <!-- RIGHT COLUMN -->
                     <div class="space-y-12">
-                        <!-- STEP 4 -->
+                        <!-- STEP 4 - Development -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
-                                STEP
-                                4</div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 4
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-lightbulb-flash-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-code-s-slash-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Innovation Focus</h3>
-                                    <p class="text-gray-800 text-sm">We prioritize innovation, helping you stay ahead in
-                                        an ever-evolving digital landscape.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Development</h3>
+                                    <p class="text-gray-800 text-sm">Turning designs into robust, functional solutions
+                                        using modern technologies.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- STEP 5 -->
+                        <!-- STEP 5 - Marketing -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
-                                STEP
-                                5</div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 5
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-bar-chart-2-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-megaphone-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">Scalability</h3>
-                                    <p class="text-gray-800 text-sm">Scalable architecture designed to grow alongside
-                                        your expanding business needs.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Marketing</h3>
+                                    <p class="text-gray-800 text-sm">Promoting your brand through SEO, ads, and digital
+                                        campaigns for maximum reach.</p>
                                 </div>
                             </div>
                         </div>
 
-                        <!-- STEP 6 -->
+                        <!-- STEP 6 - Launch & Support -->
                         <div class="relative flex flex-col">
                             <div
-                                class="text-white text-sm md:text-base bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
-                                STEP
-                                6</div>
-                            <div class="flex flex-col gap-5 items-center text-center">
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4">
+                                STEP 6
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
                                 <div
-                                    class="text-[#001633] bg-[#f2f5f8] min-w-14 min-h-14 flex justify-center items-center rounded-full shadow-md">
-                                    <i class="ri-customer-service-2-line text-2xl"></i>
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-customer-service-line text-lg"></i>
                                 </div>
                                 <div>
-                                    <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">24/7 Support</h3>
-                                    <p class="text-gray-800 text-sm">Dedicated support teams ensuring smooth operations
-                                        and resolving issues proactively.</p>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Launch & Support</h3>
+                                    <p class="text-gray-800 text-sm">Smooth project launch followed by ongoing support
+                                        and maintenance.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- Introduction Section End -->
 
-    <!-- Why Choose Us Section Start-->
-    <!-- <section class="relative py-24 bg-[#f4f4f4] overflow-hidden">
-
-        <div class="container mx-auto px-6 md:px-10 relative z-10">
-            <div class="grid grid-cols-1 gap-16 items-center">
-
-                <div class="order-2 md:order-1">
-                    <div class="mb-4">
-                        <h2 class="text-2xl md:text-3xl font-[600] text-[#001430] leading-snug text-center">
-                            Why <span class="text-gray-800">Choose Us</span>
-                        </h2>
-                    </div>
-                    <p class="text-gray-600 mb-8 text-sm md:text-base leading-relaxed text-center">
-                        KBros Developers simply has the experience with the most diverse clients, networks, and
-                        different size organizations.
-                        Since day one, we have remained on the cutting-edge of Technologies, offering the most advanced
-                        applications and hardware possible.
-                    </p>
-                    <div class="grid grid-cols-4 gap-5">
-
-                        <div class="flex items-center space-x-4">
-                            <div
-                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
-                                <i class="ri-hand-coin-line"></i>
-                            </div>
-                            <span class="text-gray-700 text-sm">Practical, cost-effective service...</span>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div
-                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
-                                <i class="ri-lightbulb-flash-line"></i>
-                            </div>
-                            <span class="text-gray-700 text-sm">Solutions that make a difference...</span>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div
-                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
-                                <i class="ri-team-line text-xl"></i>
-                            </div>
-                            <span class="text-gray-700 text-sm">The right team for the job...</span>
-                        </div>
-
-                        <div class="flex items-center space-x-4">
-                            <div
-                                class="min-w-10 min-h-10 rounded-full bg-[#001430] flex items-center justify-center text-white">
-                                <i class="ri-trophy-line"></i>
-                            </div>
-                            <span class="text-gray-700 text-sm">Years of experience...</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                
-                <div class="flex justify-center order-1 md:order-2">
-                    <div class="relative bg-[#001430] p-2 rounded-3xl shadow-lg">
-                        <img src="assets/img/sama-systems.png" alt="Sama Systems" class="w-full rounded-3xl" />
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section> -->
-
+    <!-- Why Choose Us Section start -->
     <section class="relative py-24 bg-gradient-to-tr from-[#001633] to-[#000b26] overflow-hidden">
         <div class="container mx-auto px-6 md:px-10 relative z-10">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
-                <!-- Text Section -->
-                <div class="text-white space-y-6">
-                    <h2 class="text-2xl md:text-3xl leading-snug text-center md:text-left">
-                        Why <span class="text-[#ff0063] font-[600]">Choose Us</span>
-                    </h2>
-                    <p class="text-gray-300 text-sm md:text-base leading-relaxed text-center md:text-left">
-                        KBros Developers has the experience with the most diverse clients, networks, and organizations.
-                        Since day one, we’ve stayed on the cutting-edge of technology—offering advanced solutions
-                        tailored for growth.
-                    </p>
+                <!-- Text + Features -->
+                <div class="text-white space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl md:text-3xl leading-snug text-center md:text-left">
+                            Why <span class="text-[#ff0063] font-semibold">Choose Us</span>
+                        </h2>
+                        <p class="text-gray-300 text-sm md:text-base leading-relaxed text-center md:text-left">
+                            KBros Developers has the experience with the most diverse clients, networks, and
+                            organizations.
+                            Since day one, we’ve stayed on the cutting-edge of technology—offering advanced solutions
+                            tailored for growth.
+                        </p>
+                    </div>
 
-                    <!-- Features Grid Without Cards -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Feature 1 -->
-                        <div class="flex items-center gap-4">
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                        <!-- Reusable Feature Item -->
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
                             <div
                                 class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
                                 <i class="ri-hand-coin-line"></i>
                             </div>
-                            <p class="text-gray-200 text-sm">Practical, cost-effective service</p>
+                            <div class="text-gray-200 text-sm mt-1">Full-service under one roof</div>
                         </div>
 
-                        <!-- Feature 2 -->
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
                             <div
                                 class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
                                 <i class="ri-lightbulb-flash-line"></i>
                             </div>
-                            <p class="text-gray-200 text-sm">Solutions that make a difference</p>
+                            <div class="text-gray-200 text-sm mt-1">Startup-focused approach</div>
                         </div>
 
-                        <!-- Feature 3 -->
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
                             <div
                                 class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
                                 <i class="ri-team-line"></i>
                             </div>
-                            <p class="text-gray-200 text-sm">The right team for the job</p>
+                            <div class="text-gray-200 text-sm mt-1">Fast, scalable & secure development</div>
                         </div>
 
-                        <!-- Feature 4 -->
-                        <div class="flex items-center gap-4">
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
                             <div
                                 class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
-                                <i class="ri-trophy-line"></i>
+                                <i class="ri-rocket-line"></i>
                             </div>
-                            <p class="text-gray-200 text-sm">Years of experience</p>
+                            <div class="text-gray-200 text-sm mt-1">Marketing + Tech = Growth</div>
+                        </div>
+
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-loop-left-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Flexible engagement models</div>
                         </div>
                     </div>
                 </div>
@@ -1239,13 +1007,268 @@
                 <!-- Image Section -->
                 <div class="hidden md:flex justify-center">
                     <div class="relative p-2">
-                        <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-[350px]" />
+                        <img src="assets/img/png-object.png" loading="lazy" alt="Why Choose Us" class="w-[350px]" />
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
     <!-- Why Choose Us Section End-->
+
+    <!-- industry we serve section start -->
+    <section class="py-24 bg-[#f9fafb] text-gray-800">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-[600] text-[#001633]">
+                    Industries <span class="text-[#ff0063] font-[600]">We Serve</span>
+                </h2>
+                <p class="mt-4 text-sm sm:text-base text-gray-600 max-w-xl mx-auto">
+                    Helping businesses across sectors build digital success — from startups to large enterprises.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-5 md:gap-10 text-center">
+                <!-- Reusable Industry Card -->
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-rocket-2-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Startups</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-hospital-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Healthcare</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-shopping-bag-3-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Retail</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-graduation-cap-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Education</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-bank-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Finance</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-bus-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Logistics</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-building-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">Real Estate</h3>
+                </div>
+
+                <div
+                    class="bg-white shadow-md border border-[#ffd3e3] rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.03]">
+                    <div
+                        class="bg-[#ffebf3] text-[#ff0063] w-12 h-12 mx-auto flex items-center justify-center rounded-full text-2xl mb-4 shadow-inner">
+                        <i class="ri-gift-line"></i>
+                    </div>
+                    <h3 class="text-sm sm:text-base font-[600] text-gray-800">E-commerce</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- industry we serve section end -->
+
+    <!-- stats section start -->
+    <section id="stats" class="bg-gradient-to-tr from-[#001633] to-[#000b26]">
+        <div class="container mx-auto px-4 sm:px-6 md:px-10 py-20 text-center relative">
+            <div class="absolute top-0 right-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute bottom-0 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <h2 class="text-3xl md:text-4xl font-[600] text-[#ffffff] mb-4">
+                Stats & <span class="text-[#ff0063] font-[600]">Achievements</span>
+            </h2>
+            <p class="text-gray-300 mb-12 max-w-xl mx-auto">
+                We take pride in our global reach, technical expertise, and customer satisfaction.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 pt-10">
+                <!-- Projects Delivered -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-code-s-slash-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="120" data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 text-lg font-medium">Projects Delivered</p>
+                </div>
+
+                <!-- Countries Served -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-earth-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="10" data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 text-lg font-medium">Countries Served</p>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-stack-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="25" data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 text-lg font-medium">Technologies Used</p>
+                </div>
+
+                <!-- Client Retention -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-user-heart-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-5xl font-extrabold text-[#ff006e]" data-target="95" data-suffix="%">0</h3>
+                    <p class="mt-2 text-gray-200 text-lg font-medium">Client Retention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stats section end -->
+
+
+
+    <!-- our projects section start -->
+    <section class="bg-gradient-to-tr from-[#001633] to-[#000b26] pt-32 pb-52">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-[600] text-[#ffffff]">Recent <span
+                        class="text-[#ff0063] font-[600]"> Projects</span></h2>
+                <p class="text-gray-300 mt-4 text-base max-w-xl mx-auto">Explore how we've helped businesses grow with
+                    our creative solutions.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project 1 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden group p-6 border-b-[5px] border-t-[5px] border-[#ff006e]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="SmartGrocer App"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#ff006e] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#ff006e] mb-2">SmartGrocer App</h3>
+                        <p class="text-gray-700 text-sm mb-4">Developed a custom eCommerce grocery mobile app with
+                            real-time stock tracking and delivery integration.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#ff006e]">Results:</strong> 3x user engagement, 40% faster order
+                            processing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden group p-6 border-b-[5px] border-t-[5px] border-[#ff006e]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="FinSage CRM"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#ff006e] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#ff006e] mb-2">FinSage CRM</h3>
+                        <p class="text-gray-700 text-sm mb-4">Built a scalable CRM system with lead tracking, auto-email
+                            workflows, and analytics dashboard for finance consultants.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#ff006e]">Results:</strong> Reduced lead drop by 60%, increased
+                            conversion by 35%.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div
+                    class="bg-white rounded-2xl shadow-lg overflow-hidden group p-6 border-b-[5px] border-t-[5px] border-[#ff006e]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="EduLeap LMS"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#ff006e] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-add-line"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#ff006e] mb-2">EduLeap LMS</h3>
+                        <p class="text-gray-700 text-sm mb-4">Designed and launched a cloud-based Learning Management
+                            System (LMS) with gamified learning paths and analytics.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#ff006e]">Results:</strong> 5x student retention, 80% assignment
+                            completion rate.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- our projects section end -->
+
 
     <!-- testimonal section start -->
     <section class="bg-gradient-to-br from-[#001633] to-[#000b26] overflow-hidden">
@@ -1256,7 +1279,7 @@
             <div class="absolute bottom-0 right-5">
                 <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
             </div>
-            <h2 class="text-2xl md:text-4xl font-bold text-center mb-5 text-[#ff0063]">What Our Clients Say</h2>
+            <h2 class="text-2xl md:text-4xl font-[600] text-center mb-5 text-[#ff0063]">What Our Clients Say</h2>
             <p class="text-center text-gray-200 mb-12">
                 Hear directly from our valued clients who have experienced the impact of our dedication, innovation, and
                 seamless collaboration.
