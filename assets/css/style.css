@@ -109,3 +109,14 @@
 #testimonal .owl-dots .owl-dot.active span{
   background: #c9457e;
 }
+
+
+.bottom-cta-btn{
+  background-position: center -100px;
+}
+
+@media screen and (min-width:340px) and (max-width:767px){
+  .bottom-cta-btn{
+    background-position: center 0px;
+  }  
+}
