@@ -3,39 +3,39 @@
 window.addEventListener("scroll", function () {
   const header = document.getElementById("main-header");
   const logo = document.getElementById("site-logo");
-  const isScrolled = window.scrollY > 10;
+  const isScrolled200 = window.scrollY > 200;
+  const isScrolled150 = window.scrollY > 150;
+  const isScrolled1 = window.scrollY <= 1;
   const isDesktop = window.innerWidth >= 768;
 
-  if (isScrolled) {
-    header.classList.remove("py-6");
-    header.classList.add("py-4");
-
-
-
-    if (isDesktop) {
-      header.classList.add("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("md:w-32");
-      logo.classList.add("w-28");
-    } else {
-      header.classList.add("shadow-md");
-    }
-
-  } else {
-    header.classList.remove("py-4");
+  if (isScrolled1) {
+    header.classList.remove("py-3");
     header.classList.add("py-6");
-
-    // Revert gradient back to transparent
-
+    header.classList.remove("-top-[110px]");
+    header.classList.add("-top-[0px]");
+    header.classList.remove("sticky", "-top-[0px]");
+  } else{
     if (isDesktop) {
-      header.classList.remove("shadow-md", "bg-opacity-95", "backdrop-blur-xl");
-      logo.classList.remove("w-28");
       logo.classList.add("md:w-32");
-    } else {
-      header.classList.remove("shadow-md");
+      logo.classList.remove("w-28");
     }
   }
-});
 
+  if (isScrolled150) {
+    header.classList.add("sticky", "-top-[110px]");
+  }
+
+  if (isScrolled200) {
+    header.classList.remove("py-6", "-top-[110px]");
+    header.classList.add("py-3", "-top-[0px]", "shadow-md");
+    if (isDesktop) {
+      logo.classList.remove("md:w-32");
+      logo.classList.add("w-28");
+    }
+  }
+
+  
+});
 
 // menu slider functions click on menu btn
 const menuToggle = document.getElementById("menu-toggle");

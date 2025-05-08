@@ -57,15 +57,15 @@
 } */
 
 /* header section */
-/* .header-bg {
+#main-header {
   background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
 }
 
 @media screen and (min-width: 340px) and (max-width: 767px) {
-  .header-bg {
+  #main-header {
     background-image: -webkit-linear-gradient(30deg, #fff 50%, #001633 50%);
   }
-} */
+}
 
 
 /* hero section  */
