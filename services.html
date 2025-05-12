@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Our Services</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+
+            <!-- CTA Desktop -->
+            <button
+                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl p-2 border border-white">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Mobile Slide Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+        <div class="p-6 space-y-10">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <button id="menu-close" class="text-2xl text-gray-800">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
+                Free Consultation
+            </button>
+            <button
+                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Hero Section Start -->
+    <section class="relative flex items-center justify-center py-48 bg-cover bg-center"
+        style="background-image: url('assets/img/services.jpg');">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-70"></div>
+
+        <!-- Hero Content -->
+        <div class="text-center px-6 mt-20 z-20 relative">
+            <h1 class="text-3xl md:text-7xl font-semibold text-white leading-tight Oswald mb-6">
+                Digital Services That Drive Results
+            </h1>
+
+            <p class="text-[#f4f4f4] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                Sama Systems empowers businesses with performance-driven services — from branding to marketing to
+                full-stack development. Let's elevate your digital journey together.
+            </p>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Start of Services Section -->
+    <section class="bg-white py-20 px-6 md:px-10">
+        <div class="container mx-auto max-w-7xl">
+            <h2 class="text-3xl md:text-5xl font-[600] text-center text-[#001633] mb-24">Our Services</h2>
+
+            <!-- SERVICE BLOCK START -->
+
+            <!-- Service: Web Development -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">Web Development</h3>
+
+                    <!-- 🆕 Added Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>In today’s digital age, your website is often the first impression of
+                        your business. A
+                        well-built website not only attracts visitors but also turns them into loyal customers.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Businesses lack a high-performing
+                        online
+                        presence that builds credibility and converts users into customers.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We build custom static and dynamic
+                        websites
+                        optimized for speed, SEO, and mobile responsiveness.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/html-5.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/css.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/js.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/tailwind-css.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/react.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/wordpress.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/webflow.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+                <div class="lg:w-1/2 relative order-1 lg:order-2">
+                    <img src="assets/img/services/web-dev.jpg" alt="Web Development"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+            </div>
+
+            <!-- Service: App Development -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="md:w-1/2 relative">
+                    <img src="assets/img/services/app-development.jpg" alt="App Development"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">App Development</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview:</strong> Mobile apps have become essential for engaging users, streamlining
+                        services, and staying ahead
+                        in a mobile-first world. Whether for customer interaction.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Your audience is mobile-first, but
+                        your
+                        brand isn't.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We create native iOS, Android, and
+                        cross-platform Progressive Web Apps.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/flutter.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/react-native.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/swift.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/kotlin.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/firebase.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/node-js.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Get
+                        a Quote</a>
+                </div>
+            </div>
+
+            <!-- Service: ERP & Software Development -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">ERP & Software Development</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>In today’s fast-paced business environment, efficient internal
+                        operations are the backbone of
+                        success. Custom ERP and software systems automate your workflows, boost productivity, and offer
+                        real-time control over business processes.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Outdated systems reduce
+                        productivity and
+                        can't scale.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We build custom ERP
+                        systems tailored to
+                        your workflows.</p>
+
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/python.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/django.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/laravel.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/postgresql.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/mysql.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/rest-api.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+                <div class="lg:w-1/2 relative order-1 lg:order-2">
+                    <img src="assets/img/services/erp-software.jpg" alt="ERP Development"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+            </div>
+
+            <!-- Service: Custom Software -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="md:w-1/2 relative">
+                    <img src="assets/img/services/custom-software.jpg" alt="Custom Software"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">Custom Software Development</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>Every business is unique, and your software should be too. We develop
+                        tailor-made software
+                        solutions that align with your processes, scale with your growth, and give you complete control
+                        and flexibility.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Off-the-shelf solutions
+                        don't meet your
+                        needs.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We build fully
+                        customized software tailored
+                        to your business.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/mern-stack.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/python.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/laravel.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/aws.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/mongo-db.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Get
+                        a Quote</a>
+                </div>
+            </div>
+
+            <!-- Service: DevOps & Hosting -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">DevOps & Hosting</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>Streamlined deployments and robust hosting are vital for any modern
+                        application. Our DevOps
+                        practices ensure your systems are scalable, secure, and continuously available with minimal
+                        downtime.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Slow deployments,
+                        security issues, and
+                        unscalable infrastructure.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We implement CI/CD
+                        pipelines, Dockerize
+                        your apps, and host them reliably.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/docker.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/github.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/aws.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/digital-ocean.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/nginx.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+                <div class="lg:w-1/2 relative order-1 lg:order-2">
+                    <img src="assets/img/services/deops-hosting.jpg" alt="DevOps"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+            </div>
+
+            <!-- Marketing Services Divider -->
+            <h2 class="text-3xl md:text-4xl font-[600] text-center text-[#001633] mb-24 mt-32">Marketing Services</h2>
+
+            <!-- Service: SEO -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="md:w-1/2 relative">
+                    <img src="assets/img/services/seo.jpg" alt="SEO"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">Search Engine Optimization (SEO)
+                    </h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>Having a beautiful website means nothing if it doesn’t get found. Our
+                        SEO strategies help your
+                        business rank higher on Google, drive organic traffic, and stay ahead of competitors.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Your website doesn’t
+                        show up on search
+                        engines.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We optimize your
+                        content, site structure,
+                        and backlinks.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/SEMrush.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/Ahrefs.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/Google-Search-Console.png" class="w-7 md:w-14"
+                                alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/Screaming-Frog.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Get
+                        a Quote</a>
+                </div>
+            </div>
+
+            <!-- Service: Social Media Management -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="lg:w-1/2 order-2 lg:order-1">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">Social Media Management</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>Struggling to maintain a consistent online presence? Our Social Media
+                        Management helps you
+                        engage your audience, build brand identity, and grow your reach across all platforms.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> Inconsistent branding
+                        and content on social
+                        platforms.</p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We create content
+                        calendars, designs, and
+                        manage platforms for engagement.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/canva.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/meta.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/buffer.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/hootsuite.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+                <div class="lg:w-1/2 relative order-1 lg:order-2">
+                    <img src="assets/img/services/social-media-management.jpg" alt="Social Media"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+            </div>
+
+            <!-- Service: Performance Marketing -->
+            <div class="mb-20 flex flex-col lg:flex-row gap-10 text-[#001633]">
+                <div class="md:w-1/2 relative">
+                    <img src="assets/img/services/performance.jpg" alt="Marketing"
+                        class="rounded-xl shadow-lg w-full h-full object-cover" loading="lazy">
+                    <div class="absolute inset-0 bg-black bg-opacity-20 rounded-xl h-full"></div>
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-xl md:text-2xl font-semibold text-[#001633] mb-4">Performance Marketing (Google/Meta
+                        Ads)</h3>
+
+                    <!-- 🆕 Intro Paragraph -->
+                    <p class="mb-3 text-sm md:text-base">
+                        <strong>Overview: </strong>Want faster results and higher ROI from ads? Our Performance
+                        Marketing ensures your budget is
+                        well spent through smart targeting, analytics, and continuous optimization.
+                    </p>
+
+                    <p class="mb-3 text-sm md:text-base"><strong>Problem:</strong> You're running ads but
+                        not seeing results.
+                    </p>
+                    <p class="mb-3 text-sm md:text-base"><strong>Solution:</strong> We optimize campaigns
+                        using advanced
+                        targeting, A/B testing, and ROI tracking.</p>
+                    <p class="flex gap-5 items-center mb-3">
+                        <strong class="text-[#001633] text-sm md:text-base">Tech Stack:</strong>
+                    <div class="flex flex-wrap gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/google-ads.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/meta.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/google-analytics.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/Hotjar.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block mt-10 px-6 py-3 bg-[#ff006e] text-sm md:text-base text-white rounded hover:bg-[#e6005a] transition">Get
+                        a Quote</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- End of Services Section -->
+
+
+
+    <!-- services section start -->
+    <section class="hidden bg-white py-20 px-6 md:px-10">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-bold text-center text-[#001633] mb-16">Our Services</h2>
+
+            <!-- Grid Layout for Services -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+                <!-- Service Card -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-6">
+                    <img src="" alt="Web Development" class="w-full h-44 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-[#001633] mb-3">Web Development</h3>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Businesses lack a high-performing
+                        online presence that converts users.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Solution:</strong> We build SEO-optimized static &
+                        dynamic sites with responsive design.</p>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Tech Stack:</strong> HTML, Tailwind, React, WordPress
+                    </p>
+                    <a href="contact.html"
+                        class="inline-block px-5 py-2 bg-[#ff006e] text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+
+                <!-- Repeat similar block for other services -->
+
+                <!-- App Development -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-6">
+                    <img src="" alt="App Development" class="w-full h-44 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-[#001633] mb-3">App Development</h3>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Your audience is mobile-first, but
+                        your brand isn't.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Solution:</strong> We create native iOS, Android, and
+                        PWA apps to boost engagement.</p>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Tech Stack:</strong> Flutter, React Native, Swift,
+                        Firebase</p>
+                    <a href="contact.html"
+                        class="inline-block px-5 py-2 bg-[#ff006e] text-white rounded hover:bg-[#e6005a] transition">Get
+                        a Quote</a>
+                </div>
+
+                <!-- ERP Development -->
+                <div class="bg-gray-50 rounded-xl shadow-md p-6">
+                    <img src="" alt="ERP Development" class="w-full h-44 object-cover rounded-lg mb-4">
+                    <h3 class="text-xl font-semibold text-[#001633] mb-3">ERP & Software Development</h3>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Problem:</strong> Outdated systems reduce
+                        productivity.</p>
+                    <p class="text-gray-700 text-sm mb-2"><strong>Solution:</strong> Custom ERPs built for your
+                        workflows and scalability.</p>
+                    <p class="text-sm text-gray-600 mb-4"><strong>Tech Stack:</strong> Python, Laravel, PostgreSQL, REST
+                        APIs</p>
+                    <a href="contact.html"
+                        class="inline-block px-5 py-2 bg-[#ff006e] text-white rounded hover:bg-[#e6005a] transition">Book
+                        a Discovery Call</a>
+                </div>
+
+                <!-- Add more blocks for Custom Software, DevOps, SEO, Social Media, Marketing etc. following the same structure -->
+
+            </div>
+        </div>
+    </section>
+    <!-- services section end -->
+
+
+    <!-- CTA Section Start -->
+    <section
+        class="hidden bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
+        style="background-image: url(assets/img/cta-bg.jpg);">
+        <div
+            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
+                us.</p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
+                a Free Call</a>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
+                            class="Poiret_One">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Poiret_One">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

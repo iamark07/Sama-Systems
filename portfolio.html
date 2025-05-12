@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Our Services</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+
+            <!-- CTA Desktop -->
+            <button
+                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl p-2 border border-white">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Mobile Slide Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+        <div class="p-6 space-y-10">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <button id="menu-close" class="text-2xl text-gray-800">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
+                Free Consultation
+            </button>
+            <button
+                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Hero Section Start -->
+    <section class="relative flex items-center justify-center py-48 bg-cover bg-center"
+        style="background-image: url('assets/img/portfolio.jpg'); background-position: right 100px;">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
+
+        <!-- Hero Content -->
+        <div class="text-center px-6 mt-20 z-20 relative">
+            <h1 class="text-3xl md:text-7xl font-semibold text-white leading-tight Oswald mb-6">
+                Real Projects. Real Impact.
+            </h1>
+
+            <p class="text-[#f4f4f4] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                From <span class="text-[#00bcd4] font-medium">custom software</span> to <span
+                    class="text-[#ff006e] font-medium">enterprise systems</span>, explore how Sama Systems turns complex
+                challenges into sleek.
+            </p>
+        </div>
+
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- Portfolio / Case Studies Section -->
+    <section class="bg-[#f8f8f8] text-[#001633]">
+        <div class="container mx-auto px-6 md:px-10 py-24">
+            <h2 class="text-3xl md:text-4xl font-[600] text-center mb-6">Our Success Stories</h2>
+            <p class="text-center md:text-lg text-base text-gray-600 mb-20 max-w-3xl mx-auto">
+                We craft powerful digital experiences that solve real-world problems. Here's a glimpse of how Sama
+                Systems transforms ideas into results.
+            </p>
+
+            <!-- Case Study 1 -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-28">
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img src="assets/img/projects-img/restuarent-website.png" alt="Inventory Project"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-5 text-sm md:text-base">
+                    <h3 class="text-xl md:text-2xl font-[600] text-[#ff006e]">Inventory Management System for Retail
+                        Chain</h3>
+                    <p><strong class="text-[#001633]">Overview:</strong> A growing retail brand needed better control
+                        and visibility into its
+                        stock, across multiple branches.</p>
+                    <p><strong class="text-[#001633]">Problem:</strong> Frequent stockouts, manual data entry, and no
+                        real-time stock overview
+                        made operations inefficient.</p>
+                    <p><strong class="text-[#001633]">Solution:</strong> We built a centralized inventory solution with
+                        barcode integration,
+                        user roles, and live dashboards.</p>
+                    <p><strong class="text-[#001633]">Results:</strong> Reduced stock mismatches by 75%, improved
+                        inventory accuracy, enabled
+                        24/7 visibility across branches.</p>
+                    <p class="flex gap-5 items-center">
+                        <strong class="text-[#001633]">Tech Stack:</strong>
+                    <div class="flex gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/laravel.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/vue-js.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/mysql.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/tailwind-css.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/digital-ocean.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+
+                    <div class="bg-white p-5 rounded-lg shadow-md border-l-[5px] border-[#ff006e]">
+                        <p class="italic">"Sama Systems delivered exactly what we needed — intuitive, scalable, and
+                            reliable. Our operations are now 10x smoother!"</p>
+                        <div class="mt-4 flex items-center">
+                            <img src="assets/img/testimonal-clients/client-2.jpg"
+                                class="w-10 h-10 rounded-full mr-3 object-cover object-top" alt="Client Photo">
+                            <div>
+                                <p class="font-semibold text-sm">Rohit Malhotra</p>
+                                <p class="text-xs text-gray-500">Founder, QuickMart</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Case Study 2 -->
+            <div class="grid lg:grid-cols-2 gap-12 mb-28">
+                <div class="flex flex-col order-2 lg:order-1 space-y-5 text-sm md:text-base">
+                    <h3 class="text-xl md:text-2xl font-[600] text-[#00bcd4]">E-commerce Mobile App for Fashion Brand
+                    </h3>
+                    <p><strong class="text-[#001633]">Overview:</strong> A startup fashion brand needed a full-featured
+                        Android/iOS app to
+                        support their online sales.</p>
+                    <p><strong class="text-[#001633]">Problem:</strong> Poor mobile experience on their website and low
+                        checkout conversions
+                        via mobile devices.</p>
+                    <p><strong class="text-[#001633]">Solution:</strong> We built a fast-loading, cross-platform Flutter
+                        app with Stripe
+                        integration, order tracking, and push notifications.</p>
+                    <p><strong class="text-[#001633]">Results:</strong> 180% increase in mobile sales, 30% faster
+                        checkouts, and 90% app
+                        retention after 30 days.</p>
+                    <p class="flex gap-5 items-center">
+                        <strong class="text-[#001633]">Tech Stack:</strong>
+                    <div class="flex gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/node-js.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/firebase.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/flutter.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/azure.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+
+                    <div class="bg-white p-5 rounded-lg shadow-md border-r-[5px] border-[#00bcd4]">
+                        <p class="italic">"The app helped us reach a younger audience with seamless UX and blazing
+                            speed. Sama Systems nailed it!"</p>
+                        <div class="mt-4 flex items-center">
+                            <img src="assets/img/testimonal-clients/client-1.jpg"
+                                class="w-10 h-10 rounded-full mr-3 object-cover object-top" alt="Client Photo">
+                            <div>
+                                <p class="font-semibold text-sm">Simran Kaur</p>
+                                <p class="text-xs text-gray-500">Co-Founder, StyleSaga</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex flex-col order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg">
+                    <img src="assets/img/projects-img/restuarent-website.png" alt="Fashion App"
+                        class="w-full h-full object-cover">
+                </div>
+            </div>
+
+            <!-- Case Study 3 -->
+            <div class="grid lg:grid-cols-2 gap-12">
+                <div class="rounded-xl overflow-hidden shadow-lg">
+                    <img src="assets/img/projects-img/restuarent-website.png" alt="ERP System"
+                        class="w-full h-full object-cover">
+                </div>
+                <div class="space-y-5 text-sm md:text-base">
+                    <h3 class="text-xl md:text-2xl font-[600] text-[#001633]">Custom ERP for Manufacturing Company</h3>
+                    <p><strong class="text-[#001633]">Overview:</strong> A mid-size manufacturer lacked an integrated
+                        system for finance, HR,
+                        inventory, and production tracking.</p>
+                    <p><strong class="text-[#001633]">Problem:</strong> Disconnected systems created bottlenecks and
+                        duplicate efforts,
+                        especially in reporting.</p>
+                    <p><strong class="text-[#001633]">Solution:</strong> Designed a modular ERP with integrated
+                        dashboards, user permissions,
+                        and automated reports.</p>
+                    <p class="flex gap-5 items-center">
+                        <strong class="text-[#001633]">Tech Stack:</strong>
+                    <div class="flex gap-2 xl:gap-5 items-center">
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/react.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/node-js.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/aws.png" class="w-7 md:w-14" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/tailwind-css.png" class="w-5 md:w-12" alt="">
+                        </div>
+                        <div
+                            class="flex items-center justify-center w-14 h-14 md:w-24 md:h-24 rounded-md bg-white shadow-md">
+                            <img src="assets/img/technologies-icons/github.png" class="w-5 md:w-12" alt="">
+                        </div>
+                    </div>
+                    </p>
+                    <p><strong class="text-[#001633]">Results:</strong> Improved operational efficiency by 40%, reduced
+                        reporting time by 80%,
+                        full departmental visibility.</p>
+
+                    <div class="bg-white p-5 rounded-lg shadow-md border-l-[5px] border-[#001633]">
+                        <p class="italic">"Their ERP changed our workflow completely. Everything’s faster, smarter, and
+                            tailored to our exact needs."</p>
+                        <div class="mt-4 flex items-center">
+                            <img src="assets/img/testimonal-clients/client-2.jpg"
+                                class="w-10 h-10 rounded-full mr-3 object-cover object-top" alt="Client Photo">
+                            <div>
+                                <p class="font-semibold text-sm">Akash Mehta</p>
+                                <p class="text-xs text-gray-500">Director, Mehta Manufacturing</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section Start -->
+    <section class="bg-[#f9f9f9] hidden py-24 px-6 md:px-12 lg:px-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl md:text-5xl font-bold text-[#001633] Oswald mb-4">
+                Our Work Speaks for Itself
+            </h2>
+            <p class="max-w-3xl mx-auto text-gray-600 text-lg">
+                From web development to custom software — here’s a glimpse of how we solve real business problems with
+                technology.
+            </p>
+        </div>
+
+        <!-- Project Cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <!-- Single Card -->
+            <div class="bg-white shadow-lg rounded-2xl overflow-hidden border-t-4 border-[#ff006e]">
+                <div class="p-6">
+                    <h3 class="text-xl font-bold text-[#001633] mb-2">Project: Smart ERP System</h3>
+                    <p class="text-sm text-gray-500 mb-4 italic">Streamlining operations for a manufacturing firm</p>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-[#00bcd4]">Problem:</h4>
+                        <p class="text-gray-700">Client faced delays and inaccuracies due to manual processes and
+                            scattered systems.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-[#00bcd4]">Solution:</h4>
+                        <p class="text-gray-700">We delivered a full-fledged ERP system tailored to inventory, HR,
+                            sales, and reporting.</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-[#00bcd4]">Tech Stack:</h4>
+                        <p class="text-gray-700">Laravel, Vue.js, MySQL, Docker</p>
+                    </div>
+
+                    <div class="mb-4">
+                        <h4 class="font-semibold text-[#00bcd4]">Results:</h4>
+                        <p class="text-gray-700">45% faster operations and real-time data visibility across departments.
+                        </p>
+                    </div>
+
+                    <div class="mt-6 border-t pt-4">
+                        <p class="text-sm italic text-[#001633]">"Their ERP solution revolutionized how we work —
+                            efficient and future-ready!"</p>
+                        <span class="text-sm text-gray-500">— Operations Manager, FabTech Ltd.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- You can duplicate and modify the above card for more case studies -->
+        </div>
+
+        <!-- CTA Button -->
+        <div class="text-center mt-20">
+            <a href="contact.html"
+                class="inline-block bg-[#ff006e] hover:bg-[#e6005a] text-white px-8 py-4 text-lg rounded-full shadow-lg transition duration-300">
+                Start Your Project With Us
+            </a>
+        </div>
+    </section>
+    <!-- Portfolio Section End -->
+
+
+
+
+
+    <!-- CTA Section Start -->
+    <section
+        class="hidden bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
+        style="background-image: url(assets/img/cta-bg.jpg);">
+        <div
+            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
+                us.</p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
+                a Free Call</a>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
+                            class="Poiret_One">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Poiret_One">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

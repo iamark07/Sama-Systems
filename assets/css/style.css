@@ -1,0 +1,152 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+/* scroll bar styling section  */
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb:hover{
+  background: rgb(179, 0, 0);
+} 
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+/* font styling section  */
+
+.roboto {
+  font-family: "Roboto", sans-serif;
+  /* font-optical-sizing: auto; */
+  font-weight: 200;
+  /* font-style: normal; */
+}
+
+.Montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.Poiret_One {
+  font-family: "Poiret One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.Raleway {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.Oswald {
+  font-family: "Oswald", sans-serif;
+  /* font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal; */
+}
+
+/* header section */
+#main-header {
+  background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
+}
+
+@media screen and (min-width: 340px) and (max-width: 1023px) {
+  #main-header {
+    background-image: -webkit-linear-gradient(30deg, #fff 50%, #001633 50%);
+  }
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1280px) {
+  #main-header {
+    background-image: -webkit-linear-gradient(30deg, #fff 24%, #001633 24%);
+  }
+}
+
+/* hero section  */
+@keyframes bounceSlow {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@media screen and (min-width: 340px) and (max-width: 400px) {
+  .consultation_line {
+    display: none;
+  }
+}
+
+.animate-bounce-slow {
+  animation: bounceSlow 3s infinite;
+}
+
+/* projects section */
+
+#projects-carousel .owl-stage-outer {
+  padding: 20px 0px;
+}
+
+@media screen and (min-width: 1500px) {
+  #projects-carousel .owl-stage-outer .owl-stage .owl-item {
+    height: 480px;
+  }
+}
+
+#projects-carousel .owl-nav button:hover {
+  background: none;
+}
+
+#projects-carousel .owl-dots .owl-dot.active span {
+  background: #001633;
+}
+
+/* client logo section */
+#clients-logo .owl-stage-outer {
+  padding: 50px 0px;
+}
+
+/* testimonal section */
+
+#testimonal .owl-stage-outer {
+  padding: 10px 0px;
+}
+
+#testimonal .owl-nav button:hover {
+  background: none;
+}
+
+#testimonal .owl-dots .owl-dot.active span {
+  background: #c9457e;
+}
+
+.bottom-cta-btn {
+  background-position: center -100px;
+}
+
+@media screen and (min-width: 340px) and (max-width: 767px) {
+  .bottom-cta-btn {
+    background-position: center 0px;
+  }
+}

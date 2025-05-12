@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Contact Us</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+
+            <!-- CTA Desktop -->
+            <button
+                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl p-2 border border-white">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Mobile Slide Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+        <div class="p-6 space-y-10">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <button id="menu-close" class="text-2xl text-gray-800">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
+                Free Consultation
+            </button>
+            <button
+                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+
+
+
+    <!-- world map section start -->
+    <div class="bg-[#f8f8f8]">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12 pb-24 pt-40 px-6 md:px-10">
+
+            <!-- World Map Image - Bigger & Focus -->
+            <div class="relative col-span-3 lg:col-span-2">
+                <img src="assets/img/map.jpg" loading="lazy" alt="World Map" class="w-full" />
+
+                <!-- Location Dots -->
+                <div
+                    class="absolute top-[42%] sm:top-[45%] md:top-[24%] lg:top-[39%] xl:top-[45%] right-[28%] sm:right-[29%] md:right-[28%] lg:right-[29%] xl:right-[29%]">
+                    <span
+                        class="block w-4 h-4 bg-[#ff0063] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#ff0063] rounded-full"></span>
+                </div>
+
+                <div
+                    class="absolute top-[31%] sm:top-[32%] md:top-[34%] lg:top-[27%] xl:top-[32%] left-[18%] sm:left-[19%] md:left-[19%] xl:left-[18%]">
+                    <span
+                        class="block w-4 h-4 bg-[#00bcd4] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#00bcd4] rounded-full"></span>
+                </div>
+                <div
+                    class="absolute top-[39%] sm:top-[40%] md:top-[40%] lg:top-[36%] xl:top-[40%] left-[19%] sm:left-[20%] md:left-[20%] xl:left-[20%]">
+                    <span
+                        class="block w-4 h-4 bg-[#18dc77] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#18dc77] rounded-full"></span>
+                </div>
+
+                <!-- <div class="absolute top-[55%] left-[62%]">
+            <span
+                class="block w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow-md animate-ping"></span>
+            <span class="absolute top-1 left-1 w-2 h-2 bg-blue-600 rounded-full"></span>
+        </div> -->
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-span-3 lg:col-span-1">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Our Global Footprint</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                    We’re making our mark around the world with dedicated teams and innovation-driven offices
+                    across
+                    continents.
+                </p>
+
+                <div class="space-y-3 text-sm">
+                    <div>
+                        <h3 class="text-base font-semibold text-[#00bcd4]">🇨🇦 Head Office</h3>
+                        <!-- <p class="text-gray-500">140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada</p> -->
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-[#ff0063]">🇮🇳 India Office</h3>
+                        <!-- <p class="text-gray-500">A-446 Meet Nagar, Shahdara, Delhi 110094</p> -->
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-[#18dc77]">🇺🇸 USA Office</h3>
+                        <!-- <p class="text-gray-500">1234 Sunset Blvd, Los Angeles, CA 90026, USA</p> -->
+                    </div>
+                </div>
+
+                <a href="https://maps.app.goo.gl/2ikVxJpkY35dRWKbA" target="_blank">
+                    <button class="mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 transition-all shadow">
+                        Explore Offices
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </div>
+    <!-- world map section end -->
+
+    <!-- contact form section start-->
+    <div class="bg-[#0e0e11] text-white py-32 relative">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="assets/img/hero-bg-2.jpg" alt="" class="w-full h-full opacity-20">
+        </div>
+        <div class="container mx-auto px-6 md:px-10 z-10 relative">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-[600] mb-4">Get In Touch</h2>
+                <p class="text-gray-400 text-sm">
+                    We’d love to hear from you. Fill out the form and let’s start a conversation.
+                </p>
+            </div>
+            <div class="flex justify-center w-full">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px]">
+                    <!-- First Row -->
+                    <input type="text" placeholder="Full Name"
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-1" />
+
+
+                    <!-- Second Row -->
+                    <input type="email" placeholder="Email Address"
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-1" />
+
+
+                    <!-- third Row -->
+                    <textarea rows="4" placeholder="Tell us about your query..."
+                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2"></textarea>
+
+                    <!-- Submit Button -->
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit"
+                            class="bg-[#ff0063] hover:opacity-90 transition-all px-8 py-3 text-[14px] text-white">
+                            Send Message
+                        </button>
+                        <p class="text-sm text-gray-400 mt-4">
+                            By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>
+                            and
+                            <a href="#" class="text-[#ff0063] underline">privacy policy</a>.
+                        </p>
+                    </div>
+                </form>
+            </div>
+            <!-- Additional Contact Options -->
+            <div class="hidden mt-12 text-center space-y-4">
+                <p class="text-gray-200">Prefer direct contact?</p>
+                <div class="flex flex-wrap gap-4 mt-6 justify-center">
+                    <!-- WhatsApp -->
+                    <a href="https://wa.me/918802609662" target="_blank"
+                        class="inline-flex items-center gap-2 bg-[#25D366] text-white px-6 py-3 font-medium shadow-md hover:opacity-90 transition">
+                        <i class="ri-whatsapp-line text-xl"></i>
+                        WhatsApp Us
+                    </a>
+
+                    <!-- Calendly -->
+                    <a href="https://calendly.com/samasystems/30min" target="_blank"
+                        class="inline-flex items-center gap-2 bg-[#00bcd4] text-white px-6 py-3 font-medium shadow-md hover:opacity-90 transition">
+                        <i class="ri-calendar-check-line text-xl"></i>
+                        Book via Calendly
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- contact form section end-->
+
+
+
+    <!-- CTA Section Start -->
+    <section
+        class="hidden bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
+        style="background-image: url(assets/img/cta-bg.jpg);">
+        <div
+            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s Talk About Your Vision</h2>
+            <p class="text-sm md:text-lg font-medium mb-8">Have a project in mind or just curious about how we can help?
+                Book a free consultation or message us directly — we're here to chat.</p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Let’s
+                Talk</a>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
+                            class="Poiret_One">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Poiret_One">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>

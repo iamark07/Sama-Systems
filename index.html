@@ -1,0 +1,2005 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    
+    <!-- owl caraousel link-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>Sama Systems - Converting Ideas into Reality</title>
+    <meta name="description" content="Sama Systems - Converting Ideas into Reality. A Trusted IT Development, Marketing, and Consultation services provider to help you achieve your business goals." />
+    <meta name="keywords" content="Sama Systems, IT Development, Marketing, Consultation, Software Development, Web Development, Mobile Apps, Digital Marketing" />
+
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 py-7 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="index.html" class="text-[#89be48] transition">Home</a>
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+
+            <!-- CTA Desktop -->
+            <button
+                class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Get Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl p-2 border border-white">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Mobile Slide Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+        <div class="p-6 space-y-10">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/logo.png" alt="Sama Systems Logo" class="w-24">
+                <button id="menu-close" class="text-2xl text-gray-800">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="index.html" class="text-[#89be48] transition">Home</a>
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+            <button
+                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Get Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Hero Section Start -->
+    <section class="relative flex items-center justify-center py-52 w-full bg-cover"
+        style="background-image: url(assets/img/bg-1.png);">
+
+        <!-- <div class="w-full h-full absolute top-0 z-10">
+            <video src="assets/videos/hero-bg-video.crdownload" class="w-full h-full object-cover" autoplay muted loop
+                playsinline></video>
+        </div> -->
+        <div class="hero-overlay w-full h-full absolute top-0 z-20 bg-black bg-opacity-50"></div>
+
+        <!-- Hero Content -->
+        <div class="text-center px-6 z-30">
+            <h1 class="text-3xl md:text-6xl font-[300] text-white leading-tight Raleway mb-6">
+                Converting Ideas into Reality<br class="hidden md:block"> 
+            </h1>
+
+            <p class="text-[#d6d6d6] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                From concept to execution, we bridge imagination with innovation to bring your vision to life.
+            </p>
+
+            <!-- Taglines -->
+            <div class="flex flex-wrap justify-center gap-5 sm:text-2xl font-bold">
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-yellow-300 to-pink-300"
+                    style="text-shadow: 0 2px 10px rgba(255,200,120,0.7);">IT Development</span>
+                <span class="text-white">|</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500"
+                    style="text-shadow: 0 2px 10px rgba(0,255,255,0.6);">Marketing</span>
+                <span class="text-white">|</span>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-300 to-pink-400"
+                    style="text-shadow: 0 2px 10px rgba(200,100,255,0.7);">Consultation</span>
+            </div>
+
+            <!-- Ratings -->
+            <div class="mt-10 flex flex-wrap justify-center gap-8 text-white text-sm sm:text-base">
+                <div class="text-center">
+                    <div class="font-semibold">Goodfirms rating</div>
+                    <div class="text-yellow-400">5/5 ★★★★★</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold">Reviewed on</div>
+                    <div class="text-red-400">Clutch 4.9 ★★★★★</div>
+                </div>
+                <div class="text-center">
+                    <div class="font-semibold">Top Rated</div>
+                    <div class="text-green-300">on Upwork ★★★★★</div>
+                </div>
+            </div>
+
+            <!-- CTA Buttons -->
+            <div class="mt-10 flex justify-center gap-4">
+                <a href="portfolio.html">
+                    <button
+                        class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                        <span class="relative z-20">
+                            View Our Portfolio
+                        </span>
+                        <span
+                            class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!--  Who We Are section start-->
+    <!-- <section class="bg-[#f5f5f5] py-20 text-gray-800">
+        <div class="container mx-auto px-6 md:px-10">
+            <h2 class="text-2xl sm:text-4xl font-[600] text-center text-black mb-16">
+                Who We Are
+            </h2>
+
+            <div class="space-y-12 sm:text-lg leading-relaxed flex flex-col items-center">
+                <div class="w-full relative pl-8 border-l-4 border-[#ff0063]">
+                    <p class="font-medium">
+                        Get the Services of a Trusted Software Development Company at an Affordable Price to Take Your
+                        Business a Level Up!
+                    </p>
+                </div>
+
+                <div
+                    class="relative bg-white p-8 rounded-xl shadow-lg border-l-[6px] border-[#ff0063] hover:shadow-xl transition duration-300">
+                    <p class="font-semibold text-gray-800">
+                        🚀 SAMA Systems, being the Top Rated Software Development Company across the globe, has the
+                        potential to bring specialized and optimized solutions for you. With 5+ years of experience.
+                    </p>
+                </div>
+
+                <div class="relative pr-8 border-r-4 border-[#ff0063]">
+                    <p class="font-medium">
+                        Our Software Development Team has worked with multiple Companies and enterprises and assisted
+                        them to ease their IT outsourcing experience, as well as reduce cost or time to market. By
+                        providing several Software development services, SAMA Systems has turned into a reliable brand
+                        for businesses across the globe.
+                    </p>
+                </div>
+
+                <div
+                    class="w-full   bg-[#ff0063] text-white p-6 rounded-xl shadow-md text-center text-base sm:text-xl font-semibold tracking-wide italic">
+                    “We believe in building not just websites — but meaningful digital journeys.”
+                </div>
+
+
+                <a href="about.html">
+                    <button
+                        class="hidden lg:inline-block bg-[#ff0063] hover:opacity-90 text-white px-8 py-3 text-sm duration-300 shadow-sm transition">
+                        Know More
+                    </button>
+                </a>
+            </div>
+        </div>
+    </section> -->
+    <!--  Who We Are section end-->
+
+    <!-- Company Intro Section Start -->
+    <section class="bg-[#f5f5f5] py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
+        <div class="container mx-auto relative px-6 md:px-10">
+            <div class="absolute -top-72 left-60">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="absolute -bottom-20 right-10">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <h3 class="uppercase text-sm md:text-base font-[600] tracking-[2px] text-[#111827] mb-5 Raleway">
+                Introduction</h3>
+            <h2 class="text-2xl sm:text-4xl md:text-5xl font-[500] text-[#111827] leading-tight mb-6 Raleway">
+                Sama Systems - A Name for Trusted<br class="hidden sm:block" />
+                IT Development & Marketing <span class="text-[#ff0063] font-[500] Raleway">Consultation Partner.</span>
+            </h2>
+
+            <div class="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed space-y-4  mx-auto">
+                <p class="Raleway font-[400]">
+                    Sama Systems, being the Top Rated Software Development Company across the globe, has the potential
+                    to bring specialized and optimized solutions for you. With 5+ years of experience.
+                </p>
+                <p class="Raleway font-[400]">
+                    Our Software Development Team has worked with multiple companies and enterprises and assisted them
+                    to ease their IT outsourcing experience, as well as reduce cost or time to market. By providing
+                    several software development services, Sama Systems has turned into a reliable brand for businesses
+                    across the globe.
+                </p>
+                <p class="Raleway font-[400]">
+                    Get the Services of a Trusted Software Development Company at an Affordable Price to Take Your Business a Level Up!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Company Intro Section End -->
+
+    <!-- Your Journey section start -->
+    <!-- <section class="bg-gradient-to-tr from-[#001633] to-[#000b26] py-52 text-gray-200">
+        <div class="container mx-auto px-6 md:px-10">
+            
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-center text-[#00bcd4] mb-32 leading-tight Montserrat">
+                Your Journey Begins<br class="sm:hidden"> Without the Guesswork
+            </h2>
+
+            
+            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-sm leading-relaxed">
+               
+                <div class="border-l-4 border-[#ff0063] pl-6">
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063] Montserrat">No Complex Steps</h3>
+                    <p>
+                        We’ve eliminated unnecessary friction. From the moment you show interest to your first real use,
+                        every step is guided, simple, and quick.
+                    </p>
+                    <p class="mt-4">
+                        Forget steep learning curves—this is modern onboarding the way it should be: seamless,
+                        intuitive, and tailored to your pace.
+                    </p>
+                </div>
+
+                
+                <div class="border-l-4 border-[#00bcd4] pl-6">
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#00bcd4] Montserrat">Built Around You</h3>
+                    <p>
+                        We understand that no two users are the same. That’s why our flow adapts—helping you find
+                        exactly what you need, when you need it.
+                    </p>
+                    <p class="mt-4">
+                        From setup to action, we guide you with clarity and support so you're never stuck or left
+                        wondering what’s next.
+                    </p>
+                </div>
+
+                
+                <div class="border-l-4 border-[#ff0063] pl-6">
+                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063] Montserrat">Ready to Go in Minutes
+                    </h3>
+                    <p>
+                        No long forms. No delays. In just a few steps, you're in—engaged and empowered to start
+                        building, managing, or exploring.
+                    </p>
+                    <p class="mt-4">
+                        Whether you're here for growth, tools, or innovation—your experience begins on the right foot,
+                        every single time.
+                    </p>
+                </div>
+            </div>
+
+            
+            <div class="mt-20 text-center italic text-gray-200">
+                “We’ve designed the start of your journey to be so clear, you’ll wonder why others still make it
+                complicated.”
+            </div>
+        </div>
+    </section> -->
+    <!-- Your Journey section end -->
+
+
+    <!-- Our Services section start -->
+    <section class="w-full bg-[#f5f5f5] relative">
+        <!-- <div class="absolute top-0 left-0 w-full h-full">
+            <img src="assets/img/hero-bg.jpg" alt="" class="w-full h-full opacity-20">
+        </div> -->
+        <div class="container mx-auto px-6 md:px-10 relative z-10 pt-40 pb-40">
+            <!-- <div class="absolute top-[400px] left-5">
+                <img src="assets/img/png-object-2.png" loading="lazy" alt="" class="w-72 opacity-60">
+            </div> -->
+            <div class="absolute bottom-3 right-[35%] md:right-[10%]">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="absolute -top-20 left-10 hidden md:block">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class=" mb-16">
+                <h2 class="text-2xl md:text-4xl font-[600] text-black Montserrat">Our <span
+                        class="font-[600] text-[#ff006e] Montserrat">Services</span></h2>
+                <p class="text-gray-800 text-sm sm:text-base mt-4">
+                    Solving complex business problems with elegant digital solutions.
+                </p>
+            </div>
+
+            <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-10 relative z-20">
+
+                <!-- Web & App Development -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">Top</span>
+
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-code-s-slash-line"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">Web & App
+                            Development</h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Modern websites and mobile apps built
+                            for
+                            performance and scalability.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ERP & Custom Software -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">Recommended</span>
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-settings-3-line"></i> <!-- Changed icon -->
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">ERP & Custom
+                            Software</h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Bespoke software solutions tailored to
+                            your
+                            workflow and operations.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- DevOps & Hosting -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">Reliable</span>
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-server-line"></i> <!-- Changed icon -->
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">DevOps & Hosting
+                        </h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Continuous delivery and hosting services
+                            that
+                            ensure uptime and reliability.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- SEO & Digital Marketing -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">Trending</span>
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-megaphone-line"></i> <!-- Changed icon -->
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">SEO & Digital
+                            Marketing</h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Boost visibility, rankings, and ROI
+                            through
+                            strategic online marketing.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- IT Consulting -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">Expert
+                        Advice</span>
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-lightbulb-line"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">IT Consulting</h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Guidance to align your technology
+                            roadmap with
+                            business success.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cloud & DevOps -->
+                <div
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md p-8 transition-all duration-500 hover:-translate-y-4 relative">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff006e] text-white text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                    <div class="flex flex-col items-center space-y-5">
+                        <div
+                            class="w-16 h-16 flex items-center justify-center bg-[#fff0f6] backdrop-blur-md rounded-full text-[#ff006e] group-hover:text-white text-2xl transition group-hover:bg-[#ff006e]">
+                            <i class="ri-cloud-line"></i>
+                        </div>
+                        <h3 class="text-lg md:text-xl font-[600] text-center transition Montserrat">Cloud & DevOps</h3>
+                        <p class="text-center text-gray-700 text-sm md:text-base">Streamline delivery with cloud solutions
+                            and
+                            automation pipelines.</p>
+                        <a href="#"
+                            class="hidden mt-4 w-10 h-10 flex items-center justify-center bg-[#ff006e]/10 text-[#ff006e] rounded-full hover:bg-[#ff006e] hover:text-white transition">
+                            <i class="ri-external-link-line text-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- CTA Buttons -->
+            <div class="mt-16 flex justify-center gap-4 hidden">
+                <a href="services.html">
+                    <button
+                        class="bg-[#ff0063] text-white px-8 py-3 text-sm shadow hover:opacity-90 transition duration-300">
+                        Explore All Services
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </section>
+    <!-- what we do best section end -->
+
+    <!-- <section class="w-full bg-white py-24">
+        <div class="container mx-auto  px-6 md:px-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl md:text-5xl font-bold text-[#001633]">What We Do Best</h2>
+                <p class="text-gray-600 mt-4 text-lg max-w-3xl mx-auto">
+                    Solving complex business problems with elegant digital solutions.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-12">
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-code-s-slash-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Custom Software</h3>
+                        <p class="text-gray-600 text-sm">Tailored business software crafted for efficiency and scale.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-global-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Web Development</h3>
+                        <p class="text-gray-600 text-sm">Robust, responsive websites for modern business presence.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-smartphone-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Mobile Apps</h3>
+                        <p class="text-gray-600 text-sm">Seamless cross-platform experiences with powerful performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-brush-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">UI/UX Design</h3>
+                        <p class="text-gray-600 text-sm">Human-centered design that’s both intuitive and visually
+                            compelling.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-lightbulb-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">IT Consulting</h3>
+                        <p class="text-gray-600 text-sm">Strategic technology advice to guide your business roadmap.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-cloud-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Cloud & DevOps</h3>
+                        <p class="text-gray-600 text-sm">Reliable cloud infrastructure with automation and deployment
+                            pipelines.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-settings-4-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Product Engineering</h3>
+                        <p class="text-gray-600 text-sm">End-to-end digital product development from concept to launch.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-6 group">
+                    <div
+                        class="min-w-[60px] h-[60px] rounded-full bg-gradient-to-r from-[#00bcd4] to-[#001633] text-white flex items-center justify-center text-2xl shadow-md group-hover:scale-105 transition">
+                        <i class="ri-shield-check-line"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-semibold text-[#001633] mb-1">Quality Assurance</h3>
+                        <p class="text-gray-600 text-sm">Flawless performance through rigorous testing and QA cycles.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Offerings Section Start-->
+    <section class="hidden relative h-fit bg-gradient-to-tr from-[#001633] to-[#000b26] overflow-hidden">
+        <div class="container mx-auto px-6 md:px-10 py-40 relative">
+            <!-- Background Circles -->
+            <div class="absolute top-[0%] -left-[5%] w-96 h-96 bg-[#ff0063] rounded-full inset-0 bg-opacity-20 z-0">
+            </div>
+            <div class="absolute top-[65%] left-[24%] w-48 h-48 bg-[#ff0063] rounded-full inset-0 bg-opacity-20 z-0">
+            </div>
+            <div class="absolute top-[20%] left-[80%] w-48 h-48 bg-[#ff0063] rounded-full inset-0 bg-opacity-20 z-0">
+            </div>
+            <div class="absolute top-[50%] left-[65%] w-64 h-64 bg-[#ff0063] rounded-full inset-0 bg-opacity-20 z-0">
+            </div>
+
+            <!-- Section Title -->
+            <div class="mb-16 relative z-30">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
+                    <!-- Left Heading -->
+                    <div>
+                        <h2
+                            class="text-2xl md:text-4xl text-gray-100 mb-0 md:mb-4 text-center font-[400] md:text-start Montserrat">
+                            Our <span class="font-[600] text-[#ff0063] Montserrat">Offerings</span>
+                        </h2>
+                    </div>
+                    <!-- Right Subheading + Paragraph -->
+                    <div class="text-center md:text-end">
+                        <p class="text-xl font-[600] text-[#ff0063] mb-2 Montserrat">Services That Make Us Popular</p>
+                        <p class="text-gray-300 text-sm">Software we built for you are developed in Latest Technologies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Offerings Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 Montserrat relative z-30">
+                <!-- Single Card -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full">Top</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#F2E6FF] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-code-s-slash-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Software / App Development</h3>
+                    <p class="text-gray-500 text-center text-xs">iOS App & Android Application Development - Booking,
+                        Shopping Applications, etc.</p>
+                    <!-- <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#ff0063] transition-all duration-300"></span> -->
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full">New</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#F2E6FF] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-layout-masonry-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Attractive UI / UX Design</h3>
+                    <p class="text-gray-500 text-center text-xs">ERP Software, Accounting Software, Library & Medicine
+                        Management Systems.</p>
+                    <!-- <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#ff0063] transition-all duration-300"></span> -->
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full">Trending</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#F2E6FF] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-bar-chart-2-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Digital Marketing</h3>
+                    <p class="text-gray-500 text-center text-xs">SEO, Social Media Marketing, Search Engine Optimization
+                        and Ranking Strategies.</p>
+                    <!-- <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#ff0063] transition-all duration-300"></span> -->
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full">Secure</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#F2E6FF] w-16 h-16 items-center justify-center rounded-full transition-all duration-300">
+                        <i class="ri-shield-check-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center">Security Assessment</h3>
+                    <p class="text-gray-500 text-center text-xs">Website Security, Dynamic and Static Website
+                        Development using the Latest Technologies.</p>
+                    <!-- <span
+                        class="absolute bottom-0 left-0 w-0 group-hover:w-full h-1 bg-[#ff0063] transition-all duration-300"></span> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Offering Section End -->
+
+    <!-- technology we use section start -->
+    <section class="w-full bg-gradient-to-br from-[#001633] to-[#000b26] py-24 text-white relative">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="assets/img/technology-bg.jpg" alt="" class="w-full h-full object-cover opacity-40">
+        </div>
+        <div class="container mx-auto px-6 md:px-10 relative z-10">
+            <div class="text-center mb-32">
+                <h2 class="text-2xl md:text-4xl font-[600] Montserrat">Technologies <span class="text-[#ff0063] font-[600]">We Use</span></h2>
+                <p class="text-gray-300 mt-4 text-sm sm:text-base">
+                    We leverage top-notch technologies to deliver exceptional digital experiences.
+                </p>
+            </div>
+
+            <!-- CATEGORY: Frontend -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-[#89be48] mb-3 Montserrat">Frontend</h3>
+                <p class="text-white mb-8 font-[400] text-sm sm:text-lg Montserrat">
+                    We specialize in modern frontend frameworks and technologies to craft visually stunning and high-performance interfaces.
+                </p>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/html-5.png" alt="HTML5" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>HTML5</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/css.png" alt="CSS3" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>CSS3</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/js.png" alt="JavaScript" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>JavaScript</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/react.png" alt="React" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>React</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/vue-js.png" alt="Vue.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Vue.js</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/tailwind-css.png" alt="Tailwind CSS"
+                            class="w-10 h-10 mb-3" loading="lazy">
+                        <span>Tailwind CSS</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY: Backend -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-[#89be48] mb-3 Montserrat">Backend</h3>
+                <p class="text-white mb-8 font-[400] text-sm sm:text-lg Montserrat">
+                    Our backend development leverages powerful tools and frameworks to ensure robust, secure, and scalable server-side logic.
+                </p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/node-js.png" alt="Node.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Node.js</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/php.png" alt="PHP" class="w-16 h-10 mb-3"
+                            loading="lazy">
+                        <span>PHP</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/mysql.png" alt="MySQL" class="w-16 h-10 mb-3"
+                            loading="lazy">
+                        <span>MySQL</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/laravel.png" alt="Laravel" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Laravel</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/firebase.png" alt="Firebase" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Firebase</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/express-js.png" alt="Express.js" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Express.js</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY: Mobile -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-[#89be48] mb-3 Montserrat">Mobile</h3>
+                <p class="text-white mb-8 font-[400] text-sm sm:text-lg Montserrat">
+                    We create seamless cross-platform mobile applications using the latest mobile development technologies for both Android and iOS.
+                </p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/flutter.png" alt="Flutter" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Flutter</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/android.png" alt="Android" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Android</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/ios.png" alt="iOS" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>iOS</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/react-native.png" alt="React Native"
+                            class="w-10 h-10 mb-3" loading="lazy">
+                        <span>React Native</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY: Cloud -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-semibold text-[#89be48] mb-3 Montserrat">Cloud</h3>
+                <p class="text-white mb-8 font-[400] text-sm sm:text-lg Montserrat">
+                    Our cloud solutions empower businesses with scalable infrastructure, fast deployment, and reliable hosting environments.
+                </p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/aws.png" alt="AWS" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>AWS</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/google-cloud.png" alt="Google Cloud"
+                            class="w-10 h-10 mb-3" loading="lazy">
+                        <span>Google Cloud</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/azure.png" alt="Azure" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Azure</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/digital-ocean.png" alt="DigitalOcean"
+                            class="w-10 h-10 mb-3" loading="lazy">
+                        <span>DigitalOcean</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CATEGORY: Open Source -->
+            <div>
+                <h3 class="text-3xl font-semibold text-[#89be48] mb-3 Montserrat">Open Source</h3>
+                <p class="text-white mb-8 font-[400] text-sm sm:text-lg Montserrat">
+                    We contribute to and utilize open source tools, promoting transparency, flexibility, and collaboration in our development process.
+                </p>
+                
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/github.png" alt="GitHub" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>GitHub</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/git.png" alt="Git" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Git</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/linux.png" alt="Linux" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Linux</span>
+                    </div>
+                    <div
+                        class="tech-card bg-white py-5 px-3 rounded-md flex flex-col text-black items-center hover:scale-[1.03] hover:shadow-sm hover:shadow-[#ffffff] transition-all duration-200 cursor-pointer">
+                        <img src="assets/img/technologies-icons/git-bash.png" alt="Bash" class="w-10 h-10 mb-3"
+                            loading="lazy">
+                        <span>Git Bash</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- technology we use section end -->
+
+    <!-- industry we serve section start -->
+    <section class="py-32 bg-[#f5f5f5] text-gray-800 overflow-hidden">
+        <div class="container mx-auto px-6 md:px-10 relative">
+            <div class="absolute -top-52 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute -bottom-28 left-10 md:left-1/2">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute -top-20 right-10 hidden md:block">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="mb-12">
+                <h2 class="text-2xl md:text-4xl font-[600] text-[#001633] Montserrat">
+                    Industries <span class="text-[#ff0063] font-[600] Montserrat">We Serve</span>
+                </h2>
+                <p class="mt-4 text-sm sm:text-base text-gray-600">
+                    Helping businesses across sectors build digital success — from startups to large enterprises.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <!-- Startups -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Fast-Growing</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-rocket-2-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">Startups</h3>
+                    <p class="text-gray-500 text-center text-xs">Agile and scalable digital products to launch MVPs
+                        quickly and efficiently.</p>
+                </div>
+
+                <!-- Retail -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Trusted</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-shopping-bag-3-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">Retail</h3>
+                    <p class="text-gray-500 text-center text-xs">Smart inventory, POS systems & digital storefronts for
+                        modern retailers.</p>
+                </div>
+
+                <!-- Education -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Popular</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-graduation-cap-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">Education</h3>
+                    <p class="text-gray-500 text-center text-xs">E-learning platforms with live classes, assessments &
+                        course tracking.</p>
+                </div>
+
+                <!-- Finance -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Secure</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-bank-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">Finance</h3>
+                    <p class="text-gray-500 text-center text-xs">Fintech solutions with encryption, KYC, and seamless
+                        transactions.</p>
+                </div>
+
+                <!-- Real Estate -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Listed</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-building-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">Real Estate</h3>
+                    <p class="text-gray-500 text-center text-xs">Property portals with interactive maps, 3D tours, and
+                        CRM systems.</p>
+                </div>
+
+                <!-- E-commerce -->
+                <div
+                    class="group relative px-5 py-8 border-t-4 border-[#ff0063] bg-white shadow-md hover:shadow-2xl transition-all duration-300 hover:scale-[1.02] flex flex-col items-center overflow-hidden">
+                    <span
+                        class="absolute top-4 right-4 bg-[#ff0063] text-white text-xs font-semibold px-3 py-1 rounded-full Montserrat">Top
+                        Seller</span>
+                    <div
+                        class="flex mb-6 text-[#ff0063] bg-[#FFF0F6] w-16 h-16 items-center justify-center rounded-full">
+                        <i class="ri-gift-line text-2xl"></i>
+                    </div>
+                    <h3 class="font-semibold text-gray-800 mb-4 text-center Montserrat">E-commerce</h3>
+                    <p class="text-gray-500 text-center text-xs">End-to-end eCommerce development — cart, checkout,
+                        reviews & more.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- industry we serve section end -->
+
+    <!-- Introduction Section Start -->
+    <section class="relative bg-[#f5f5f5] text-gray-800 overflow-hidden pt-12 pb-24">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="mt-16 py-20">
+
+                <div class="container mx-auto grid lg:grid-cols-3 gap-12">
+                    <!-- LEFT COLUMN -->
+                    <div class="space-y-10">
+                        <!-- STEP 1 - Discovery -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 1
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-search-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Discovery</h3>
+                                    <p class="text-gray-800 text-sm">Understanding your goals, audience, and business
+                                        needs to lay a strong foundation.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 2 - Planning -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 2
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-draft-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Planning</h3>
+                                    <p class="text-gray-800 text-sm">Creating a clear roadmap with timelines, goals, and
+                                        project strategies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 3 - Design -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 3
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-layout-4-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Design</h3>
+                                    <p class="text-gray-800 text-sm">Crafting visually engaging and user-friendly UI/UX
+                                        for seamless interaction.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- IMAGE CENTER -->
+                    <div class="relative group">
+                        <img src="assets/img/image.jpg" alt="Workstation" loading="lazy"
+                            class="h-[400px] object-cover w-full object-center md:w-fit md:h-full shadow-2xl group-hover:scale-[1.03] transition duration-700">
+                        <div class="absolute top-0 left-0 w-full h-full rounded-3xl transition duration-700">
+                        </div>
+                    </div>
+
+                    <!-- RIGHT COLUMN -->
+                    <div class="space-y-10">
+                        <!-- STEP 4 - Development -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 4
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-code-s-slash-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Development</h3>
+                                    <p class="text-gray-800 text-sm">Turning designs into robust, functional solutions
+                                        using modern technologies.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 5 - Marketing -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 5
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-megaphone-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Marketing</h3>
+                                    <p class="text-gray-800 text-sm">Promoting your brand through SEO, ads, and digital
+                                        campaigns for maximum reach.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- STEP 6 - Launch & Support -->
+                        <div
+                            class="relative flex flex-col bg-white border-t-4 border-[#001633] shadow-md p-6 hover:scale-[1.03] transition-all duration-200">
+                            <div
+                                class="text-white text-xs bg-[#001633] w-fit px-5 py-1 flex items-center justify-center rounded-full font-[600] mb-4 Montserrat">
+                                STEP 6
+                            </div>
+                            <div class="flex flex-col gap-4 items-center text-center">
+                                <div
+                                    class="text-[#001633] bg-[#f2f5f8] min-w-12 min-h-12 flex justify-center items-center rounded-full shadow-md">
+                                    <i class="ri-customer-service-line text-lg"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-[600] text-[#001633] mb-2 Montserrat">Launch & Support</h3>
+                                    <p class="text-gray-800 text-sm">Smooth project launch followed by ongoing support
+                                        and maintenance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Introduction Section End -->
+
+    <!-- stats section start -->
+    <section id="stats" class="bg-gradient-to-tr from-[#001633] to-[#000b26]">
+        <div class="container mx-auto px-4 sm:px-6 md:px-10 py-20 text-center relative">
+            <div class="absolute top-0 right-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute bottom-0 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <h2 class="text-3xl md:text-4xl font-[600] text-[#ffffff] mb-4 relative z-10 Montserrat">
+                Stats & <span class="text-[#ff0063] font-[600] Montserrat">Achievements</span>
+            </h2>
+            <p class="text-gray-300 mb-12 max-w-xl mx-auto relative z-10">
+                We take pride in our global reach, technical expertise, and customer satisfaction.
+            </p>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 pt-10 relative z-10">
+                <!-- Projects Delivered -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-code-s-slash-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[400] text-[#ff006e]" data-target="120"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium Montserrat">Projects Delivered</p>
+                </div>
+
+                <!-- Countries Served -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-earth-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[400] text-[#ff006e]" data-target="10"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium Montserrat">Countries Served</p>
+                </div>
+
+                <!-- Technologies Used -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-stack-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[400] text-[#ff006e]" data-target="25"
+                        data-suffix="+">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium Montserrat">Technologies Used</p>
+                </div>
+
+                <!-- Client Retention -->
+                <div class="flex flex-col items-center">
+                    <div class="w-16 h-16 rounded-full bg-white/10 flex items-center justify-center mb-7">
+                        <i class="ri-user-heart-line text-[#ff006e] text-2xl"></i>
+                    </div>
+                    <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[400] text-[#ff006e]" data-target="95"
+                        data-suffix="%">0</h3>
+                    <p class="mt-2 text-gray-200 md:text-lg font-medium Montserrat">Client Retention</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- stats section end -->
+
+    <!-- Blog / Insights Teaser Start -->
+    <section class="bg-white py-32 text-black" id="blogs-section">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-4xl font-[600] text-black Montserrat">Latest <span
+                        class="text-[#ff0063] font-[600] Montserrat">Insights</span></h2>
+                <p class="text-gray-800 mt-3 max-w-xl mx-auto">Explore our recent thoughts on technology, innovation,
+                    and trends.</p>
+            </div>
+
+            <div class="space-y-10 mt-10">
+                <!-- Blog Post 1 -->
+                <div
+                    class="relative border-l-4 border-[#ff0063] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3
+                        class="text-xl md:text-2xl font-semibold group-hover:text-[#ff0063] transition-colors Montserrat">
+                        How AI is
+                        Transforming Modern Business</h3>
+                    <p class="text-gray-800 mt-2">Discover the key ways artificial intelligence is reshaping operations,
+                        customer experiences, and growth strategies.</p>
+                    <a href="#" class="inline-block mt-3 text-[#ff0063] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div
+                    class="relative border-l-4 border-[#00bcd4] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3
+                        class="text-xl md:text-2xl font-semibold group-hover:text-[#00bcd4] transition-colors Montserrat">
+                        Top 10
+                        Web
+                        Development Trends in 2025</h3>
+                    <p class="text-gray-800 mt-2">Stay ahead of the curve with this breakdown of the most important
+                        trends in modern web development.</p>
+                    <a href="#" class="inline-block mt-3 text-[#00bcd4] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div
+                    class="relative border-l-4 border-[#ff0063] pl-6 hover:translate-x-2 transition-transform duration-300 group">
+                    <h3
+                        class="text-xl md:text-2xl font-semibold group-hover:text-[#ff0063] transition-colors Montserrat">
+                        The
+                        Future of Cloud
+                        and DevOps</h3>
+                    <p class="text-gray-800 mt-2">Learn how cloud-native architectures and DevOps practices are changing
+                        how teams build and deploy software.</p>
+                    <a href="#" class="inline-block mt-3 text-[#ff0063] font-medium group-hover:underline">Read More
+                        →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Blog / Insights Teaser End -->
+
+    <!-- Why Choose Us Section start -->
+    <section class="relative py-24 bg-gradient-to-br from-[#001633] to-[#000b26] overflow-hidden">
+        <div class="container mx-auto px-6 md:px-10 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+                <!-- Text + Features -->
+                <div class="text-white space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="text-2xl md:text-3xl leading-snug text-center md:text-left font-[400] Montserrat">
+                            Why <span class="text-[#ff0063] font-semibold Montserrat">Choose Us</span>
+                        </h2>
+                        <p class="text-gray-300 text-sm md:text-base leading-relaxed text-center md:text-left">
+                            KBros Developers has the experience with the most diverse clients, networks, and
+                            organizations.
+                            Since day one, we’ve stayed on the cutting-edge of technology—offering advanced solutions
+                            tailored for growth.
+                        </p>
+                    </div>
+
+                    <!-- Feature Grid -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-6">
+                        <!-- Reusable Feature Item -->
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-hand-coin-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Full-service under one roof</div>
+                        </div>
+
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-lightbulb-flash-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Startup-focused approach</div>
+                        </div>
+
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-team-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Fast, scalable & secure development</div>
+                        </div>
+
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-rocket-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Marketing + Tech = Growth</div>
+                        </div>
+
+                        <div class="flex items-center gap-4 group hover:scale-[1.02] transition">
+                            <div
+                                class="min-w-12 min-h-12 rounded-full bg-[#ff0063] flex items-center justify-center text-white text-xl shadow-md">
+                                <i class="ri-loop-left-line"></i>
+                            </div>
+                            <div class="text-gray-200 text-sm mt-1">Flexible engagement models</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Image Section -->
+                <div class="hidden md:flex justify-center">
+                    <div class="relative p-2">
+                        <img src="assets/img/png-object.png" loading="lazy" alt="Why Choose Us" class="w-[350px]" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Why Choose Us Section End-->
+
+
+    <!-- our projects section start -->
+    <section class="bg-[#f9f9f9] pt-32 pb-52">
+        <div class="container mx-auto px-6 md:px-10">
+            <div class="mb-12">
+                <h2 class="text-2xl md:text-4xl font-[400] text-black Montserrat">Recent <span
+                        class="text-[#001633] font-[600] Montserrat">
+                        Projects</span></h2>
+                <p class="text-gray-800 mt-4 text-base">Explore how we've helped businesses grow with
+                    our creative solutions.</p>
+            </div>
+
+            <!-- Owl Carousel Wrapper -->
+            <div id="projects-carousel" class="owl-carousel owl-theme h-full">
+
+                <!-- Project 1 -->
+                <div class="h-full item bg-white shadow-md overflow-hidden group p-6 border-t-[5px] border-[#001633]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="SmartGrocer App"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#001633] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-links-line text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">SmartGrocer App</h3>
+                        <p class="text-gray-700 text-sm mb-4">Developed a custom eCommerce grocery mobile app with
+                            real-time stock tracking and delivery integration.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#001633]">Results:</strong> 3x user engagement, 40% faster order
+                            processing.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="h-full item bg-white shadow-md overflow-hidden group p-6 border-t-[5px] border-[#001633]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="FinSage CRM"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#001633] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-links-line text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">FinSage CRM</h3>
+                        <p class="text-gray-700 text-sm mb-4">Built a scalable CRM system with lead tracking, auto-email
+                            workflows, and analytics dashboard for finance consultants.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#001633]">Results:</strong> Reduced lead drop by 60%, increased
+                            conversion by 35%.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="h-full item bg-white shadow-md overflow-hidden group p-6 border-t-[5px] border-[#001633]">
+                    <!-- Image wrapper -->
+                    <div class="relative overflow-hidden rounded-md">
+                        <img src="assets/img/projects-img/restuarent-website.png" alt="EduLeap LMS"
+                            class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 rounded-md">
+                        <!-- Overlay -->
+                        <div
+                            class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500 rounded-md">
+                            <a href="#"
+                                class="text-[#001633] text-4xl flex items-center justify-center w-14 h-14 rounded-full bg-white/90">
+                                <i class="ri-links-line text-xl"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Text content -->
+                    <div class="mt-4">
+                        <h3 class="text-xl font-bold text-[#001633] mb-2 Montserrat">EduLeap LMS</h3>
+                        <p class="text-gray-700 text-sm mb-4">Designed and launched a cloud-based Learning Management
+                            System (LMS) with gamified learning paths and analytics.</p>
+                        <div class="text-sm text-gray-500">
+                            <strong class="text-[#001633]">Results:</strong> 5x student retention, 80% assignment
+                            completion rate.
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <!-- our projects section end -->
+
+
+    <!-- testimonal section start -->
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] overflow-hidden">
+        <div class="container mx-auto flex flex-col items-center px-6 md:px-10 relative py-16">
+            <div class="absolute top-0 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <div class="absolute bottom-0 right-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+            <h2 class="text-2xl md:text-4xl font-[600] text-center mb-5 text-[#ff0063] Montserrat">What Our Clients Say
+            </h2>
+            <p class="text-center text-gray-200 mb-12">
+                Hear directly from our valued clients who have experienced the impact of our dedication, innovation, and
+                seamless collaboration.
+            </p>
+
+            <div class="owl-carousel owl-theme w-full sm:w-[600px] md:w-[700px] lg:w-[900px]" id="testimonal">
+                <!-- Testimonial Item -->
+                <div class="bg-white flex flex-col md:flex-row">
+                    <!-- Reviewer Image -->
+                    <div class="flex-shrink-0">
+                        <img src="assets/img/testimonal-clients/client-1.jpg" loading="lazy" alt="Client"
+                            class="h-[400px] sm:h-[600px] md:h-[400px] object-cover" />
+                    </div>
+
+                    <!-- Testimonial Content -->
+                    <div class="flex-1 py-8 px-5">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="assets/img/Google.png" alt="Company Logo" class="!w-16 h-auto" />
+                            <span class="text-gray-500 text-sm">Google LLC</span>
+                        </div>
+                        <!-- Star Rating -->
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-half-fill"></i>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-3">
+                            “Collaborating with your design team completely elevated our product interface. I was amazed
+                            at how seamlessly creativity and usability blended together. The design process was not only
+                            efficient, but it also brought clarity to our user journeys that we hadn't seen before.
+                            Every interaction, every screen felt purposeful and user-centric!”
+                        </p>
+
+                        <p class="text-sm font-semibold text-[#ff0063] Montserrat">Sophia Zhang — UX Strategist</p>
+                    </div>
+                </div>
+
+                <!-- Testimonial Item -->
+                <div class="bg-white flex flex-col md:flex-row">
+                    <!-- Reviewer Image -->
+                    <div class="flex-shrink-0">
+                        <img src="assets/img/testimonal-clients/client-2.jpg" loading="lazy" alt="Client"
+                            class="h-[400px] sm:h-[600px] md:h-[400px] object-cover" />
+                    </div>
+                    <!-- Testimonial Content -->
+                    <div class="flex-1 py-8 px-5">
+                        <div class="flex items-center gap-3 mb-2">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+                                alt="Company Logo" class="!w-8 h-auto" />
+                            <span class="text-gray-500 text-sm">Apple Inc.</span>
+                        </div>
+                        <!-- Star Rating -->
+                        <div class="flex gap-1 text-yellow-400 mb-2">
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                            <i class="ri-star-fill"></i>
+                        </div>
+                        <p class="text-gray-700 leading-relaxed mb-4 mt-3">
+                            “Your development team brought in exceptional clarity and performance improvements to our
+                            internal dashboard. From code quality to deployment speed, every phase of the project was
+                            handled with precision. The turnaround time was fast, the collaboration seamless, and the
+                            output production-ready from day one!”
+                        </p>
+
+                        <p class="text-sm font-semibold text-[#ff0063] Montserrat">Daniel Reed — Software Engineering
+                            Manager</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonal section end -->
+
+    <!-- world map section start -->
+    <section class="bg-[#f8f8f8]">
+        <div class="container mx-auto grid md:grid-cols-3 gap-12 pb-24 pt-40 px-6 md:px-10">
+
+            <!-- World Map Image - Bigger & Focus -->
+            <div class="relative col-span-3 lg:col-span-2">
+                <img src="assets/img/map.jpg" loading="lazy" alt="World Map" class="w-full" />
+
+                <!-- Location Dots -->
+                <div
+                    class="absolute top-[42%] sm:top-[45%] md:top-[24%] lg:top-[39%] xl:top-[45%] right-[28%] sm:right-[29%] md:right-[28%] lg:right-[29%] xl:right-[29%]">
+                    <span
+                        class="block w-4 h-4 bg-[#ff0063] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#ff0063] rounded-full"></span>
+                </div>
+
+                <div
+                    class="absolute top-[31%] sm:top-[32%] md:top-[34%] lg:top-[27%] xl:top-[32%] left-[18%] sm:left-[19%] md:left-[19%] xl:left-[18%]">
+                    <span
+                        class="block w-4 h-4 bg-[#00bcd4] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#00bcd4] rounded-full"></span>
+                </div>
+                <div
+                    class="absolute top-[39%] sm:top-[40%] md:top-[40%] lg:top-[36%] xl:top-[40%] left-[19%] sm:left-[20%] md:left-[20%] xl:left-[20%]">
+                    <span
+                        class="block w-4 h-4 bg-[#18dc77] rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-[#18dc77] rounded-full"></span>
+                </div>
+
+                <!-- <div class="absolute top-[55%] left-[62%]">
+                    <span
+                        class="block w-4 h-4 bg-blue-600 rounded-full border-2 border-white shadow-md animate-ping"></span>
+                    <span class="absolute top-1 left-1 w-2 h-2 bg-blue-600 rounded-full"></span>
+                </div> -->
+            </div>
+
+            <!-- Text Content -->
+            <div class="col-span-3 lg:col-span-1">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 Montserrat">Our Global Footprint</h2>
+                <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                    We’re making our mark around the world with dedicated teams and innovation-driven offices across
+                    continents.
+                </p>
+
+                <div class="space-y-3 text-sm">
+                    <div>
+                        <h3 class="text-base font-semibold text-[#00bcd4] Montserrat">🇨🇦 Head Office</h3>
+                        <!-- <p class="text-gray-500">140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada</p> -->
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-[#ff0063] Montserrat">🇮🇳 India Office</h3>
+                        <!-- <p class="text-gray-500">A-446 Meet Nagar, Shahdara, Delhi 110094</p> -->
+                    </div>
+                    <div>
+                        <h3 class="text-base font-semibold text-[#18dc77] Montserrat">🇺🇸 USA Office</h3>
+                        <!-- <p class="text-gray-500">1234 Sunset Blvd, Los Angeles, CA 90026, USA</p> -->
+                    </div>
+                </div>
+
+                <a href="https://maps.app.goo.gl/2ikVxJpkY35dRWKbA" target="_blank">
+                    <button class="mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 transition-all shadow">
+                        Explore Offices
+                    </button>
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- world map section end -->
+
+    <!-- contact form section start-->
+    <section class="bg-[#0e0e11] text-white py-32 relative">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="assets/img/contact-bg.jpg" alt="" class="w-full h-full opacity-30 object-cover">
+        </div>
+        <div class="container mx-auto px-6 md:px-10 z-10 relative">
+            <div class="text-center mb-12">
+                <h2 class="text-2xl md:text-3xl font-[600] mb-4 Montserrat">Connect with <span
+                        class="font-[600] text-[#ff006e] Montserrat">Our Team</span></h2>
+                <p class="text-gray-400 text-sm">
+                    Have questions or need details? Fill in your info and we’ll be in touch shortly.
+                </p>
+            </div>
+            <div class="flex justify-center w-full">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px]">
+                    <!-- First Row -->
+                    <input type="text" placeholder="First Name"
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+                    <input type="text" placeholder="Last Name"
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+
+                    <!-- Second Row -->
+                    <input type="email" placeholder="Email Address"
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none md:col-span-2" />
+
+                    <!-- Third Row -->
+                    <input type="tel" placeholder="Mobile Number"
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+                    <input type="text" placeholder="Company or Brand"
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+
+                    <!-- Fourth Row -->
+                    <textarea rows="4" placeholder="Tell us about your query..."
+                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none md:col-span-2"></textarea>
+
+                    <!-- Submit Button -->
+                    <div class="md:col-span-2 text-center">
+
+                        <button type="submit"
+                            class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
+                            <span class="relative z-20">
+                                Submit
+                            </span>
+                            <span
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                        </button>
+                        <p class="text-sm text-gray-400 mt-4">
+                            By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>
+                            and
+                            <a href="#" class="text-[#ff0063] underline">privacy policy</a>.
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="text-white py-32 relative">
+        <div class="container mx-auto px-6 md:px-10 z-10 relative flex justify-center">
+            <div class="bg-[#0e0e11] relative py-16 shadow-md rounded-xl w-full sm:w-[600px] lg:w-[800px]">
+                <div class="absolute top-0 left-0 w-full h-full">
+                    <img src="assets/img/hero-bg-2.jpg" alt="" class="w-full h-full opacity-20 shadow-md rounded-xl">
+                </div>
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-[600] mb-4">Connect with Our Team</h2>
+                    <p class="text-gray-400 text-sm">
+                        Have questions or need details? Fill in your info and we’ll be in touch shortly.
+                    </p>
+                </div>
+                <div class="flex justify-center w-full">
+                    <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[700px] lg:w-[900px] px-5 md:px-10">
+                        
+                        <input type="text" placeholder="First Name"
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        <input type="text" placeholder="Last Name"
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+
+                        
+                        <input type="email" placeholder="Email Address"
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2" />
+
+                        
+                        <input type="tel" placeholder="Mobile Number"
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+                        <input type="text" placeholder="Company or Brand"
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none" />
+
+                        
+                        <textarea rows="4" placeholder="Tell us about your query..."
+                            class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2"></textarea>
+
+                        
+                        <div class="md:col-span-2 text-center">
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:opacity-90 transition-all px-8 py-3 text-[14px] text-white">
+                                Send Message
+                            </button>
+                            <p class="text-sm text-gray-400 mt-4">
+                                By clicking submit, you agree to our <a href="#"
+                                    class="text-[#ff0063] underline">terms</a>
+                                and
+                                <a href="#" class="text-[#ff0063] underline">privacy policy</a>.
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- contact form section end-->
+
+
+    <!-- Client Section Start-->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 md:px-10">
+
+            <!-- Heading -->
+            <div class="mb-10 grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-8 items-center">
+                <!-- Left Heading -->
+                <div>
+                    <h2 class="text-2xl md:text-4xl text-[#001430] font-[400] mb-0 md:mb-4 text-start Montserrat">
+                        Our <span class="font-[600] Montserrat">Clients</span>
+                    </h2>
+                </div>
+
+                <!-- Right Subheading + Paragraph -->
+                <div class="text-end">
+                    <p class="text-[#001430] text-lg md:text-2xl mt-4 mb-2 font-medium Montserrat">You May Know Of</p>
+                    <p class="text-gray-500 text-sm flex gap-2 justify-end items-center Montserrat font-[500]">
+                        Find these on <img src="assets/img/Google.png" alt="" class="w-16">
+                    </p>
+                </div>
+            </div>
+
+            <!-- Client Logos Carousel -->
+            <div class="owl-carousel owl-theme" id="clients-logo">
+
+                <!-- Client Logos -->
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11" class="object-contain">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Client Section End -->
+
+    <!-- CTA Section Start -->
+    <!-- <section
+        class="bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
+        style="background-image: url(assets/img/cta-bg.jpg);">
+        <div
+            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
+                us.</p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
+                a Free Call</a>
+        </div>
+    </section> -->
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-gradient-to-tr from-[#001633] to-[#000b26] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
+                            class="Raleway">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Raleway">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2025 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- Initialize Carousel -->
+    <script>
+        $(document).ready(function () {
+
+            $("#projects-carousel").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 3000,
+                autoplayHoverPause: true,
+                nav: true,
+                dots: true,
+                navText: [
+                    '<i class="ri-arrow-left-s-line text-xl border-[#001633] hover:bg-[#001633] hover:text-white inline-block w-10 h-10 flex items-center justify-center rounded-full border text-[#001633] transition-all duration-200"></i>',
+                    '<i class="ri-arrow-right-s-line text-xl border-[#001633] hover:bg-[#001633] hover:text-white inline-block w-10 h-10 flex items-center justify-center rounded-full border text-[#001633] transition-all duration-200"></i>'
+                ],
+                responsive: {
+                    0: { items: 1 },
+                    768: { items: 2 },
+                    1024: { items: 3 }
+                }
+            });
+
+            $("#testimonal").owlCarousel({
+                items: 1,
+                loop: true,
+                margin: 20,
+                nav: true,
+                dots: true,
+                autoplay: true,
+                autoplayTimeout: 5000,
+                navText: [
+                    '<i class="ri-arrow-left-s-line text-xl border-[#ff0063] hover:bg-[#ff0063] hover:text-white inline-block w-10 h-10 flex items-center justify-center rounded-full border text-[#ff0063] transition-all duration-200"></i>',
+                    '<i class="ri-arrow-right-s-line text-xl border-[#ff0063] hover:bg-[#ff0063] hover:text-white inline-block w-10 h-10 flex items-center justify-center rounded-full border text-[#ff0063] transition-all duration-200"></i>'
+                ],
+                responsive: {
+                    768: { items: 1 },
+                    1024: { items: 1 }
+                }
+            });
+            $("#clients-logo").owlCarousel({
+                loop: true,
+                margin: 30,
+                autoplay: true,
+                autoplayTimeout: 2000,
+                autoplayHoverPause: true,
+                dots: false,
+                nav: false,
+                rtl: true,
+                responsive: {
+                    0: {
+                        items: 2
+                    },
+                    768: {
+                        items: 4
+                    },
+                    1024: {
+                        items: 6
+                    }
+                }
+            });
+
+        });
+    </script>
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

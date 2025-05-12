@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- owl caraousel link-->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+    <title>About Us</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-28 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+
+
+            <!-- Desktop Menu -->
+            <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+
+            <!-- CTA Desktop -->
+            <button
+                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-toggle" class="lg:hidden text-white text-2xl p-2 border border-white">
+                <i class="ri-menu-line"></i>
+            </button>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Mobile Slide Menu -->
+    <div id="mobile-menu"
+        class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
+        <div class="p-6 space-y-10">
+            <div class="flex justify-between items-center">
+                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <button id="menu-close" class="text-2xl text-gray-800">
+                    <i class="ri-close-line"></i>
+                </button>
+            </div>
+            <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+            </nav>
+            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
+                Free Consultation
+            </button>
+            <button
+                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                <span class="relative z-20">
+                    Free Consultation
+                </span>
+                <span
+                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Overlay -->
+    <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
+
+    <!-- Hero Section Start -->
+    <section class="relative flex items-center justify-center py-48 bg-cover bg-center"
+        style="background-image: url('assets/img/about-us.jpg');">
+
+        <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-60"></div>
+
+        <!-- Hero Content -->
+        <div class="text-center px-6 mt-20 z-20 relative">
+            <h1 class="text-3xl md:text-7xl font-semibold text-white leading-tight Oswald mb-6">
+                About Sama Systems
+            </h1>
+
+            <p class="text-[#f4f4f4] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+                Your Growth Partner in the Digital Era — Enabling Startups & Scaling Brands through Tailored IT &
+                Marketing Solutions
+            </p>
+        </div>
+    </section>
+    <!-- Hero Section End -->
+
+    <!-- about us section start -->
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] text-white">
+        <div class="container mx-auto px-6 md:px-10 py-32">
+            <h2 class="text-3xl md:text-5xl font-[600] text-center mb-12 lg:mb-24 text-[#ff006e]">
+                Our Story
+            </h2>
+            <div class="grid lg:grid-cols-2 gap-10">
+                <div class="space-y-6">
+                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
+                        At <span class="text-[#ff006e] font-semibold">Sama Systems</span>, we are not just another IT
+                        and
+                        Marketing agency. We are a passionate team of strategists, designers, and developers on a
+                        mission to empower startups and growing brands with innovative digital solutions.
+                    </p>
+                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
+                        Since our inception, we've been driven by a simple belief: <span
+                            class="text-[#00bcd4] italic">technology should simplify lives and marketing should connect
+                            hearts</span>. With years of collective experience, we blend creativity with strategy to
+                        help your business thrive in this digital-first world.
+                    </p>
+                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
+                        Whether you're launching your first product or scaling a brand across global markets, we walk
+                        with you at every step — turning ideas into scalable, impactful experiences.
+                    </p>
+                    <div class="flex space-x-4 mt-6">
+                        <div
+                            class="bg-[#ff006e] px-3 sm:px-4 py-3 text-[11px] sm:text-sm font-semibold text-white shadow-lg">
+                            50+ Happy Clients
+                        </div>
+                        <div
+                            class="bg-[#00bcd4] px-3 sm:px-4 py-3 text-[11px] sm:text-sm font-semibold text-white shadow-lg">
+                            100+ Projects Delivered
+                        </div>
+                    </div>
+                </div>
+                <div class="relative h-fit">
+                    <img src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_52683-18822.jpg"
+                        alt="About Us Illustration"
+                        class="w-full lg-w-auto h-[400px] md:h-[500px] object-cover rounded-xl shadow-lg relative z-10">
+                    <div class="absolute -top-5 -left-5 w-20 h-20 bg-[#ff006e] blur-xl rounded-full opacity-50">
+                    </div>
+                    <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-[#00bcd4] blur-xl rounded-full opacity-50">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us section end -->
+
+    <!-- Our Mission Section -->
+    <section class="bg-white">
+        <div class="container mx-auto px-6 md:px-10 xl:px-20 pt-24 pb-10 md:py-24 relative">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Text Content -->
+                <div class="w-full">
+                    <h2 class="text-xl md:text-2xl font-[600] text-[#00bcd4] mb-4">Our Mission</h2>
+                    <p class="text-gray-700 text-sm md:text-base mb-6">
+                        To empower emerging businesses and startups with cutting-edge digital tools and personalized IT
+                        solutions, helping them transform ideas into impactful realities.
+                    </p>
+                    <ul class="space-y-4 text-gray-700 text-xs md:text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#00bcd4] text-xl"></i>
+                            Scalable and flexible digital product development.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#00bcd4] text-xl"></i>
+                            Personalized IT strategies tailored for growth.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#00bcd4] text-xl"></i>
+                            Continuous innovation for real-world impact.
+                        </li>
+                    </ul>
+                </div>
+                <!-- Image -->
+                <div class="flex justify-center w-full">
+                    <img src="assets/img/our-mission.jpg" alt="Our Mission" class="w-[250px] md:w-[300px]"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Vision Section -->
+    <section class="bg-white pb-24">
+        <div class="container mx-auto px-6 md:px-10 xl:px-20 py-24 relative">
+            <div class="grid md:grid-cols-2 gap-12 items-center flex-col-reverse md:flex-row">
+                <!-- Image -->
+                <div class="flex justify-center order-2 md:order-1">
+                    <img src="assets/img/our-vision.jpg" alt="Our Vision" class="w-[300px]" loading="lazy">
+                </div>
+                <!-- Text Content -->
+                <div class="order-1 md:order-2">
+                    <h2 class="text-xl md:text-2xl font-[600] text-[#ff006e] mb-4">Our Vision</h2>
+                    <p class="text-gray-700 text-sm md:text-base-lg mb-6">
+                        To become the go-to global IT partner for startups and brands seeking long-term digital growth,
+                        innovation, and success.
+                    </p>
+                    <ul class="space-y-4 text-gray-700 text-xs md:text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#ff006e] text-xl"></i>
+                            A global reputation for delivering tech excellence.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#ff006e] text-xl"></i>
+                            Building sustainable digital ecosystems for clients.
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="ri-checkbox-circle-fill text-[#ff006e] text-xl"></i>
+                            Shaping the future of startups through innovation.
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Founder's Story / Our Team Section -->
+    <section class="bg-gradient-to-br from-[#001633] to-[#000b26]">
+        <div
+            class="container mx-auto flex justify-center flex-col gap-12 items-center py-24 px-6 md:px-10 lg:px-32 relative">
+            <div class="absolute top-0 left-5">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="absolute bottom-0 right-10">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-52 opacity-20">
+            </div>
+
+            <!-- Left: Founder Image -->
+            <div class="relative group flex flex-col items-center">
+                <img src="assets/img/testimonal-clients/client-2.jpg" alt="Founder of Sama Systems"
+                    class="w-[250px] md:w-[300px] h-[250px] md:h-[300px] rounded-full object-cover object-top shadow-2xl transform transition duration-500" />
+                <div
+                    class="mt-6 w-fit bg-[#00bcd4]/90 text-white text-sm px-6 py-2 rounded-lg backdrop-blur-sm shadow-lg">
+                    Founder & CEO
+                </div>
+            </div>
+
+            <!-- Right: Story Content -->
+            <div>
+                <h2 class="text-2xl md:text-4xl font-[600] text-[#00bcd4] mb-6 md:text-center">The Vision Behind Sama
+                    Systems</h2>
+                <p class="text-gray-300 md:text-lg leading-relaxed md:text-center">
+                    Sama Systems was founded by a passionate technologist determined to bring innovation and scalable
+                    solutions to emerging businesses. With years of experience in product strategy, development, and
+                    digital growth, our founder envisioned a tech agency that goes beyond just code — one that
+                    understands startup challenges, nurtures ideas, and delivers transformation.
+                </p>
+                <p class="text-gray-400 text-sm md:text-base mt-6 md:text-center">
+                    Today, we’re a close-knit team of creatives, strategists, and developers working hand-in-hand to
+                    make that vision a reality.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Why We Exist Section -->
+    <section class="bg-white">
+        <div class="max-w-7xl mx-auto text-center py-24 px-6 md:px-10">
+            <!-- Heading -->
+            <h2 class="text-3xl md:text-4xl font-bold text-[#ff006e] mb-6 tracking-tight">
+                Empowering Startups, Fueling Growth
+            </h2>
+            <p class="text-lg text-gray-600 max-w-3xl mx-auto mb-12">
+                We’re not just an agency — we are your innovation partner. Sama Systems exists to turn complex tech
+                challenges into simple, scalable realities for startups and emerging brands.
+            </p>
+
+            <div class="grid md:grid-cols-3 gap-10 mt-10">
+
+                <!-- Card 1 -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-200 border-t-[5px] border-t-[#ff006e] flex items-center flex-col">
+                    <div
+                        class="text-[#ff006e] w-16 h-16 rounded-full flex items-center justify-center bg-[#ffebf4] shadow-md text-4xl mb-4">
+                        <i class="ri-rocket-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Startup Empowerment</h3>
+                    <p class="text-gray-600 text-base">Helping early-stage ventures launch strong with smart, scalable,
+                        and stunning digital solutions.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-200 border-t-[5px] border-t-[#ff006e] flex items-center flex-col">
+                    <div
+                        class="text-[#ff006e] w-16 h-16 rounded-full flex items-center justify-center bg-[#ffebf4] shadow-md text-4xl mb-4">
+                        <i class="ri-lightbulb-flash-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Simplifying Tech</h3>
+                    <p class="text-gray-600 text-base">We remove the clutter and confusion — making digital easy for
+                        businesses of all sizes.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white p-6 md:p-8 rounded-2xl shadow-md border border-gray-200 border-t-[5px] border-t-[#ff006e] flex items-center flex-col">
+                    <div
+                        class="text-[#ff006e] w-16 h-16 rounded-full flex items-center justify-center bg-[#ffebf4] shadow-md text-4xl mb-4">
+                        <i class="ri-line-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-gray-800">Growth-Focused</h3>
+                    <p class="text-gray-600 text-base">Our goal isn’t just to build — it’s to grow with you through
+                        innovation and partnership.</p>
+                </div>
+            </div>
+    </section>
+
+    <!-- Certifications / Tech Stack Section -->
+    <section class="py-24 px-6 bg-gradient-to-br from-[#0f172a] to-[#1f2937] text-white">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl md:text-4xl font-[600] text-center mb-14 tracking-tight text-[#00bcd4]">
+                Certifications & Technologies
+            </h2>
+
+            <div class="grid md:grid-cols-2 gap-10">
+                <!-- Certifications -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-md rounded-2xl py-8 px-5 sm:p-8 shadow-lg border border-white border-opacity-10">
+                    <h3
+                        class="text-lg md:text-2xl font-[600] mb-6 text-[#00bcd4] flex items-center md:flex-row flex-col gap-2">
+                        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#00bcd4]/10">
+                            <i class="ri-award-line  text-2xl"></i>
+                        </div>Recognitions & Certifications
+                    </h3>
+                    <ul class="space-y-4 text-gray-200 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="ri-shield-check-line text-[#00bcd4] text-xl"></i>
+                            <span>ISO 9001:2015 Certified IT Solutions Provider</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-google-line text-[#00bcd4] text-xl"></i>
+                            <span>Google Partner for Digital Marketing</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-rocket-line text-[#00bcd4] text-xl"></i>
+                            <span>Startup India Registered</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Tech Stack -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-md rounded-2xl py-8 px-5 sm:p-8 shadow-lg border border-white border-opacity-10">
+                    <h3
+                        class="text-lg md:text-2xl font-[600] mb-6 text-[#00bcd4] flex items-center md:flex-row flex-col gap-2">
+                        <div class="w-16 h-16 flex items-center justify-center rounded-full bg-[#00bcd4]/10">
+                            <i class="ri-code-s-slash-line text-2xl"></i>
+                        </div>Tech Stack
+                    </h3>
+                    <ul class="space-y-4 text-gray-200 text-sm">
+                        <li class="flex items-center gap-3">
+                            <i class="ri-html5-line text-[#00bcd4] text-xl"></i>
+                            <span><strong>Frontend:</strong> HTML5, Tailwind CSS, React.js</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                                class="text-[#00bcd4] w-5">
+                                <path
+                                    d="M11.174 22.5552C11.4297 22.6937 11.7051 22.7729 12.0002 22.7729C12.2952 22.7729 12.5902 22.6937 12.8262 22.5947L20.6745 18.023C21.1854 17.7261 21.5 17.172 21.5 16.5781V7.45437C21.5 6.86056 21.1854 6.30644 20.6745 6.00954L12.8262 1.43778C12.3345 1.16072 11.6657 1.16072 11.174 1.43778L3.32604 6.00954C2.81468 6.30644 2.5 6.86056 2.5 7.45437V16.5781C2.5 17.172 2.81468 17.7261 3.32604 18.023L5.3913 19.2105C6.39448 19.7052 6.74854 19.7052 7.20089 19.7052C8.67604 19.7052 9.52182 18.7948 9.52182 17.2313V8.22623C9.52182 8.08765 9.4038 7.98875 9.28578 7.98875H8.28271C8.14495 7.98875 8.04667 8.10749 8.04667 8.22623V17.2313C8.04667 17.924 7.31891 18.6167 6.15844 18.023L4.01453 16.776C3.93578 16.7365 3.89651 16.6376 3.89651 16.5584V7.43453C3.89651 7.35536 3.93578 7.25647 4.01453 7.21689L11.8625 2.66486C11.9214 2.62528 12.0198 2.62528 12.0984 2.66486L19.9466 7.21689C20.0247 7.25647 20.0648 7.33563 20.0648 7.43453V16.5584C20.0648 16.6573 20.0247 16.7365 19.9466 16.776L12.0984 21.3479C12.0394 21.3875 11.9411 21.3875 11.8625 21.3479L9.85624 20.1407C9.79723 20.1011 9.71849 20.0812 9.65948 20.1208C9.10875 20.4375 9.01047 20.477 8.47937 20.6552C8.36135 20.6948 8.16469 20.774 8.55802 20.9917L11.174 22.5552ZM10.2887 13.5698C10.2887 14.9156 10.9967 16.499 14.4393 16.499C16.9169 16.499 18.3531 15.5093 18.3531 13.7677C18.3531 12.0657 17.212 11.6104 14.7929 11.2938C12.3539 10.9772 12.0982 10.799 12.0982 10.225C12.0982 9.75008 12.3146 9.11679 14.1242 9.11679C15.7367 9.11679 16.3463 9.47302 16.5828 10.5615C16.6023 10.6605 16.701 10.7397 16.7987 10.7397H17.8411C17.9008 10.7397 17.9594 10.7001 17.9994 10.6605C18.0385 10.6011 18.058 10.5418 18.058 10.4824C17.9008 8.58241 16.6619 7.71155 14.1438 7.71155C11.9015 7.71155 10.564 8.66157 10.564 10.2646C10.564 11.9865 11.9015 12.4615 14.0454 12.6792C16.6219 12.9365 16.8192 13.3126 16.8192 13.8271C16.8192 14.7177 16.1109 15.0938 14.4588 15.0938C12.3736 15.0938 11.9212 14.5792 11.7639 13.5302C11.7639 13.4115 11.6655 13.3323 11.5475 13.3323H10.5247C10.387 13.3323 10.2887 13.4511 10.2887 13.5698Z">
+                                </path>
+                            </svg>
+                            <span><strong>Backend:</strong> Node.js, Laravel, PHP</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-smartphone-line text-[#00bcd4] text-xl"></i>
+                            <span><strong>Mobile:</strong> Flutter, React Native</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="ri-cloud-line text-[#00bcd4] text-xl"></i>
+                            <span><strong>Cloud:</strong> AWS, Firebase, DigitalOcean</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- CTA Section Start -->
+    <section
+        class="hidden bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
+        style="background-image: url(assets/img/cta-bg.jpg);">
+        <div
+            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
+        </div>
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
+                us.</p>
+            <a href="contact.html"
+                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
+                a Free Call</a>
+        </div>
+    </section>
+    <!-- CTA Section End -->
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
+                            class="Poiret_One">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Poiret_One">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
