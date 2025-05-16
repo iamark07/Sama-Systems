@@ -40,27 +40,27 @@
 <body class="overflow-x-hidden">
 
     <!-- Header Start -->
-    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+    <header id="main-header" class="w-full z-40 py-7 shadow-md transition-all duration-300 transform">
         <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
                     class="w-28 md:w-32 transition-all duration-300" loading="lazy">
             </a>
-
-
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex gap-6 font-normal text-white">
-                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
+                <a href="about.html" class="text-[#89be48] transition">About Us</a>
                 <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
 
             <!-- CTA Desktop -->
             <button
-                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
                 <span class="relative z-20">
-                    Free Consultation
+                    Get Free Consultation
                 </span>
                 <span
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
@@ -78,24 +78,23 @@
         class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
         <div class="p-6 space-y-10">
             <div class="flex justify-between items-center">
-                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <img src="assets/img/logo.png" alt="Sama Systems Logo" class="w-24">
                 <button id="menu-close" class="text-2xl text-gray-800">
                     <i class="ri-close-line"></i>
                 </button>
             </div>
             <nav class="flex flex-col gap-5 text-sm font-medium">
-                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
+                <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
+                <a href="about.html" class="text-[#89be48] transition">About Us</a>
                 <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
+                <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
-            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
-                Free Consultation
-            </button>
             <button
                 class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
                 <span class="relative z-20">
-                    Free Consultation
+                    Get Free Consultation
                 </span>
                 <span
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
@@ -114,11 +113,11 @@
 
         <!-- Hero Content -->
         <div class="text-center px-6 mt-20 z-20 relative">
-            <h1 class="text-3xl md:text-7xl font-semibold text-white leading-tight Oswald mb-6">
+            <h1 class="text-3xl md:text-7xl font-[300] text-white leading-tight Montserrat mb-6">
                 About Sama Systems
             </h1>
 
-            <p class="text-[#f4f4f4] max-w-2xl mx-auto text-base sm:text-lg mb-8">
+            <p class="text-[#f4f4f4] max-w-2xl mx-auto text-base sm:text-lg mb-8 Montserrat">
                 Your Growth Partner in the Digital Era — Enabling Startups & Scaling Brands through Tailored IT &
                 Marketing Solutions
             </p>
@@ -127,26 +126,36 @@
     <!-- Hero Section End -->
 
     <!-- about us section start -->
-    <section class="bg-gradient-to-br from-[#001633] to-[#000b26] text-white">
-        <div class="container mx-auto px-6 md:px-10 py-32">
-            <h2 class="text-3xl md:text-5xl font-[600] text-center mb-12 lg:mb-24 text-[#ff006e]">
-                Our Story
+    <section class="bg-[#f5f5f5] text-[#111827] relative overflow-hidden">
+        <div class="container mx-auto px-6 md:px-10 py-32 relative">
+            <div class="absolute -top-20 right-10">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-72 opacity-20">
+            </div>
+            <div class="absolute -bottom-10 left-10">
+                <img src="assets/img/png-object.png" loading="lazy" alt="" class="w-60 opacity-20">
+            </div>
+            <h2 class="text-3xl md:text-[44px] font-[500] text-black leading-tight mb-6 Montserrat relative z-20">
+                Our <span class="text-[#ff006e] font-[600] Montserrat">Story</span>
             </h2>
-            <div class="grid lg:grid-cols-2 gap-10">
-                <div class="space-y-6">
-                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
-                        At <span class="text-[#ff006e] font-semibold">Sama Systems</span>, we are not just another IT
+            <p class="text-gray-800 text-base md:text-xl Raleway font-[300] relative z-20">
+                Sama Systems was born out of a passion for transforming ideas into impactful digital solutions. What started as a small vision is now a growing team of creatives, developers, and marketers dedicated to empowering startups and helping brands scale. We believe in the power of strategy, design, and technology — and we’re here to guide you every step of the way.
+              </p>
+              
+            <div class="grid lg:grid-cols-2 gap-10 mt-14 relative z-20">
+                <div class="space-y-6 text-gray-700 order-2 lg:order-1">
+                    <p class="text-sm md:text-lg leading-relaxed font-[300] Raleway">
+                        At <span class="text-[#ff006e] font-[300]">Sama Systems</span>, we are not just another IT
                         and
                         Marketing agency. We are a passionate team of strategists, designers, and developers on a
                         mission to empower startups and growing brands with innovative digital solutions.
                     </p>
-                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
+                    <p class="text-sm md:text-lg leading-relaxed font-[300] Raleway">
                         Since our inception, we've been driven by a simple belief: <span
-                            class="text-[#00bcd4] italic">technology should simplify lives and marketing should connect
+                            class="text-[#00bcd4] italic font-[300]">technology should simplify lives and marketing should connect
                             hearts</span>. With years of collective experience, we blend creativity with strategy to
                         help your business thrive in this digital-first world.
                     </p>
-                    <p class="text-sm md:text-lg leading-relaxed text-gray-300">
+                    <p class="text-sm md:text-lg leading-relaxed font-[300] Raleway">
                         Whether you're launching your first product or scaling a brand across global markets, we walk
                         with you at every step — turning ideas into scalable, impactful experiences.
                     </p>
@@ -161,14 +170,14 @@
                         </div>
                     </div>
                 </div>
-                <div class="relative h-fit">
-                    <img src="https://img.freepik.com/free-vector/teamwork-concept-landing-page_52683-18822.jpg"
+                <div class="relative h-full order-1 lg:order-2">
+                    <img src="assets/img/startup.jpg"
                         alt="About Us Illustration"
-                        class="w-full lg-w-auto h-[400px] md:h-[500px] object-cover rounded-xl shadow-lg relative z-10">
-                    <div class="absolute -top-5 -left-5 w-20 h-20 bg-[#ff006e] blur-xl rounded-full opacity-50">
+                        class="w-full lg-w-auto h-[300px] md:h-[400] lg:h-full object-cover shadow-lg relative z-10">
+                    <!-- <div class="absolute -top-5 -left-5 w-20 h-20 bg-[#ff006e] blur-xl rounded-full opacity-50">
                     </div>
                     <div class="absolute -bottom-6 -right-6 w-16 h-16 bg-[#00bcd4] blur-xl rounded-full opacity-50">
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </div>

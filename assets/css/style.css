@@ -65,7 +65,7 @@
 
 /* header section */
 #main-header {
-  background-image: -webkit-linear-gradient(30deg, #fff 30%, #001633 30%);
+  background-image: -webkit-linear-gradient(30deg, #fff 26%, #001633 26%);
 }
 
 @media screen and (min-width: 340px) and (max-width: 1023px) {
@@ -74,9 +74,14 @@
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1280px) {
+@media screen and (min-width: 1024px) and (max-width: 1120px) {
   #main-header {
-    background-image: -webkit-linear-gradient(30deg, #fff 24%, #001633 24%);
+    background-image: -webkit-linear-gradient(30deg, #fff 22%, #001633 22%);
+  }
+}
+@media screen and (min-width: 1120px) and (max-width: 1280px) {
+  #main-header {
+    background-image: -webkit-linear-gradient(30deg, #fff 25%, #001633 25%);
   }
 }
 
