@@ -26,6 +26,7 @@
 
     <!-- custom css link -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
 
     <!-- owl caraousel link-->
     <link rel="stylesheet"
@@ -40,27 +41,27 @@
 <body class="overflow-x-hidden">
 
     <!-- Header Start -->
-    <header id="main-header" class="w-full z-40 py-6 shadow-md transition-all duration-300 transform">
+    <header id="main-header" class="w-full z-40 py-7 shadow-md transition-all duration-300 transform">
         <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
             <!-- Logo -->
             <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
                     class="w-28 md:w-32 transition-all duration-300" loading="lazy">
             </a>
-
-
             <!-- Desktop Menu -->
             <nav class="hidden lg:flex gap-6 font-normal text-white">
+                <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
                 <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
-                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+                <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
+                <a href="contact.html" class="text-[#89be48] transition">Contact Us</a>
             </nav>
 
             <!-- CTA Desktop -->
             <button
-                class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
                 <span class="relative z-20">
-                    Free Consultation
+                    Get Free Consultation
                 </span>
                 <span
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
@@ -78,24 +79,23 @@
         class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
         <div class="p-6 space-y-10">
             <div class="flex justify-between items-center">
-                <img src="assets/img/logo.png" alt="Sama Logo" class="w-24">
+                <img src="assets/img/logo.png" alt="Sama Systems Logo" class="w-24">
                 <button id="menu-close" class="text-2xl text-gray-800">
                     <i class="ri-close-line"></i>
                 </button>
             </div>
             <nav class="flex flex-col gap-5 text-sm font-medium">
+                <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
                 <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
-                <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
+                <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
+                <a href="contact.html" class="text-[#89be48] transition">Contact Us</a>
             </nav>
-            <button class="bg-[#ff0063] text-white px-6 py-3 shadow hover:opacity-90 transition text-sm">
-                Free Consultation
-            </button>
             <button
                 class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
                 <span class="relative z-20">
-                    Free Consultation
+                    Get Free Consultation
                 </span>
                 <span
                     class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
@@ -106,14 +106,10 @@
     <!-- Overlay -->
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
-
-
-
     <!-- world map section start -->
     <div class="bg-[#f8f8f8]">
         <div class="container mx-auto grid md:grid-cols-3 gap-12 pb-24 pt-40 px-6 md:px-10">
 
-            <!-- World Map Image - Bigger & Focus -->
             <div class="relative col-span-3 lg:col-span-2">
                 <img src="assets/img/map.jpg" loading="lazy" alt="World Map" class="w-full" />
 
@@ -147,8 +143,8 @@
 
             <!-- Text Content -->
             <div class="col-span-3 lg:col-span-1">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Our Global Footprint</h2>
-                <p class="text-gray-600 text-sm leading-relaxed mb-5">
+                <h2 class="text-2xl md:text-3xl font-[700] text-gray-900 mb-3 Montserrat">Our Global Footprint</h2>
+                <p class="text-gray-600 text-sm md:text-base xl:text-lg leading-relaxed mb-5 Montserrat font-[400]">
                     We’re making our mark around the world with dedicated teams and innovation-driven offices
                     across
                     continents.
@@ -156,21 +152,22 @@
 
                 <div class="space-y-3 text-sm">
                     <div>
-                        <h3 class="text-base font-semibold text-[#00bcd4]">🇨🇦 Head Office</h3>
+                        <h3 class="text-base font-semibold text-[#00bcd4] Montserrat">CA Head Office</h3>
                         <!-- <p class="text-gray-500">140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada</p> -->
                     </div>
                     <div>
-                        <h3 class="text-base font-semibold text-[#ff0063]">🇮🇳 India Office</h3>
+                        <h3 class="text-base font-semibold text-[#ff0063] Montserrat">IN India Office</h3>
                         <!-- <p class="text-gray-500">A-446 Meet Nagar, Shahdara, Delhi 110094</p> -->
                     </div>
                     <div>
-                        <h3 class="text-base font-semibold text-[#18dc77]">🇺🇸 USA Office</h3>
+                        <h3 class="text-base font-semibold text-[#18dc77] Montserrat">US USA Office</h3>
                         <!-- <p class="text-gray-500">1234 Sunset Blvd, Los Angeles, CA 90026, USA</p> -->
                     </div>
                 </div>
 
                 <a href="https://maps.app.goo.gl/2ikVxJpkY35dRWKbA" target="_blank">
-                    <button class="mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 transition-all shadow">
+                    <button
+                        class="Montserrat font-[400] mt-6 bg-[#001633] text-white text-sm px-5 py-2.5 transition-all shadow">
                         Explore Offices
                     </button>
                 </a>
@@ -180,39 +177,63 @@
     </div>
     <!-- world map section end -->
 
+
     <!-- contact form section start-->
-    <div class="bg-[#0e0e11] text-white py-32 relative">
+    <div class="bg-[#0e0e11] text-white py-32 relative overflow-hidden">
         <div class="absolute top-0 left-0 w-full h-full">
-            <img src="assets/img/hero-bg-2.jpg" alt="" class="w-full h-full opacity-20">
+            <img src="assets/img/contact-bg.jpg" alt="" class="w-full h-full object-cover">
         </div>
-        <div class="container mx-auto px-6 md:px-10 z-10 relative">
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10">
+        </div>
+        <div class="container mx-auto px-6 md:px-10 z-20 relative">
             <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-[600] mb-4">Get In Touch</h2>
-                <p class="text-gray-400 text-sm">
+                <h2 class="text-2xl md:text-3xl font-[600] mb-4 Montserrat">Get In <span
+                        class="text-[#ff006e] font-[600]">Touch</span></h2>
+                <p class="text-gray-400 text-sm md:text-base Montserrat font-[400]">
                     We’d love to hear from you. Fill out the form and let’s start a conversation.
                 </p>
             </div>
             <div class="flex justify-center w-full">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px]">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px] backdrop-blur-2xl">
                     <!-- First Row -->
-                    <input type="text" placeholder="Full Name"
-                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-1" />
+
+                    <div class="relative contact_page_form_input">
+                        <input type="text" id="full_name_input" required
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="full_name_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Full
+                            Name</label>
+                    </div>
 
 
                     <!-- Second Row -->
-                    <input type="email" placeholder="Email Address"
-                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-1" />
+                    <div class="relative contact_page_form_input">
+                        <input type="email" id="email_input" required
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="email_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Email
+                            Address</label>
+                    </div>
 
 
                     <!-- third Row -->
-                    <textarea rows="4" placeholder="Tell us about your query..."
-                        class="bg-gray-900 border border-gray-700 text-white px-4 py-3 text-sm focus:ring-2 focus:ring-[#00bcd4] focus:outline-none md:col-span-2"></textarea>
+                    <div class="relative contact_page_form_input md:col-span-2">
+                        <textarea rows="4" required id="massage_input"
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
+                        <label for="massage_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Tell
+                            us about your query...</label>
+                    </div>
 
                     <!-- Submit Button -->
                     <div class="md:col-span-2 text-center">
                         <button type="submit"
-                            class="bg-[#ff0063] hover:opacity-90 transition-all px-8 py-3 text-[14px] text-white">
-                            Send Message
+                            class="group relative bg-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
+                            <span class="relative z-20">
+                                Submit
+                            </span>
+                            <span
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-full transition-all duration-300 z-10 bg-white"></span>
                         </button>
                         <p class="text-sm text-gray-400 mt-4">
                             By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>
@@ -268,7 +289,7 @@
 
 
     <!-- Footer Start -->
-    <footer class="relative bg-[#001633] text-gray-400 pt-16 pb-8 overflow-hidden">
+    <footer class="relative bg-gradient-to-tr from-[#001633] to-[#000b26] text-gray-400 pt-16 pb-8 overflow-hidden">
         <div class="container mx-auto">
             <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
 
@@ -277,14 +298,14 @@
                     <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html"
                             class="Poiret_One">Sama
                             Systems</a></h2>
-                    <p class="leading-relaxed text-gray-200 Poiret_One">A Customised Software Development <br />Company
+                    <p class="leading-relaxed text-gray-200 Raleway">A Customised Software Development <br />Company
                         &
                         Digital Agency</p>
                 </div>
 
                 <!-- Quick Links -->
                 <div>
-                    <h3 class="text-xl font-[500] text-white mb-6">Quick Links</h3>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Quick Links</h3>
                     <ul class="space-y-3 text-sm text-gray-300">
                         <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
                         <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
@@ -296,7 +317,7 @@
 
                 <!-- Services -->
                 <div>
-                    <h3 class="text-xl font-[500] text-white mb-6">Popular Services</h3>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Popular Services</h3>
                     <ul class="space-y-3 text-sm text-gray-300">
                         <li class="hover:text-white hover:underline">ERP Software Development</li>
                         <li class="hover:text-white hover:underline">Accounting Software</li>
@@ -308,7 +329,7 @@
 
                 <!-- Contact & Newsletter -->
                 <div>
-                    <h3 class="text-xl font-[500] text-white mb-6">Contact</h3>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Contact</h3>
                     <ul class="space-y-3 text-sm">
                         <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
                         <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
@@ -359,7 +380,7 @@
             <!-- Bottom Bar -->
             <div
                 class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
-                Copyrights © 2024 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                Copyrights © 2025 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
                 reserved.
             </div>
         </div>
@@ -370,6 +391,41 @@
 
     <!-- custom script link -->
     <script src="assets/js/custom.js"></script>
+    <script>
+        // contact form label animation features 
+        document.addEventListener("DOMContentLoaded", function () {
+
+            const fields = document.querySelectorAll(
+                ".contact_page_form_input input, .contact_page_form_input textarea"
+            );
+
+            fields.forEach((field) => {
+                const label = field.parentElement.querySelector("label");
+
+                field.addEventListener("focus", () => {
+                    label.classList.add("contact_form_floating_label");
+                });
+
+                field.addEventListener("blur", () => {
+                    if (field.value.trim() === "") {
+                        label.classList.remove("contact_form_floating_label");
+                    }
+                });
+
+                field.addEventListener("input", () => {
+                    if (field.value.trim() !== "") {
+                        label.classList.add("contact_form_floating_label");
+                    } else if (document.activeElement !== field) {
+                        label.classList.remove("contact_form_floating_label");
+                    }
+                });
+
+                if (field.value.trim() !== "") {
+                    label.classList.add("contact_form_floating_label");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

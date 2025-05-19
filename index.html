@@ -1552,7 +1552,8 @@
                         </h2>
                         <p class="text-white text-sm md:text-base leading-relaxed text-center md:text-left">
                             KBros Developers has the experience with the most diverse clients, networks, and
-                            organizations. Since day one, we’ve stayed on the cutting-edge of technology—offering advanced solutions
+                            organizations. Since day one, we’ve stayed on the cutting-edge of technology—offering
+                            advanced solutions
                             tailored for growth.
                         </p>
                     </div>
@@ -1896,37 +1897,65 @@
                 </p>
             </div>
             <div class="flex justify-center w-full">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px] backdrop-blur-2xl">
+                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px] backdrop-blur-2xl"
+                    id="landing_page_form">
                     <!-- First Row -->
-                    <input type="text" placeholder="First Name"
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
-                    <input type="text" placeholder="Last Name"
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+                    <div class="relative landing_page_form_input">
+                        <input type="text" id="first_name_input" required
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="first_name_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">First
+                            Name</label>
+                    </div>
+                    <div class="relative landing_page_form_input">
+                        <input type="text" required id="last_name_input"
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="last_name_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Last Name</label>
+                    </div>
 
                     <!-- Second Row -->
-                    <input type="email" placeholder="Email Address"
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none md:col-span-2" />
+                    <div class="relative landing_page_form_input md:col-span-2">
+                        <input type="email" id="email_input" required
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="email_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Email Address</label>
+                    </div>
 
                     <!-- Third Row -->
-                    <input type="tel" placeholder="Mobile Number"
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
-                    <input type="text" placeholder="Company or Brand"
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none" />
+                    <div class="relative landing_page_form_input">
+                        <input type="tel" required id="mobile_input"
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="mobile_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Mobile Number</label>
+                    </div>
+
+                    <div class="relative landing_page_form_input">
+                        <input type="text" required id="com_or_brand_input"
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <label for="com_or_brand_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Company or Brand</label>
+                    </div>
 
                     <!-- Fourth Row -->
-                    <textarea rows="4" placeholder="Tell us about your query..."
-                        class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none md:col-span-2"></textarea>
+                    <div class="relative landing_page_form_input md:col-span-2">
+                        <textarea rows="4" required id="massage_input"
+                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
+                        <label for="massage_input"
+                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Tell us about your query...</label>
+                    </div>
+
 
                     <!-- Submit Button -->
                     <div class="md:col-span-2 text-center">
 
                         <button type="submit"
-                            class="hidden group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
-                            <span class="relative z-20">
+                            class="group relative bg-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
+                            <span class="relative z-20 Montserrat font-[400]">
                                 Submit
                             </span>
                             <span
-                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-full transition-all duration-300 z-10 bg-white"></span>
                         </button>
                         <p class="text-sm text-gray-400 mt-4">
                             By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>

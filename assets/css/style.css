@@ -155,3 +155,30 @@
     background-position: center 0px;
   }
 }
+
+
+/* landing page form  */
+
+.landing_page_form_input label{
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+/* .landing_page_form_input input:focus + label,
+.landing_page_form_input input:valid + label{
+  font-size: 10px;
+  top: -5px
+}
+.landing_page_form_input textarea:focus + label,
+.landing_page_form_input textarea:valid + label{
+  font-size: 10px;
+  top: -5px
+} */
+
+
+
+.floating-label {
+  font-size: 10px !important;
+  top: -5px !important;
+}

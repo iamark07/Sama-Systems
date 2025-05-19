@@ -35,3 +35,36 @@ const observer = new IntersectionObserver(
 );
 
 observer.observe(document.querySelector("#stats"));
+
+// landing page form label animation features 
+document.addEventListener("DOMContentLoaded", function () {
+  const fields = document.querySelectorAll(
+    ".landing_page_form_input input, .landing_page_form_input textarea"
+  );
+
+  fields.forEach((field) => {
+    const label = field.parentElement.querySelector("label");
+
+    field.addEventListener("focus", () => {
+      label.classList.add("floating-label");
+    });
+
+    field.addEventListener("blur", () => {
+      if (field.value.trim() === "") {
+        label.classList.remove("floating-label");
+      }
+    });
+
+    field.addEventListener("input", () => {
+      if (field.value.trim() !== "") {
+        label.classList.add("floating-label");
+      } else if (document.activeElement !== field) {
+        label.classList.remove("floating-label");
+      }
+    });
+
+    if (field.value.trim() !== "") {
+      label.classList.add("floating-label");
+    }
+  });
+});
