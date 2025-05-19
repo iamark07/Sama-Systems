@@ -9,15 +9,15 @@ window.addEventListener("scroll", function () {
   const isDesktop = window.innerWidth >= 768;
 
   if (isScrolled1) {
-    header.classList.remove("py-5");
-    header.classList.add("py-7");
+    header.classList.remove("md:py-5");
+    header.classList.add("md:py-7");
     header.classList.remove("-top-[110px]");
     header.classList.add("-top-[0px]");
     header.classList.remove("sticky", "-top-[0px]");
   } else{
     if (isDesktop) {
       logo.classList.add("md:w-32");
-      logo.classList.remove("w-28");
+      logo.classList.remove("md:w-28");
     }
   }
 
@@ -26,11 +26,11 @@ window.addEventListener("scroll", function () {
   }
 
   if (isScrolled200) {
-    header.classList.remove("py-7", "-top-[110px]");
-    header.classList.add("py-5", "-top-[0px]", "shadow-md");
+    header.classList.remove("md:py-7", "-top-[110px]");
+    header.classList.add("md:py-5", "-top-[0px]", "shadow-md");
     if (isDesktop) {
       logo.classList.remove("md:w-32");
-      logo.classList.add("w-28");
+      logo.classList.add("md:w-28");
     }
   }
 
