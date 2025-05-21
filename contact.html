@@ -22,7 +22,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Favicon -->
-    <link rel="icon" href="assets/img/fevicon.webp" type="image/png" />
+    <link rel="icon" href="assets/img/fevicon.jpg" type="image/png" />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -198,8 +198,8 @@
                     <!-- First Row -->
 
                     <div class="relative contact_page_form_input">
-                        <input type="text" id="full_name_input" required
-                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <input type="text" id="full_name_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
                         <label for="full_name_input"
                             class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Full
                             Name</label>
@@ -208,8 +208,8 @@
 
                     <!-- Second Row -->
                     <div class="relative contact_page_form_input">
-                        <input type="email" id="email_input" required
-                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                        <input type="email" id="email_input"
+                            class="lowercase bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
                         <label for="email_input"
                             class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Email
                             Address</label>
@@ -218,8 +218,8 @@
 
                     <!-- third Row -->
                     <div class="relative contact_page_form_input md:col-span-2">
-                        <textarea rows="4" required id="massage_input"
-                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
+                        <textarea rows="4" id="massage_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
                         <label for="massage_input"
                             class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Tell
                             us about your query...</label>
@@ -392,40 +392,132 @@
     <!-- custom script link -->
     <script src="assets/js/custom.js"></script>
     <script>
-        // contact form label animation features 
         document.addEventListener("DOMContentLoaded", function () {
-
-            const fields = document.querySelectorAll(
-                ".contact_page_form_input input, .contact_page_form_input textarea"
-            );
-
-            fields.forEach((field) => {
-                const label = field.parentElement.querySelector("label");
-
-                field.addEventListener("focus", () => {
-                    label.classList.add("contact_form_floating_label");
-                });
-
-                field.addEventListener("blur", () => {
-                    if (field.value.trim() === "") {
-                        label.classList.remove("contact_form_floating_label");
-                    }
-                });
-
-                field.addEventListener("input", () => {
-                    if (field.value.trim() !== "") {
-                        label.classList.add("contact_form_floating_label");
-                    } else if (document.activeElement !== field) {
-                        label.classList.remove("contact_form_floating_label");
-                    }
-                });
-
-                if (field.value.trim() !== "") {
-                    label.classList.add("contact_form_floating_label");
-                }
+          const contactFields = document.querySelectorAll(
+            ".contact_page_form_input input, .contact_page_form_input textarea"
+          );
+      
+          contactFields.forEach((field) => {
+            const label = field.parentElement.querySelector("label");
+      
+            // Label animation
+            field.addEventListener("focus", () => {
+              label.classList.add("contact_form_floating_label");
             });
+      
+            field.addEventListener("blur", () => {
+              if (field.value.trim() === "") {
+                label.classList.remove("contact_form_floating_label");
+              }
+            });
+      
+            field.addEventListener("input", () => {
+              if (field.value.trim() !== "") {
+                label.classList.add("contact_form_floating_label");
+              } else if (document.activeElement !== field) {
+                label.classList.remove("contact_form_floating_label");
+              }
+      
+              // Input restrictions
+              if (field.id === "full_name_input") {
+                field.value = field.value.replace(/[^A-Za-z\s]/g, ""); // Only letters & spaces
+              }
+            });
+      
+            // Initial check (if value pre-filled)
+            if (field.value.trim() !== "") {
+              label.classList.add("contact_form_floating_label");
+            }
+          });
+      
+          // Form validation on submit
+          const contactForm = document.querySelector(".contact_page_form_input").closest("form");
+      
+          contactForm.addEventListener("submit", function (e) {
+            e.preventDefault(); // Stop default form submit
+            let isValidContactForm = true;
+      
+            // Clear old errors
+            document.querySelectorAll(".contact-error-message").forEach(el => el.remove());
+            contactFields.forEach(field => {
+              field.classList.remove("border-red-500");
+              const label = field.parentElement.querySelector("label");
+              label.classList.remove("text-red-500");
+            });
+      
+            const contactValidations = [
+              {
+                id: "full_name_input",
+                min: 3,
+                max: 60,
+                regex: /^[A-Za-z\s]+$/,
+                message: "Full Name must be 3–60 letters only."
+              },
+              {
+                id: "email_input",
+                min: 3,
+                max: 60,
+                regex: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Enter a valid Email Address."
+              },
+              {
+                id: "massage_input",
+                min: 10,
+                max: 1000,
+                regex: /^.{10,}$/,
+                message: "Message must be at least 10 characters."
+              }
+            ];
+      
+            contactValidations.forEach(({ id, min, max, regex, message }) => {
+              const input = document.getElementById(id);
+              const value = input.value.trim();
+              const label = input.parentElement.querySelector("label");
+      
+              if (value === "") {
+                isValidContactForm = false;
+                input.classList.add("border-red-500");
+                label.classList.add("text-red-500");
+      
+                const error = document.createElement("p");
+                error.className = "text-red-500 text-sm mt-1 contact-error-message";
+                error.textContent = "This field is required.";
+                input.parentElement.appendChild(error);
+              } else if (value.length < min || value.length > max || !regex.test(value)) {
+                isValidContactForm = false;
+                input.classList.add("border-red-500");
+                label.classList.add("text-red-500");
+      
+                const error = document.createElement("p");
+                error.className = "text-red-500 text-sm mt-1 contact-error-message";
+                error.textContent = message;
+                input.parentElement.appendChild(error);
+              }
+            });
+      
+            if (isValidContactForm) {
+              // Show success message
+              const successMsg = document.createElement("p");
+              successMsg.className = "text-green-400 text-sm py-5 font-medium contact-success-msg";
+              successMsg.textContent = "Form submitted successfully!";
+              contactForm.querySelector("button").insertAdjacentElement("beforebegin", successMsg);
+      
+              contactForm.reset();
+      
+              // Reset labels
+              contactFields.forEach((field) => {
+                const label = field.parentElement.querySelector("label");
+                label.classList.remove("contact_form_floating_label");
+              });
+      
+              setTimeout(() => {
+                successMsg.remove();
+              }, 3000);
+            }
+          });
         });
-    </script>
+      </script>
+      
 </body>
 
 </html>
