@@ -1,0 +1,10 @@
+.consultation_page_form_input label {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+.consultation-floating-label {
+  font-size: 10px !important;
+  top: -5px !important;
+}

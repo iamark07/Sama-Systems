@@ -50,21 +50,44 @@
             <nav class="hidden lg:flex gap-6 font-normal text-white">
                 <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
-                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <div class="relative group">
+                    <button class="hover:text-[#89be48] transition flex items-center gap-1">
+                        Services
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="absolute left-0 top-full z-50 pt-2 hidden group-hover:block">
+                        <div class="bg-white shadow-lg py-2 min-w-[200px]">
+                            <ul>
+                                <li class="text-gray-800 hover:text-[#89be48] transition-all duration-300">
+                                    <a href="services.html"
+                                        class="block px-4 py-2 border-l-[3px] border-transparent hover:border-[#89be48] text-xs">Our
+                                        Services</a>
+                                </li>
+                                <li class="text-gray-800 hover:text-[#89be48] transition-all duration-300">
+                                    <a href="it-marketing.html"
+                                        class="block px-4 py-2 border-l-[3px] border-transparent hover:border-[#89be48] text-xs">IT
+                                        Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <a href="portfolio.html" class="text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
 
             <!-- CTA Desktop -->
-            <button
-                class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
-                <span class="relative z-20">
-                    Get Free Consultation
-                </span>
-                <span
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
-            </button>
+            <a href="free-consultation.html">
+                <button
+                    class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                    <span class="relative z-20">
+                        Get Free Consultation
+                    </span>
+                    <span
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                </button>
+            </a>
 
             <!-- Mobile Menu Button -->
             <button id="menu-toggle" class="lg:hidden text-white text-3xl p-2">
@@ -83,22 +106,34 @@
                     <i class="ri-close-line"></i>
                 </button>
             </div>
-            <nav class="flex flex-col gap-5 text-sm font-medium">
+            <nav class="flex flex-col gap-5 text-sm font-medium Raleway">
                 <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
-                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <div class="relative">
+                    <button id="mobile-services-toggle" class="flex items-center gap-2">
+                        Services
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div id="mobile-services-dropdown"
+                        class="hidden pl-4 mt-2 space-y-3 bg-[#fff0f5] border-[#ffabca] rounded-md py-3 text-black">
+                        <a href="services.html" class="block text-xs hover:text-[#89be48]">Our Services</a>
+                        <a href="it-marketing.html" class="block text-xs hover:text-[#89be48]">IT Marketing</a>
+                    </div>
+                </div>
                 <a href="portfolio.html" class="text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
-            <button
-                class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
-                <span class="relative z-20">
-                    Get Free Consultation
-                </span>
-                <span
-                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
-            </button>
+            <a href="free-consultation.html">
+                <button
+                    class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                    <span class="relative z-20">
+                        Get Free Consultation
+                    </span>
+                    <span
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                </button>
+            </a>
         </div>
     </div>
 
@@ -106,15 +141,18 @@
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
     <!-- Hero Section Start -->
-    <section class="relative flex items-center py-32 sm:py-40 bg-cover bg-center"
+    <section class="relative flex items-center py-32 sm:py-40 bg-cover bg-center  -z-10"
         style="background-image: url('assets/img/portfolio.jpg'); background-position: right 100px;">
 
         <div class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"></div>
 
         <!-- Hero Content -->
-        <div class="px-6 md:px-10 z-20 relative">
+        <div class="container mx-auto px-6 md:px-10 z-20 relative">
+            <h3 class="uppercase text-sm md:text-lg font-[500] tracking-[2px] text-[#ff006e] mb-5 Raleway">
+                Portfolio</h3>
             <h1
-                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[300] text-white leading-tight Montserrat mb-3">Real Projects. Real Impact</h1>
+                class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-[300] text-white leading-tight Montserrat mb-3">
+                Real Projects. Real Impact</h1>
 
             <p class="text-[#f4f4f4] text-base sm:text-lg font-[300] Montserrat">
                 From <span class="text-[#00bcd4] font-[300] Montserrat">custom software</span> to <span
@@ -123,7 +161,7 @@
                 challenges into sleek.
             </p>
         </div>
-        <div class="absolute bottom-5 left-10 flex gap-3 text-white"><a href="index.html"
+        <div class="absolute bottom-5 left-10 flex gap-3 text-white hidden"><a href="index.html"
                 class="Montserrat font-[400]">Home</a>/<span
                 class="text-[#ff006e] Montserrat font-[400]">Portfolio</span></div>
 
@@ -153,10 +191,24 @@
             </p>
 
             <!-- Case Study 1 -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-28 relative z-30">
-                <div class="rounded-xl overflow-hidden shadow-lg">
+            <div class="grid lg:grid-cols-2 gap-12 mb-28 relative z-30 group">
+                <div class="rounded-xl overflow-hidden shadow-lg relative">
                     <img src="assets/img/projects-img/restuarent-website.png" alt="Inventory Project"
                         class="w-full h-full object-cover">
+                    <!-- Dark Overlay -->
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 rounded-xl h-full z-10">
+                    </div>
+
+                    <!-- Button with Text + Icon -->
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                        <a href="contact.html"
+                            class="flex items-center gap-2 bg-white px-5 py-3 rounded-full shadow-xl transform transition-all duration-300">
+                            <i class="ri-links-line text-[#ff006e] text-xl"></i>
+                            <span class="text-[#ff006e] font-medium">See Details</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="space-y-5 text-sm md:text-base">
                     <h3 class="text-xl md:text-2xl font-[600] text-[#ff006e] Montserrat">Inventory Management System for
@@ -225,7 +277,7 @@
             </div>
 
             <!-- Case Study 2 -->
-            <div class="grid lg:grid-cols-2 gap-12 mb-28 relative z-30">
+            <div class="grid lg:grid-cols-2 gap-12 mb-28 relative z-30 group">
                 <div class="flex flex-col order-2 lg:order-1 space-y-5 text-sm md:text-base">
                     <h3 class="text-xl md:text-2xl font-[600] Montserrat text-[#00bcd4]">E-commerce Mobile App for
                         Fashion Brand
@@ -286,17 +338,45 @@
                         </div>
                     </div>
                 </div>
-                <div class="flex flex-col order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg">
+                <div class="flex flex-col order-1 lg:order-2 rounded-xl overflow-hidden shadow-lg relative">
                     <img src="assets/img/projects-img/restuarent-website.png" alt="Fashion App"
                         class="w-full h-full object-cover">
+                    <!-- Dark Overlay -->
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 rounded-xl h-full z-10">
+                    </div>
+
+                    <!-- Button with Text + Icon -->
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                        <a href="contact.html"
+                            class="flex items-center gap-2 bg-white px-5 py-3 rounded-full shadow-xl transform transition-all duration-300">
+                            <i class="ri-links-line text-[#ff006e] text-xl"></i>
+                            <span class="text-[#ff006e] font-medium">See Details</span>
+                        </a>
+                    </div>
                 </div>
             </div>
 
             <!-- Case Study 3 -->
-            <div class="grid lg:grid-cols-2 gap-12 relative z-30">
-                <div class="rounded-xl overflow-hidden shadow-lg">
+            <div class="grid lg:grid-cols-2 gap-12 relative z-30 group">
+                <div class="rounded-xl overflow-hidden shadow-lg relative">
                     <img src="assets/img/projects-img/restuarent-website.png" alt="ERP System"
                         class="w-full h-full object-cover">
+                    <!-- Dark Overlay -->
+                    <div
+                        class="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-all duration-300 rounded-xl h-full z-10">
+                    </div>
+
+                    <!-- Button with Text + Icon -->
+                    <div
+                        class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-20">
+                        <a href="contact.html"
+                            class="flex items-center gap-2 bg-white px-5 py-3 rounded-full shadow-xl transform transition-all duration-300">
+                            <i class="ri-links-line text-[#ff006e] text-xl"></i>
+                            <span class="text-[#ff006e] font-medium">See Details</span>
+                        </a>
+                    </div>
                 </div>
                 <div class="space-y-5 text-sm md:text-base">
                     <h3 class="text-xl md:text-2xl font-[600] Montserrat text-[#001633]">Custom ERP for Manufacturing
@@ -348,7 +428,7 @@
                     </p>
 
                     <div class="bg-white p-5 rounded-lg shadow-md border-l-[5px] border-[#001633]">
-                        <p class="italic Montserrat font-[600]">"Their ERP changed our workflow completely. Everything’s
+                        <p class="italic Montserrat font-[600]">"Their ERP changed our workflow completely. Everything's
                             faster, smarter, and
                             tailored to our exact needs."</p>
                         <div class="mt-4 flex items-center">
@@ -372,7 +452,7 @@
                 Our Work Speaks for Itself
             </h2>
             <p class="max-w-3xl mx-auto text-gray-600 text-lg">
-                From web development to custom software — here’s a glimpse of how we solve real business problems with
+                From web development to custom software — here's a glimpse of how we solve real business problems with
                 technology.
             </p>
         </div>
@@ -437,7 +517,7 @@
             class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
         </div>
         <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
+            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let's build your next big thing.</h2>
             <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
                 us.</p>
             <a href="contact.html"
@@ -472,7 +552,8 @@
                         <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
                         <li><a href="blogs" class="hover:text-white hover:underline">Blogs</a></li>
                         <li><a href="terms.html" class="hover:text-white hover:underline">Terms</a></li>
-                        <li><a href="privacypolicy.html" class="hover:text-white hover:underline">Privacy & Policy</a></li>
+                        <li><a href="privacypolicy.html" class="hover:text-white hover:underline">Privacy & Policy</a>
+                        </li>
                     </ul>
                 </div>
 

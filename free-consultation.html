@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Remix Icon CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Playwrite+IN:wght@100..400&family=Poiret+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- scroll animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="assets/img/fevicon.jpg" type="image/png" />
+
+    <!-- custom css link -->
+    <link rel="stylesheet" href="assets/css/consultation.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Free Consultation</title>
+
+</head>
+
+<body class="overflow-x-hidden">
+
+    <!-- Header Start -->
+    <header id="main-header" class="w-full z-40 md:py-7 py-3 shadow-md transition-all duration-300 transform">
+        <div class="container mx-auto px-6 md:px-10 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="index.html"><img id="site-logo" src="assets/img/logo.png" alt="Sama Systems Logo"
+                    class="w-24 md:w-32 transition-all duration-300" loading="lazy">
+            </a>
+
+            <!-- CTA Desktop -->
+            <a href="index.html"><button
+                    class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                    <span class="relative z-20">
+                        Go Back
+                    </span>
+                    <span
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-[44px] transition-all duration-300 z-10 bg-white"></span>
+                </button>
+            </a>
+        </div>
+    </header>
+    <!-- Header End -->
+
+    <section class="container mx-auto px-6 md:px-10 py-52">
+        <div class="grid md:grid-cols-2 gap-10 items-start">
+
+            <!-- Left Section: Logos + Testimonial -->
+            <div>
+                <h2 class="text-3xl font-semibold mb-6">Let us know about your project</h2>
+                <p class="mb-6 text-sm text-gray-500">Trusted By</p>
+                <div class="grid grid-cols-3 gap-4 mb-10">
+                    <img src="/images/logo1.png" alt="Dyson" class="h-10">
+                    <img src="/images/logo2.png" alt="GreenPal" class="h-10">
+                    <img src="/images/logo3.png" alt="Bosch" class="h-10">
+                    <img src="/images/logo4.png" alt="Vynkon" class="h-10">
+                    <img src="/images/logo5.png" alt="OpenSea" class="h-10">
+                    <img src="/images/logo6.png" alt="Indio" class="h-10">
+                </div>
+
+                <div class="bg-white p-6 rounded-xl shadow-md relative">
+                    <div class="absolute -top-3 left-4 bg-white px-2 text-red-600 text-2xl">“</div>
+                    <p class="text-gray-700 italic">We are always very delighted with the quality Sama Systems provides.
+                        They help us think of possible solutions, have a proactive attitude and are people that stand by
+                        their word.</p>
+                    <div class="mt-4 flex items-center space-x-3">
+                        <img src="/images/testimonial-user.jpg" alt="Daniel Fischer" class="w-10 h-10 rounded-full">
+                        <div>
+                            <p class="font-semibold">Daniel Fischer</p>
+                            <p class="text-sm text-gray-500">CEO, Nebkos.ro</p>
+                        </div>
+                    </div>
+                </div>
+
+                <p class="mt-6 text-sm text-gray-400">All projects secured by NDA and IP is yours<br>100% Secure. Zero
+                    Spam</p>
+            </div>
+
+            <!-- Right Section: Form -->
+            <div class="bg-gradient-to-br from-[#001633] to-[#000b26] p-10 shadow-lg">
+                <form id="consultation_page_form"
+                    class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full">
+
+                    <!-- Full Name -->
+                    <div class="relative consultation_page_form_input">
+                        <input type="text" id="first_name_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full" />
+                        <label for="first_name_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Full Name</label>
+                    </div>
+
+                    <!-- Email -->
+                    <div class="relative consultation_page_form_input">
+                        <input type="email" id="email_input"
+                            class="lowercase bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full" />
+                        <label for="email_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Email Address</label>
+                    </div>
+
+                    <!-- Mobile Number -->
+                    <div class="relative consultation_page_form_input md:col-span-2">
+                        <input type="tel" id="mobile_input"
+                            class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full" />
+                        <label for="mobile_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Mobile Number</label>
+                    </div>
+
+                    <!-- Project Type -->
+                    <div class="relative consultation_page_form_input">
+                        <select id="project_type"
+                            class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full appearance-none">
+                            <option value="" disabled selected>Select Project Type</option>
+                            <option value="website" class="bg-gray-800">Website</option>
+                            <option value="mobile_app" class="bg-gray-800">Mobile App</option>
+                            <option value="consultation" class="bg-gray-800">Consultation</option>
+                            <option value="other" class="bg-gray-800">Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Designation -->
+                    <div class="relative consultation_page_form_input">
+                        <input type="text" id="designation_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full" />
+                        <label for="designation_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Designation</label>
+                    </div>
+
+                    <!-- Budget -->
+                    <div class="relative consultation_page_form_input">
+                        <select id="budget_select"
+                            class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full appearance-none">
+                            <option value="" disabled selected>Select Budget</option>
+                            <option value="<1000" class="bg-gray-800">&lt; $1000</option>
+                            <option value="1000-5000" class="bg-gray-800">$1000 - $5000</option>
+                            <option value="5000-10000" class="bg-gray-800">$5000 - $10,000</option>
+                            <option value=">10000" class="bg-gray-800">&gt; $10,000</option>
+                        </select>
+                    </div>
+
+                    <!-- Starting Timeline -->
+                    <div class="relative consultation_page_form_input">
+                        <select id="timeline_select"
+                            class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full appearance-none">
+                            <option value="" disabled selected>How Soon?</option>
+                            <option value="immediately" class="bg-gray-800">Immediately</option>
+                            <option value="within_week" class="bg-gray-800">Within a week</option>
+                            <option value="in_month" class="bg-gray-800">In a month</option>
+                            <option value="not_sure" class="bg-gray-800">Not sure</option>
+                        </select>
+                    </div>
+
+                    <!-- Requirement Type -->
+                    <div class="relative consultation_page_form_input md:col-span-2">
+                        <select id="requirement_type"
+                            class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full appearance-none">
+                            <option value="" disabled selected>Your Requirement</option>
+                            <option value="immediate" class="bg-gray-800">Immediate</option>
+                            <option value="long_term" class="bg-gray-800">Long term</option>
+                        </select>
+                    </div>
+
+                    <!-- Company / Brand -->
+                    <div class="relative consultation_page_form_input md:col-span-2">
+                        <input type="text" id="com_or_brand_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full" />
+                        <label for="com_or_brand_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Company or Brand</label>
+                    </div>
+
+                    <!-- Brief / Message -->
+                    <div class="relative consultation_page_form_input md:col-span-2">
+                        <textarea rows="4" id="message_input"
+                            class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none font-[400] w-full"></textarea>
+                        <label for="message_input"
+                            class="transition-all duration-200 text-sm text-white h-fit w-fit">Tell us about your
+                            query...</label>
+                    </div>
+
+                    <!-- Submit -->
+                    <div class="md:col-span-2 text-center">
+                        <button type="submit"
+                            class="group relative bg-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
+                            <span class="relative z-20 font-[400]">Submit</span>
+                            <span
+                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[0px] group-hover:h-full transition-all duration-300 z-10 bg-white"></span>
+                        </button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Start -->
+    <footer class="relative bg-gradient-to-tr from-[#001633] to-[#000b26] text-gray-400 pt-16 pb-8 overflow-hidden">
+        <div class="container mx-auto">
+            <div class=" px-6 md:px-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 relative z-10">
+
+                <!-- Company Info -->
+                <div>
+                    <h2 class="text-4xl sm:text-3xl font-bold text-white mb-4"><a href="index.html" class="Raleway">Sama
+                            Systems</a></h2>
+                    <p class="leading-relaxed text-gray-200 Raleway">A Customised Software Development <br />Company
+                        &
+                        Digital Agency</p>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Quick Links</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li><a href="services.html" class="hover:text-white hover:underline">Services</a></li>
+                        <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
+                        <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
+                        <li><a href="blogs" class="hover:text-white hover:underline">Blogs</a></li>
+                        <li><a href="terms.html" class="hover:text-white hover:underline">Terms</a></li>
+                        <li><a href="privacypolicy.html" class="hover:text-white hover:underline">Privacy & Policy</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Popular Services</h3>
+                    <ul class="space-y-3 text-sm text-gray-300">
+                        <li class="hover:text-white hover:underline">ERP Software Development</li>
+                        <li class="hover:text-white hover:underline">Accounting Software</li>
+                        <li class="hover:text-white hover:underline">Website Development</li>
+                        <li class="hover:text-white hover:underline">Digital Marketing</li>
+                        <li class="hover:text-white hover:underline">Android/iOS Applications</li>
+                    </ul>
+                </div>
+
+                <!-- Contact & Newsletter -->
+                <div>
+                    <h3 class="text-xl font-[500] text-white mb-6 Montserrat">Contact</h3>
+                    <ul class="space-y-3 text-sm">
+                        <li><a href="tel:+15877190883" class="text-gray-300 hover:text-white">+1 (587) 719-0883</a></li>
+                        <li><a href="tel:+918802609662" class="text-gray-300 hover:text-white">+91-8802609662</a></li>
+                        <li><a href="mailto:connect@samasystems.ca"
+                                class="text-gray-300 hover:text-white">connect@samasystems.ca</a></li>
+                        <li><a href="https://maps.google.com/?q=140 Kinniburgh Drive, Chestermere AB T1X0T8, Canada"
+                                target="_blank" class="text-gray-300 hover:text-white">Head Office: Chestermere, AB,
+                                Canada</a></li>
+                        <li><a href="https://maps.google.com/?q=A-446 Meet Nagar, Shahdara, Delhi 110094"
+                                target="_blank" class="text-gray-300 hover:text-white">India Office: Delhi, 110094</a>
+                        </li>
+                    </ul>
+
+                    <!-- Social Icons -->
+                    <div class="flex gap-4 mt-6">
+                        <a href="https://www.facebook.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-facebook-fill"></i>
+                        </a>
+                        <a href="https://www.instagram.com/samasystems.ca/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://x.com/KbrosTechno" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-twitter-x-line"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/samasystems/" target="_blank"
+                            class="border border-gray-300 rounded-full min-w-10 min-h-10 flex justify-center items-center text-gray-300 hover:bg-white hover:text-[#0A0E23] transition-all duration-300">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                    </div>
+
+                    <!-- Newsletter Signup -->
+                    <form class="mt-6 hidden">
+                        <label for="email" class="block text-sm font-medium text-gray-200 mb-2">Subscribe to our
+                            newsletter</label>
+                        <div class="flex items-center">
+                            <input type="email" id="email" placeholder="Enter your email"
+                                class="w-full px-4 py-2 rounded-l bg-white text-[#001633] focus:outline-none" />
+                            <button type="submit"
+                                class="bg-[#ff0063] hover:bg-[#e6005a] text-white font-semibold px-4 py-2 rounded-r">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+            <!-- Bottom Bar -->
+            <div
+                class="relative z-10 border-t border-gray-500 mt-12 pt-6 text-center text-xs text-gray-300 px-6 md:px-10">
+                Copyrights © 2025 <span class="font-semibold text-white">Sairam Solutions LTD</span>. All rights
+                reserved.
+            </div>
+        </div>
+
+    </footer>
+    <!-- Footer End -->
+
+
+    <!-- custom script link -->
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
