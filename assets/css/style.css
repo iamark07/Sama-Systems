@@ -15,9 +15,9 @@
   background: #000;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: rgb(179, 0, 0);
-} 
+}
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -97,6 +97,20 @@
   }
 }
 
+.typing-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
 @media screen and (min-width: 340px) and (max-width: 400px) {
   .consultation_line {
     display: none;
@@ -156,10 +170,9 @@
   }
 }
 
-
 /* landing page form  */
 
-.landing_page_form_input label{
+.landing_page_form_input label {
   position: absolute;
   top: 13px;
   left: 0px;
@@ -176,9 +189,95 @@
   top: -5px
 } */
 
-
-
 .floating-label {
   font-size: 10px !important;
   top: -5px !important;
+}
+
+.carousel_slider_1 {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.item img {
+  min-width: 200px;
+  padding: 0 30px;
+}
+
+/* Wrapper for overflow */
+#carousel_slider_1-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+#carousel_slider_1-container:hover .carousel_slider_1 {
+  animation-play-state: paused;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+.carousel_slider_2 {
+  display: flex;
+  width: max-content;
+  animation: scroll2 30s linear infinite;
+}
+
+.item img {
+  min-width: 200px;
+  padding: 0 30px;
+}
+
+/* Wrapper for overflow */
+#carousel_slider_2-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+#carousel_slider_2-container:hover .carousel_slider_2 {
+  animation-play-state: paused;
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+
+.error-message{
+  text-shadow: 0 2px 10px rgb(255, 0, 0);
+}
+
+
+@keyframes scaleIn {
+  0% { transform: scale(0.7); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+@keyframes drawCheck {
+  0% { stroke-dashoffset: 24; }
+  100% { stroke-dashoffset: 0; }
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.4s ease-out forwards;
+}
+
+.animate-draw path {
+  stroke-dasharray: 24;
+  stroke-dashoffset: 24;
+  animation: drawCheck 0.5s ease forwards;
+  animation-delay: 0.2s;
 }

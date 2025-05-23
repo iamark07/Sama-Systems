@@ -42,6 +42,8 @@ const menuToggle = document.getElementById("menu-toggle");
 const mobileMenu = document.getElementById("mobile-menu");
 const menuClose = document.getElementById("menu-close");
 const overlay = document.getElementById("overlay");
+const mobileServicesToggle = document.getElementById("mobile-services-toggle");
+const mobileServicesDropdown = document.getElementById("mobile-services-dropdown");
 
 menuToggle.addEventListener("click", () => {
   mobileMenu.classList.remove("-translate-x-full");
@@ -51,9 +53,15 @@ menuToggle.addEventListener("click", () => {
 menuClose.addEventListener("click", () => {
   mobileMenu.classList.add("-translate-x-full");
   overlay.classList.add("hidden");
+  mobileServicesDropdown.classList.add("hidden");
 });
 
 overlay.addEventListener("click", () => {
   mobileMenu.classList.add("-translate-x-full");
   overlay.classList.add("hidden");
+  mobileServicesDropdown.classList.add("hidden");
+});
+
+mobileServicesToggle.addEventListener("click", () => {
+  mobileServicesDropdown.classList.toggle("hidden");
 });

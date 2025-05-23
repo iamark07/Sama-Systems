@@ -27,7 +27,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
     <!-- Favicon -->
-     <link rel="icon" href="assets/img/fevicon.jpg" type="image/png" />
+    <link rel="icon" href="assets/img/fevicon.jpg" type="image/png" />
 
     <!-- custom css link -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -52,7 +52,24 @@
             <nav class="hidden lg:flex gap-6 font-normal text-white">
                 <a href="index.html" class="text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
-                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <div class="relative group">
+                    <button class="hover:text-[#89be48] transition flex items-center gap-1">
+                        Services
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div class="absolute left-0 top-full z-50 pt-2 hidden group-hover:block">
+                        <div class="bg-white shadow-lg py-2 min-w-[200px]">
+                            <ul>
+                                <li class="text-gray-800 hover:text-[#89be48] transition-all duration-300">
+                                    <a href="services.html" class="block px-4 py-2 border-l-[3px] border-transparent hover:border-[#89be48] text-xs">Our Services</a>
+                                </li>
+                                <li class="text-gray-800 hover:text-[#89be48] transition-all duration-300">
+                                    <a href="it-marketing.html" class="block px-4 py-2 border-l-[3px] border-transparent hover:border-[#89be48] text-xs">IT Marketing</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
@@ -75,6 +92,8 @@
         </div>
     </header>
     <!-- Header End -->
+
+
     <!-- Mobile Slide Menu -->
     <div id="mobile-menu"
         class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
@@ -85,10 +104,19 @@
                     <i class="ri-close-line"></i>
                 </button>
             </div>
-            <nav class="flex flex-col gap-5 text-sm font-medium">
+            <nav class="flex flex-col gap-5 text-sm font-medium Raleway">
                 <a href="index.html" class="text-[#89be48] transition">Home</a>
                 <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
-                <a href="services.html" class="hover:text-[#89be48] transition">Services</a>
+                <div class="relative">
+                    <button id="mobile-services-toggle" class="flex items-center gap-2">
+                        Services
+                        <i class="ri-arrow-down-s-line"></i>
+                    </button>
+                    <div id="mobile-services-dropdown" class="hidden pl-4 mt-2 space-y-3 bg-[#fff0f5] border-[#ffabca] rounded-md py-3 text-black">
+                        <a href="services.html" class="block text-xs hover:text-[#89be48]">Our Services</a>
+                        <a href="it-marketing.html" class="block text-xs hover:text-[#89be48]">IT Marketing</a>
+                    </div>
+                </div>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
@@ -108,7 +136,7 @@
     <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden z-40"></div>
 
     <!-- Hero Section Start -->
-    <section class="relative flex items-center justify-center py-52 w-full bg-cover"
+    <section class="relative flex items-center justify-center py-52 w-full bg-cover -z-10"
         style="background-image: url(assets/img/bg-1.png);">
 
         <!-- <div class="w-full h-full absolute top-0 z-10">
@@ -119,8 +147,9 @@
 
         <!-- Hero Content -->
         <div class="text-center px-6 z-30">
-            <h1 class="text-3xl md:text-6xl font-[300] text-white leading-tight Raleway mb-6">
-                Converting Ideas into Reality<br class="hidden md:block">
+            <h1 class="mb-6 text-white leading-tight text-3xl md:text-6xl">
+                <span id="typing-text" class="font-[300] Raleway"></span><span
+                    class="typing-cursor font-[300] Raleway">|</span>
             </h1>
 
             <p class="text-[#d6d6d6] max-w-2xl mx-auto text-base sm:text-lg mb-8">
@@ -206,7 +235,7 @@
 
                 <div
                     class="w-full   bg-[#ff0063] text-white p-6 rounded-xl shadow-md text-center text-base sm:text-xl font-semibold tracking-wide italic">
-                    “We believe in building not just websites — but meaningful digital journeys.”
+                    "We believe in building not just websites — but meaningful digital journeys."
                 </div>
 
 
@@ -256,67 +285,6 @@
         </div>
     </section>
     <!-- Company Intro Section End -->
-
-    <!-- Your Journey section start -->
-    <!-- <section class="bg-gradient-to-tr from-[#001633] to-[#000b26] py-52 text-gray-200">
-        <div class="container mx-auto px-6 md:px-10">
-            
-            <h2 class="text-2xl sm:text-4xl font-extrabold text-center text-[#00bcd4] mb-32 leading-tight Montserrat">
-                Your Journey Begins<br class="sm:hidden"> Without the Guesswork
-            </h2>
-
-            
-            <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-12 text-sm leading-relaxed">
-               
-                <div class="border-l-4 border-[#ff0063] pl-6">
-                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063] Montserrat">No Complex Steps</h3>
-                    <p>
-                        We’ve eliminated unnecessary friction. From the moment you show interest to your first real use,
-                        every step is guided, simple, and quick.
-                    </p>
-                    <p class="mt-4">
-                        Forget steep learning curves—this is modern onboarding the way it should be: seamless,
-                        intuitive, and tailored to your pace.
-                    </p>
-                </div>
-
-                
-                <div class="border-l-4 border-[#00bcd4] pl-6">
-                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#00bcd4] Montserrat">Built Around You</h3>
-                    <p>
-                        We understand that no two users are the same. That’s why our flow adapts—helping you find
-                        exactly what you need, when you need it.
-                    </p>
-                    <p class="mt-4">
-                        From setup to action, we guide you with clarity and support so you're never stuck or left
-                        wondering what’s next.
-                    </p>
-                </div>
-
-                
-                <div class="border-l-4 border-[#ff0063] pl-6">
-                    <h3 class="text-lg md:text-2xl font-semibold mb-3 text-[#ff0063] Montserrat">Ready to Go in Minutes
-                    </h3>
-                    <p>
-                        No long forms. No delays. In just a few steps, you're in—engaged and empowered to start
-                        building, managing, or exploring.
-                    </p>
-                    <p class="mt-4">
-                        Whether you're here for growth, tools, or innovation—your experience begins on the right foot,
-                        every single time.
-                    </p>
-                </div>
-            </div>
-
-            
-            <div class="mt-20 text-center italic text-gray-200">
-                “We’ve designed the start of your journey to be so clear, you’ll wonder why others still make it
-                complicated.”
-            </div>
-        </div>
-    </section> -->
-    <!-- Your Journey section end -->
-
 
     <!-- Introduction Section Start -->
     <section class="relative bg-[#f5f5f5] text-gray-800 overflow-hidden pb-24">
@@ -692,7 +660,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold text-[#001633] mb-1">UI/UX Design</h3>
-                        <p class="text-gray-600 text-sm">Human-centered design that’s both intuitive and visually
+                        <p class="text-gray-600 text-sm">Human-centered design that's both intuitive and visually
                             compelling.</p>
                     </div>
                 </div>
@@ -747,7 +715,7 @@
         </div>
     </section> -->
 
-    <!-- Offerings Section Start-->
+    <!-- Our Services section start-->
     <section class="relative h-fit bg-gradient-to-br from-[#001633] to-[#000b26] overflow-hidden">
         <div class="container mx-auto px-6 md:px-10 py-40 relative">
             <!-- Background Circles -->
@@ -789,7 +757,7 @@
 
                 <!-- Web & App Development -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">Top</span>
 
@@ -812,7 +780,7 @@
 
                 <!-- ERP & Custom Software -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">Recommended</span>
                     <div class="flex flex-col items-center space-y-2">
@@ -834,7 +802,7 @@
 
                 <!-- DevOps & Hosting -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">Reliable</span>
                     <div class="flex flex-col items-center space-y-2">
@@ -857,7 +825,7 @@
 
                 <!-- SEO & Digital Marketing -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">Trending</span>
                     <div class="flex flex-col items-center space-y-2">
@@ -882,7 +850,7 @@
 
                 <!-- IT Consulting -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">Expert
                         Advice</span>
@@ -904,7 +872,7 @@
 
                 <!-- Cloud & DevOps -->
                 <div
-                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:-translate-y-4 relative rounded-2xl">
+                    class="group bg-white border-t-[5px] border-[#ff006e] text-gray-900 shadow-md py-8 px-5 transition-all duration-500 hover:scale-[1.02] relative">
                     <span
                         class="absolute top-4 right-4 bg-[#ff006e] text-white text-[10px] font-semibold px-3 py-1 rounded-full">New</span>
                     <div class="flex flex-col items-center space-y-2">
@@ -936,7 +904,7 @@
             </div>
         </div>
     </section>
-    <!-- Offering Section End -->
+    <!-- Our Services section End -->
 
     <!-- technology we use section start -->
     <section class="w-full py-24 text-white relative">
@@ -1416,13 +1384,13 @@
 
                 <!-- Reusable Card -->
                 <div
-                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#ff006e]/40 shadow-md group">
+                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-md group">
                     <div class="flex gap-3 items-center">
                         <div
                             class="w-14 h-14 rounded-full bg-[#ff006e]/10 flex items-center justify-center shadow-md group-hover:bg-[#ff006e]/20 transition">
                             <i class="ri-code-s-slash-line text-[#ff006e] text-xl"></i>
                         </div>
-                        <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
+                        <h3 class="min-w-[70px] md:min-w-[85px] xl:min-w-[115px] count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
                             data-target="120" data-suffix="+" style="text-shadow: 0 2px 6px rgba(255, 0, 110, 0.3);">0
                         </h3>
                     </div>
@@ -1430,13 +1398,13 @@
                 </div>
 
                 <div
-                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#ff006e]/40 shadow-md group">
+                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-md group">
                     <div class="flex gap-3 items-center">
                         <div
                             class="w-14 h-14 rounded-full bg-[#ff006e]/10 flex items-center justify-center shadow-md group-hover:bg-[#ff006e]/20 transition">
                             <i class="ri-earth-line text-[#ff006e] text-xl"></i>
                         </div>
-                        <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
+                        <h3 class="min-w-[70px] md:min-w-[85px] xl:min-w-[115px] count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
                             data-target="10" data-suffix="+" style="text-shadow: 0 2px 6px rgba(255, 0, 110, 0.3);">0
                         </h3>
                     </div>
@@ -1444,13 +1412,13 @@
                 </div>
 
                 <div
-                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#ff006e]/40 shadow-md group">
+                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-md group">
                     <div class="flex gap-3 items-center">
                         <div
                             class="w-14 h-14 rounded-full bg-[#ff006e]/10 flex items-center justify-center shadow-md group-hover:bg-[#ff006e]/20 transition">
                             <i class="ri-stack-line text-[#ff006e] text-xl"></i>
                         </div>
-                        <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
+                        <h3 class="min-w-[70px] md:min-w-[85px] xl:min-w-[115px] count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
                             data-target="25" data-suffix="+" style="text-shadow: 0 2px 6px rgba(255, 0, 110, 0.3);">0
                         </h3>
                     </div>
@@ -1458,13 +1426,13 @@
                 </div>
 
                 <div
-                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:ring-2 hover:ring-[#ff006e]/40 shadow-md group">
+                    class="flex flex-col justify-center items-center bg-white/10 backdrop-blur-md p-10 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-md group">
                     <div class="flex gap-3 items-center">
                         <div
                             class="w-14 h-14 rounded-full bg-[#ff006e]/10 flex items-center justify-center shadow-md group-hover:bg-[#ff006e]/20 transition">
                             <i class="ri-user-heart-line text-[#ff006e] text-xl"></i>
                         </div>
-                        <h3 class="count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
+                        <h3 class="min-w-[70px] md:min-w-[85px] xl:min-w-[115px] count text-3xl md:text-4xl xl:text-5xl font-[500] text-white group-hover:text-[#ff006e]"
                             data-target="95" data-suffix="%" style="text-shadow: 0 2px 6px rgba(255, 0, 110, 0.3);">0
                         </h3>
                     </div>
@@ -1537,8 +1505,12 @@
 
     <!-- Why Choose Us Section start -->
     <section
-        class="relative lg:pt-24 lg:pb-40 pt-24 pb-[300px] bg-gradient-to-br from-[#001633] to-[#000b26] overflow-hidden">
-        <div class="container mx-auto px-6 md:px-10 relative z-10">
+        class="relative lg:pt-24 lg:pb-40 pt-24 pb-[300px] bg-gradient-to-tr from-[#001633] to-[#000b26] overflow-hidden">
+        <div class="absolute top-0 left-0 w-full h-full">
+            <img src="assets/img/our_misson_bg.png" alt="Why Choose Us" class="w-full h-full object-cover">
+            <div class="absolute top-0 left-0 w-full h-full bg-black opacity-70 z-10"></div>
+        </div>
+        <div class="container mx-auto px-6 md:px-10 relative z-20">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
                 <!-- Text + Features -->
@@ -1549,7 +1521,7 @@
                         </h2>
                         <p class="text-white text-sm md:text-base leading-relaxed text-center md:text-left">
                             KBros Developers has the experience with the most diverse clients, networks, and
-                            organizations. Since day one, we’ve stayed on the cutting-edge of technology—offering
+                            organizations. Since day one, we've stayed on the cutting-edge of technology—offering
                             advanced solutions
                             tailored for growth.
                         </p>
@@ -1760,10 +1732,10 @@
                             <i class="ri-star-half-fill"></i>
                         </div>
                         <p class="text-gray-700 leading-relaxed mb-4 mt-3">
-                            “Collaborating with your design team completely elevated our product interface. I was amazed
+                            "Collaborating with your design team completely elevated our product interface. I was amazed
                             at how seamlessly creativity and usability blended together. The design process was not only
                             efficient, but it also brought clarity to our user journeys that we hadn't seen before.
-                            Every interaction, every screen felt purposeful and user-centric!”
+                            Every interaction, every screen felt purposeful and user-centric!"
                         </p>
 
                         <p class="text-sm font-semibold text-[#ff0063] Montserrat">Sophia Zhang — UX Strategist</p>
@@ -1793,10 +1765,10 @@
                             <i class="ri-star-fill"></i>
                         </div>
                         <p class="text-gray-700 leading-relaxed mb-4 mt-3">
-                            “Your development team brought in exceptional clarity and performance improvements to our
+                            "Your development team brought in exceptional clarity and performance improvements to our
                             internal dashboard. From code quality to deployment speed, every phase of the project was
                             handled with precision. The turnaround time was fast, the collaboration seamless, and the
-                            output production-ready from day one!”
+                            output production-ready from day one!"
                         </p>
 
                         <p class="text-sm font-semibold text-[#ff0063] Montserrat">Daniel Reed — Software Engineering
@@ -1848,7 +1820,7 @@
             <div class="col-span-3 lg:col-span-1">
                 <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-3 Montserrat">Our Global Footprint</h2>
                 <p class="text-gray-600 text-sm leading-relaxed mb-5">
-                    We’re making our mark around the world with dedicated teams and innovation-driven offices across
+                    We're making our mark around the world with dedicated teams and innovation-driven offices across
                     continents.
                 </p>
 
@@ -1878,96 +1850,126 @@
     </section>
     <!-- world map section end -->
 
-    <!-- contact form section start-->
+    <!-- CONTACT FORM SECTION -->
     <section class="bg-[#0e0e11] text-white py-32 relative overflow-hidden">
+        <!-- Background Image -->
         <div class="absolute top-0 left-0 w-full h-full">
             <img src="assets/img/contact-bg.jpg" alt="" class="w-full h-full object-cover">
         </div>
-        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10">
-        </div>
+        <!-- Overlay -->
+        <div class="absolute top-0 left-0 w-full h-full bg-black opacity-30 z-10"></div>
+
         <div class="container mx-auto px-6 md:px-10 z-20 relative">
-            <div class="text-center mb-12">
-                <h2 class="text-2xl md:text-3xl font-[600] mb-4 Montserrat">Connect with <span
-                        class="font-[600] text-[#ff006e] Montserrat">Our Team</span></h2>
-                <p class="text-gray-400 text-sm">
-                    Have questions or need details? Fill in your info and we’ll be in touch shortly.
-                </p>
+            <div id="hide_form">
+                <div class="text-center mb-12">
+                    <h2 class="text-2xl md:text-3xl font-[600] mb-4 Montserrat">
+                        Connect with <span class="text-[#ff006e]">Our Team</span>
+                    </h2>
+                    <p class="text-gray-400 text-sm">Have questions or need details? Fill in your info and we'll be in touch
+                        shortly.</p>
+                </div>
+
+                <div class="flex justify-center w-full">
+                    <form id="landing_page_form"
+                        class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px] backdrop-blur-2xl">
+                        <!-- Full Name -->
+                        <div class="relative landing_page_form_input">
+                            <input type="text" id="first_name_input"
+                                class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                            <label for="first_name_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Full Name</label>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="relative landing_page_form_input">
+                            <input type="email" id="email_input"
+                                class="lowercase bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                            <label for="email_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Email Address</label>
+                        </div>
+
+                        <!-- Mobile Number -->
+                        <div class="relative landing_page_form_input md:col-span-2">
+                            <input type="tel" id="mobile_input"
+                                class="bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                            <label for="mobile_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Mobile Number</label>
+                        </div>
+
+                        <!-- Designation -->
+                        <div class="relative landing_page_form_input">
+                            <input type="text" id="designation_input"
+                                class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                            <label for="designation_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Designation</label>
+                        </div>
+
+                        <!-- Services -->
+                        <div class="relative landing_page_form_input">
+                            <select id="services_select"
+                                class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group appearance-none">
+                                <option value="" disabled selected class="bg-gray-800">Select Services</option>
+                                <option value="web_development" class="bg-gray-800">Web Development</option>
+                                <option value="mobile_app" class="bg-gray-800">Mobile App Development</option>
+                                <option value="ui_ux" class="bg-gray-800">UI/UX Design</option>
+                                <option value="digital_marketing" class="bg-gray-800">Digital Marketing</option>
+                                <option value="consultation" class="bg-gray-800">IT Consultation</option>
+                            </select>
+                        </div>
+
+                        <!-- Company / Brand -->
+                        <div class="relative landing_page_form_input md:col-span-2">
+                            <input type="text" id="com_or_brand_input"
+                                class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
+                            <label for="com_or_brand_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Company or Brand</label>
+                        </div>
+
+                        <!-- Message -->
+                        <div class="relative landing_page_form_input md:col-span-2">
+                            <textarea rows="4" id="massage_input"
+                                class="capitalize bg-transparent border-b border-gray-100 text-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
+                            <label for="massage_input"
+                                class="transition-all duration-200 text-sm text-white h-fit w-fit">Tell us about your
+                                query...</label>
+                        </div>
+
+                        <!-- Submit -->
+                        <div class="md:col-span-2 text-center">
+                            <button type="submit"
+                                class="group relative bg-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
+                                <span class="relative z-20 Montserrat font-[400]">Submit</span>
+                                <span
+                                    class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-[0px] group-hover:h-full transition-all duration-300 z-10 bg-white"></span>
+                            </button>
+                            <p class="text-sm text-gray-400 mt-4">
+                                By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>
+                                and <a href="#" class="text-[#ff0063] underline">privacy policy</a>.
+                            </p>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="flex justify-center w-full">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full sm:w-[500px] md:w-[600px] backdrop-blur-2xl"
-                    id="landing_page_form">
-                    <!-- First Row -->
-                    <div class="relative landing_page_form_input">
-                        <input type="text" id="first_name_input"
-                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
-                        <label for="first_name_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">First
-                            Name</label>
+            <!-- Success Animation Box -->
+            <div id="successAnimation"
+                class="w-full h-full my-40 flex items-center justify-center relative z-20 hidden">
+                <div class="flex flex-col items-center bg-white px-8 py-6 shadow-lg animate-scaleIn">
+                    <!-- Tick Icon -->
+                    <div class="bg-[#ffdbeb] p-4 rounded-full mb-4">
+                        <svg class="w-12 h-12 text-[#ff006e] animate-draw" fill="none" stroke="currentColor"
+                            stroke-width="3" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
+                        </svg>
                     </div>
-                    <div class="relative landing_page_form_input">
-                        <input type="text" id="last_name_input"
-                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
-                        <label for="last_name_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Last
-                            Name</label>
-                    </div>
-
-                    <!-- Second Row -->
-                    <div class="relative landing_page_form_input md:col-span-2">
-                        <input type="email" id="email_input"
-                            class="lowercase bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
-                        <label for="email_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Email
-                            Address</label>
-                    </div>
-
-                    <!-- Third Row -->
-                    <div class="relative landing_page_form_input">
-                        <input type="tel" id="mobile_input"
-                            class="bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
-                        <label for="mobile_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Mobile
-                            Number</label>
-                    </div>
-
-                    <div class="relative landing_page_form_input">
-                        <input type="text" id="com_or_brand_input"
-                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group" />
-                        <label for="com_or_brand_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Company
-                            or Brand</label>
-                    </div>
-
-                    <!-- Fourth Row -->
-                    <div class="relative landing_page_form_input md:col-span-2">
-                        <textarea rows="4" id="massage_input"
-                            class="capitalize bg-transparent border-b border-gray-100 text-white placeholder-white pr-4 py-3 text-sm focus:outline-none Montserrat font-[400] w-full group"></textarea>
-                        <label for="massage_input"
-                            class="transition-all duration-200 bg-transparent Montserrat font-[400] text-sm text-white h-fit w-fit">Tell
-                            us about your query...</label>
-                    </div>
-
-
-                    <!-- Submit Button -->
-                    <div class="md:col-span-2 text-center">
-
-                        <button type="submit"
-                            class="group relative bg-[#ff006e] text-white hover:text-[#ff006e] px-10 py-3 text-sm md:text-base hover:opacity-90 transition duration-300">
-                            <span class="relative z-20 Montserrat font-[400]">
-                                Submit
-                            </span>
-                            <span
-                                class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 inline-block w-full h-[0px] group-hover:h-full transition-all duration-300 z-10 bg-white"></span>
-                        </button>
-                        <p class="text-sm text-gray-400 mt-4">
-                            By clicking submit, you agree to our <a href="#" class="text-[#ff0063] underline">terms</a>
-                            and
-                            <a href="#" class="text-[#ff0063] underline">privacy policy</a>.
-                        </p>
-                    </div>
-                </form>
+                    <!-- Message -->
+                    <p class="text-[#ff006e] font-[600] Montserrat">Form submitted successfully!</p>
+                </div>
             </div>
+            
         </div>
+
+        </div>
+
     </section>
 
     <!-- <section class="text-white py-32 relative">
@@ -1979,7 +1981,7 @@
                 <div class="text-center mb-12">
                     <h2 class="text-2xl md:text-3xl font-[600] mb-4">Connect with Our Team</h2>
                     <p class="text-gray-400 text-sm">
-                        Have questions or need details? Fill in your info and we’ll be in touch shortly.
+                        Have questions or need details? Fill in your info and we'll be in touch shortly.
                     </p>
                 </div>
                 <div class="flex justify-center w-full">
@@ -2024,9 +2026,8 @@
     </section> -->
     <!-- contact form section end-->
 
-
     <!-- Client Section Start-->
-    <section class="py-20 bg-white hidden">
+    <section class="py-20 bg-white">
         <div class="container mx-auto px-6 md:px-10">
 
             <!-- Heading -->
@@ -2047,10 +2048,69 @@
                 </div>
             </div>
 
+            <div class="carousel_slider_1 mt-20" id="carousel_slider_1">
+                <div class="item"><img src="assets/img/brand-logo/infops.png" alt="Client Logo 1"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/invic.png" alt="Client Logo 2" class="object-contain">
+                </div>
+                <div class="item"><img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10"
+                        class="object-contain"></div>
+                <div class="item"><img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11"
+                        class="object-contain"></div>
+            </div>
+            <div class="carousel_slider_2" id="carousel_slider_2">
+                <div class="item">
+                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10" class="object-contain">
+                </div>
+                <div class="item">
+                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11" class="object-contain">
+                </div>
+            </div>
             <!-- Client Logos Carousel -->
-            <div class="owl-carousel owl-theme" id="clients-logo">
+            <!-- <div class="owl-carousel owl-theme" id="clients-logo-1">
 
-                <!-- Client Logos -->
+                
                 <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
                     <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1" class="object-contain">
                 </div>
@@ -2096,12 +2156,60 @@
                 </div>
 
             </div>
+            <div class="owl-carousel owl-theme" id="clients-logo-2">
+
+                
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/infops.png" alt="Client Logo 1" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-4 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/invic.png" alt="Client Logo 2" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/iskcon-calgary.png" alt="Client Logo 3" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/japa-yagna.png" alt="Client Logo 4" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/kennar-groups.png" alt="Client Logo 5" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/maa-durga.png" alt="Client Logo 6" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/pragya.png" alt="Client Logo 7" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/sg-power.png" alt="Client Logo 8" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/shree-ji.png" alt="Client Logo 9" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/system-agency.png" alt="Client Logo 10" class="object-contain">
+                </div>
+
+                <div class="flex items-center justify-center p-6 rounded-md transition-transform duration-300">
+                    <img src="assets/img/brand-logo/unicorp.png" alt="Client Logo 11" class="object-contain">
+                </div>
+
+            </div> -->
         </div>
     </section>
     <!-- Client Section End -->
 
     <!-- Client Section Start-->
-    <section class="py-20 bg-white">
+    <section class="py-20 bg-white hidden">
         <div class="container mx-auto px-6 md:px-10">
 
             <!-- Heading -->
@@ -2177,26 +2285,6 @@
     </section>
     <!-- Client Section End -->
 
-
-    <!-- CTA Section Start -->
-    <!-- <section
-        class="bottom-cta-btn relative bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] text-white py-24 md:py-32 text-center w-full bg-cover"
-        style="background-image: url(assets/img/cta-bg.jpg);">
-        <div
-            class="overlay bg-gradient-to-tr from-[#ff0063] to-[#ff3c8f] opacity-85 absolute top-0 left-0 w-full h-full z-10">
-        </div>
-        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
-            <h2 class="text-2xl md:text-4xl font-extrabold mb-4">Let’s build your next big thing.</h2>
-            <p class="text-sm md:text-lg font-medium mb-8">Book a free discovery call today and start your journey with
-                us.</p>
-            <a href="contact.html"
-                class="inline-block px-8 py-4 bg-white text-[#ff0063] font-semibold shadow-lg hover:bg-gray-100 transition duration-300">Book
-                a Free Call</a>
-        </div>
-    </section> -->
-    <!-- CTA Section End -->
-
-
     <!-- Footer Start -->
     <footer class="relative bg-gradient-to-tr from-[#001633] to-[#000b26] text-gray-400 pt-16 pb-8 overflow-hidden">
         <div class="container mx-auto">
@@ -2219,7 +2307,9 @@
                         <li><a href="about.html" class="hover:text-white hover:underline">About Us</a></li>
                         <li><a href="portfolio.html" class="hover:text-white hover:underline">Portfolio</a></li>
                         <li><a href="contact.html" class="hover:text-white hover:underline">Contact</a></li>
-                        <li><a href="#blogs-section" class="hover:text-white hover:underline">Blogs</a></li>
+                        <li><a href="blogs" class="hover:text-white hover:underline">Blogs</a></li>
+                        <li><a href="terms.html" class="hover:text-white hover:underline">Terms</a></li>
+                        <li><a href="privacypolicy.html" class="hover:text-white hover:underline">Privacy & Policy</a></li>
                     </ul>
                 </div>
 
@@ -2341,27 +2431,48 @@
                     1024: { items: 1 }
                 }
             });
-            $("#clients-logo").owlCarousel({
-                loop: true,
-                margin: 0,
-                autoplay: true,
-                autoplayTimeout: 2000,
-                autoplayHoverPause: true,
-                dots: false,
-                nav: false,
-                rtl: false,
-                responsive: {
-                    0: {
-                        items: 2
-                    },
-                    768: {
-                        items: 4
-                    },
-                    1024: {
-                        items: 6
-                    }
-                }
-            });
+            // $("#clients-logo-1").owlCarousel({
+            //     loop: true,
+            //     margin: 0,
+            //     autoplay: true,
+            //     autoplayTimeout: 2000,
+            //     autoplayHoverPause: true,
+            //     dots: false,
+            //     nav: false,
+            //     rtl: false,
+            //     responsive: {
+            //         0: {
+            //             items: 2
+            //         },
+            //         768: {
+            //             items: 4
+            //         },
+            //         1024: {
+            //             items: 6
+            //         }
+            //     }
+            // });
+            // $("#clients-logo-2").owlCarousel({
+            //     loop: true,
+            //     margin: 0,
+            //     autoplay: true,
+            //     autoplayTimeout: 2000,
+            //     autoplayHoverPause: true,
+            //     dots: false,
+            //     nav: false,
+            //     rtl: true,
+            //     responsive: {
+            //         0: {
+            //             items: 2
+            //         },
+            //         768: {
+            //             items: 4
+            //         },
+            //         1024: {
+            //             items: 6
+            //         }
+            //     }
+            // });
 
         });
     </script>
@@ -2369,6 +2480,10 @@
     <!-- custom script link -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/script.js"></script>
+
+    <script>
+
+    </script>
 </body>
 
 </html>
