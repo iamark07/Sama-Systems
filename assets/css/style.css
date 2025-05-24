@@ -200,10 +200,10 @@
   animation: scroll 30s linear infinite;
 }
 
-.item img {
+/* .item img {
   min-width: 200px;
   padding: 0 30px;
-}
+} */
 
 /* Wrapper for overflow */
 #carousel_slider_1-container {
@@ -230,10 +230,10 @@
   animation: scroll2 30s linear infinite;
 }
 
-.item img {
+/* .item img {
   min-width: 200px;
   padding: 0 30px;
-}
+} */
 
 /* Wrapper for overflow */
 #carousel_slider_2-container {
