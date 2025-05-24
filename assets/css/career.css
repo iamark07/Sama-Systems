@@ -1,0 +1,32 @@
+.career_page_form_input label {
+  position: absolute;
+  top: 13px;
+  left: 0px;
+}
+
+.career-floating-label {
+  font-size: 10px !important;
+  top: -12px !important;
+}
+
+
+
+@keyframes career_fadeIn {
+  from { opacity: 0; transform: scale(0.9); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes career_scaleBounce {
+  0% { transform: scale(0); }
+  60% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.animate-career_fadeIn {
+  animation: career_fadeIn 0.5s ease-out forwards;
+}
+
+.animate-career_scaleBounce {
+  animation: career_scaleBounce 0.5s ease-out forwards;
+}
+
