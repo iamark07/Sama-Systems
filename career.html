@@ -82,9 +82,9 @@
                     class="w-24 md:w-32 transition-all duration-300" loading="lazy">
             </a>
             <!-- Desktop Menu -->
-            <nav class="hidden lg:flex gap-6 font-normal text-white">
+            <nav class="hidden lg:flex gap-6 font-normal text-white ms-10 lg:text-sm xl:text-base text-nowrap">
                 <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
-                <a href="about.html" class="text-[#89be48] transition">About Us</a>
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
                 <div class="relative group">
                     <button class="hover:text-[#89be48] transition flex items-center gap-1">
                         Services
@@ -109,13 +109,14 @@
                 </div>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
+                <a href="career.html" class="text-[#89be48] transition">Career</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
 
             <!-- CTA Desktop -->
-            <a href="free-consultation.html">
+            <a href="free-consultation.html" class="inline-block text-nowrap">
                 <button
-                    class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
+                    class="hidden group relative lg:inline-block bg-[#ff006e] shadow-inner border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 lg:px-4 xl:px-6 text-sm hover:opacity-90 transition duration-300">
                     <span class="relative z-20">
                         Get Free Consultation
                     </span>
@@ -134,7 +135,7 @@
     <!-- Mobile Slide Menu -->
     <div id="mobile-menu"
         class="fixed top-0 left-0 h-full w-64 bg-white transform -translate-x-full transition-transform duration-300 z-50 shadow-lg">
-        <div class="p-6 space-y-10">
+        <div class="p-6 space-y-7">
             <div class="flex justify-between items-center">
                 <img src="assets/img/logo.png" alt="Sama Systems Logo" class="w-24">
                 <button id="menu-close" class="text-2xl text-gray-800">
@@ -143,7 +144,7 @@
             </div>
             <nav class="flex flex-col gap-5 text-sm font-medium Raleway">
                 <a href="index.html" class="hover:text-[#89be48] transition">Home</a>
-                <a href="about.html" class="text-[#89be48] transition">About Us</a>
+                <a href="about.html" class="hover:text-[#89be48] transition">About Us</a>
                 <div class="relative">
                     <button id="mobile-services-toggle" class="flex items-center gap-2">
                         Services
@@ -157,9 +158,10 @@
                 </div>
                 <a href="portfolio.html" class="hover:text-[#89be48] transition">Portfolio</a>
                 <a href="pricing.html" class="hover:text-[#89be48] transition">Pricing</a>
+                <a href="career.html" class="text-[#89be48] transition">Career</a>
                 <a href="contact.html" class="hover:text-[#89be48] transition">Contact Us</a>
             </nav>
-            <a href="free-consultation.html">
+            <a href="free-consultation.html" class="inline-block">
                 <button
                     class="shadow-sm group relative lg:inline-block bg-[#ff006e] border-1px border-[#ff006e] text-white hover:text-[#ff006e] px-6 py-3 text-sm hover:opacity-90 transition duration-300">
                     <span class="relative z-20">
@@ -206,11 +208,11 @@
     <!-- Hero Section End -->
 
     <!-- Career Section Start -->
-    <section class="bg-gray-100 py-20 px-4 md:px-10" id="careers">
-        <div class="max-w-7xl mx-auto">
+    <section class="bg-gray-100 py-20" id="careers">
+        <div class="container mx-auto px-6 md:px-10">
             <h2 class="text-3xl md:text-[38px] font-[500] text-black leading-tight mb-2 Montserrat relative z-20">Join
                 Our Team</span></h2>
-            <p class="text-lg text-gray-600 Montserrat mb-12 font-[400]">
+            <p class="md:text-lg text-gray-600 Montserrat mb-12 font-[400]">
                 We're always looking for passionate, creative, and dedicated people to join us. Explore our current
                 openings.
             </p>
@@ -218,40 +220,40 @@
             <!-- Job Cards -->
             <div class="grid md:grid-cols-3 sm:grid-cols-2 gap-8 mb-16">
                 <!-- Job Card 1 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white p-6 shadow-md hover:shadow-xl transition-all duration-300">
                     <h3 class="text-xl font-semibold text-black mb-2 Raleway">Frontend Developer</h3>
                     <p class="text-gray-600 mb-4">2+ years experience • Remote • Full-Time</p>
                     <ul class="text-sm text-gray-500 list-disc list-inside mb-4">
                         <li class="Raleway font-[500]">Expert in React / Vue / Tailwind</li>
                         <li class="Raleway font-[500]">Good design sense</li>
                     </ul>
-                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 rounded-lg hover:bg-[#00acc1]">
+                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 hover:bg-[#00acc1] Raleway font-[500]">
                         Apply Now
                     </button>
                 </div>
 
                 <!-- Job Card 2 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white p-6 shadow-md hover:shadow-xl transition-all duration-300">
                     <h3 class="text-xl font-semibold text-black mb-2 Raleway">Backend Developer</h3>
                     <p class="text-gray-600 mb-4">3+ years experience • Bangalore • Full-Time</p>
                     <ul class="text-sm text-gray-500 list-disc list-inside mb-4">
                         <li class="Raleway font-[500]">Laravel / NodeJS / Django</li>
                         <li class="Raleway font-[500]">REST API & DB Knowledge</li>
                     </ul>
-                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 rounded-lg hover:bg-[#00acc1]">
+                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 hover:bg-[#00acc1] Raleway font-[500]">
                         Apply Now
                     </button>
                 </div>
 
                 <!-- Job Card 3 -->
-                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition-all duration-300">
+                <div class="bg-white p-6 shadow-md hover:shadow-xl transition-all duration-300">
                     <h3 class="text-xl font-semibold text-black mb-2 Raleway">UI/UX Designer</h3>
                     <p class="text-gray-600 mb-4">1+ year experience • Remote • Contract</p>
                     <ul class="text-sm text-gray-500 list-disc list-inside mb-4">
                         <li class="Raleway font-[500]">Figma / Adobe XD / Webflow</li>
                         <li class="Raleway font-[500]">Creativity & Prototyping Skills</li>
                     </ul>
-                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 rounded-lg hover:bg-[#00acc1]">
+                    <button class="mt-auto bg-[#00bcd4] text-white px-4 py-2 hover:bg-[#00acc1] Raleway font-[500]">
                         Apply Now
                     </button>
                 </div>
@@ -259,6 +261,77 @@
         </div>
     </section>
     <!-- Career Section End -->
+
+    <section class="pt-16 pb-24 bg-[#f5f5f5]">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-[38px] font-[500] text-black leading-tight mb-2 Montserrat relative z-20">Why Join Sama Systems?</h2>
+            <p class="md:text-lg text-gray-600 Montserrat mb-12 font-[400]">
+                At Sama Systems, we don’t just offer jobs — we offer a platform where your passion meets purpose.
+                Here’s what makes us more than just another workplace.
+            </p>
+
+            <!-- Horizontal style section -->
+            <div class="relative grid md:grid-cols-3 justify-between items-start gap-14 md:gap-10 text-center my-16">
+
+                <!-- Decorative timeline line -->
+                <div
+                    class="hidden md:block absolute top-14 left-0 w-full h-1 bg-gradient-to-r from-[#ff93c2] via-[#98f3ff] to-[#ffea95] z-0">
+                </div>
+
+                <!-- Point 1 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-[#ff93c2] flex items-center justify-center my-4">
+                        <img src="assets/icons/teamwork.png" class="w-10 h-10" alt="Teamwork">
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 Raleway">Collaborative Environment</h4>
+                    <p class="text-gray-600 Raleway font-[400]">
+                        We foster a culture where ideas flow freely and every voice is heard. You’ll be working in an
+                        open, inclusive space where team spirit wins over hierarchy, and innovation is a shared mission.
+                    </p>
+                </div>
+
+                <!-- Point 2 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-[#98f3ff] flex items-center justify-center my-4">
+                        <img src="assets/icons/learning.png" class="w-10 h-10" alt="Learning">
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 Raleway">Continuous Learning & Growth</h4>
+                    <p class="text-gray-600 Raleway font-[400]">
+                        Your growth is our priority. Whether it’s real-time project exposure, 1-on-1 mentorship, or
+                        sponsored courses — we make sure you evolve into the best version of your professional self.
+                    </p>
+                </div>
+
+                <!-- Point 3 -->
+                <div class="relative z-10 flex-1 text-center">
+                    <div
+                        class="w-20 h-20 mx-auto rounded-full bg-[#ffea95] flex items-center justify-center my-4">
+                        <img src="assets/icons/worklife.png" class="w-10 h-10" alt="Work Life">
+                    </div>
+                    <h4 class="text-xl font-semibold text-gray-800 mb-2 Raleway">Work-Life Harmony</h4>
+                    <p class="text-gray-600 Raleway font-[400]">
+                        We respect your personal time. With flexible working hours, hybrid work options, and wellness
+                        breaks — we believe that a happy mind creates better products.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Bonus Section (Optional) -->
+            <div class="mt-20 text-center">
+                <h3 class="text-2xl text-gray-800 mb-4 Montserrat font-[600]">And most importantly — you belong here!</h3>
+                <p class="md:text-lg text-gray-600 Montserrat mb-12 font-[400]">
+                    Whether you're just starting out or bringing years of experience, we welcome passionate minds who
+                    are ready to innovate, learn, and grow together. Come, be a part of something meaningful.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
 
 
 
@@ -368,7 +441,8 @@
 
 
     <!--Popup Application Form -->
-    <div class="popup_career_form fixed inset-0 w-full h-full backdrop-blur-lg z-50 flex justify-center items-center p-6 bg-black bg-opacity-30">
+    <div
+        class="popup_career_form fixed inset-0 w-full h-full backdrop-blur-lg z-50 flex justify-center items-center p-6 bg-black bg-opacity-30 hidden">
         <div class="bg-white w-full md:w-[600px] px-6 py-8 md:p-8 shadow-lg">
             <h3 class="text-lg md:text-2xl font-bold text-gray-800 mb-7 Montserrat">Submit Your Application</h3>
             <form class="grid md:grid-cols-2 gap-6 w-full" id="careerForm">
@@ -376,7 +450,8 @@
                     <input type="text" id="full_name_input" name="full_name"
                         class="w-full py-2 bg-white border-b border-gray-300 focus:outline-none text-sm"
                         placeholder=" ">
-                    <label for="full_name_input" class="transition-all duration-200 text-gray-700 text-sm">Full Name</label>
+                    <label for="full_name_input" class="transition-all duration-200 text-gray-700 text-sm">Full
+                        Name</label>
                     <div class="career-error-message"></div>
                 </div>
                 <div class="relative career_page_form_input">
@@ -390,7 +465,8 @@
                     <input type="tel" id="phone_input" name="phone"
                         class="w-full py-2 bg-white border-b border-gray-300 focus:outline-none text-sm"
                         placeholder=" ">
-                    <label for="phone_input" class="transition-all duration-200 text-gray-700 text-sm">Phone Number</label>
+                    <label for="phone_input" class="transition-all duration-200 text-gray-700 text-sm">Phone
+                        Number</label>
                     <div class="career-error-message"></div>
                 </div>
                 <div class="relative career_page_form_input md:col-span-2">
@@ -430,7 +506,7 @@
             </form>
         </div>
     </div>
-    
+
     <!-- Success Message Card -->
     <div id="successMsg"
         class="fixed top-0 left-0 w-full h-[100dvh] flex justify-center items-center bg-black bg-opacity-20 z-50 hidden">
@@ -445,8 +521,10 @@
                 </svg>
             </div>
 
-            <h3 class="text-lg md:text-2xl font-semibold text-[#dc3f83] mb-2 Raleway">Application Submitted Successfully!</h3>
-            <p class="text-gray-700 text-sm md:text-base font-[400] Raleway">Thank you for applying. We'll get back to you soon.</p>
+            <h3 class="text-lg md:text-2xl font-semibold text-[#dc3f83] mb-2 Raleway">Application Submitted
+                Successfully!</h3>
+            <p class="text-gray-700 text-sm md:text-base font-[400] Raleway">Thank you for applying. We'll get back to
+                you soon.</p>
         </div>
     </div>
 
@@ -454,7 +532,7 @@
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/career.js"></script>
 
-    
+
 </body>
 
 </html>

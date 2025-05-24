@@ -1,5 +1,48 @@
 document.addEventListener("DOMContentLoaded", function () {
   const form = document.getElementById("careerForm");
+  const popupForm = document.querySelector(".popup_career_form");
+  const successMsg = document.getElementById("successMsg");
+
+  // Show career form
+  window.showCareerForm = function() {
+    popupForm.classList.remove('hidden');
+    document.body.style.overflow = 'hidden'; // Prevent background scrolling
+  }
+
+  // Hide career form
+  window.hideCareerForm = function() {
+    popupForm.classList.add('hidden');
+    document.body.style.overflow = ''; // Restore scrolling
+    successMsg.classList.add('hidden');
+  }
+
+  // Add click event listeners to all Apply Now buttons
+  document.querySelectorAll('button').forEach(button => {
+    if (button.textContent.trim() === 'Apply Now') {
+      button.addEventListener('click', showCareerForm);
+    }
+  });
+
+  // Close form when clicking outside
+  popupForm.addEventListener('click', function(event) {
+    if (event.target === popupForm) {
+      hideCareerForm();
+    }
+  });
+
+  // Add close button functionality
+  const closeButton = document.createElement('button');
+  closeButton.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" /></svg>';
+  closeButton.className = 'absolute top-4 right-4 text-gray-500 hover:text-gray-700';
+  closeButton.onclick = hideCareerForm;
+  
+  // Add close button to the form container
+  const formContainer = popupForm.querySelector('.bg-white');
+  if (formContainer) {
+    formContainer.style.position = 'relative';
+    formContainer.appendChild(closeButton);
+  }
+
   const fields = {
     full_name: {
       minLength: 3,
@@ -253,27 +296,25 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     if (isFormValid) {
-      // Hide the form
-      const popup_career_form = document.querySelector(".popup_career_form");
-      if (popup_career_form) {
-        popup_career_form.classList.add("hidden");
-      }
-
       // Show success message
-      const successMsg = document.getElementById("successMsg");
-      if (successMsg) {
-        successMsg.classList.remove("hidden");
-        successMsg.classList.add("flex");
-      }
-
+      popupForm.classList.add('hidden');
+      successMsg.classList.remove('hidden');
+      
       // Reset form
       form.reset();
+      
       // Reset floating labels
       formInputs.forEach((field) => {
         const label = field.parentElement.querySelector("label");
         if (label) label.classList.remove("career-floating-label");
       });
       fileName.textContent = "";
+
+      // Hide success message and form after 3 seconds
+      setTimeout(() => {
+        successMsg.classList.add('hidden');
+        hideCareerForm();
+      }, 3000);
     }
   });
 });

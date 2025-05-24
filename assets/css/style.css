@@ -281,3 +281,38 @@
   animation: drawCheck 0.5s ease forwards;
   animation-delay: 0.2s;
 }
+
+/* Flip Animation */
+.flip-container {
+  perspective: 1000px;
+  display: inline-block;
+  height: 60px; /* Fixed height for square-like appearance */
+  overflow: hidden;
+}
+
+.flip-text {
+  position: relative;
+  display: inline-block;
+  transform-origin: top;
+  animation: flip 2s ease-in-out;
+  backface-visibility: hidden;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+  50% {
+    transform: rotateX(-90deg);
+    opacity: 0;
+  }
+  51% {
+    transform: rotateX(90deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
