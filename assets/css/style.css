@@ -86,30 +86,37 @@
 }
 
 /* hero section  */
-@keyframes bounceSlow {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
 
-  50% {
-    transform: translateY(-10px);
-  }
+.perspective-heading {
+  perspective: 800px;
+  perspective-origin: 50% 50%;
+  display: inline-block;
 }
 
-.typing-cursor {
-  animation: blink 1s infinite;
+
+.animate-flip {
+transition: margin-top 0.6s ease-in-out; 
+margin-top: 0; 
 }
 
-@keyframes blink {
-  0%,
-  100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
+
+#flip {
+  overflow: hidden;
+
+  height: 70px; 
+  display: inline-block; 
+  vertical-align: top;
 }
+
+
+#flip .animate-flip > div {
+  height: 65px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  margin-bottom: 1.25rem;
+}
+
 
 @media screen and (min-width: 340px) and (max-width: 400px) {
   .consultation_line {
@@ -178,81 +185,9 @@
   left: 0px;
 }
 
-/* .landing_page_form_input input:focus + label,
-.landing_page_form_input input:valid + label{
-  font-size: 10px;
-  top: -5px
-}
-.landing_page_form_input textarea:focus + label,
-.landing_page_form_input textarea:valid + label{
-  font-size: 10px;
-  top: -5px
-} */
-
 .floating-label {
   font-size: 10px !important;
   top: -5px !important;
-}
-
-.carousel_slider_1 {
-  display: flex;
-  width: max-content;
-  animation: scroll 30s linear infinite;
-}
-
-/* .item img {
-  min-width: 200px;
-  padding: 0 30px;
-} */
-
-/* Wrapper for overflow */
-#carousel_slider_1-container {
-  overflow: hidden;
-  width: 100%;
-  padding: 1rem 0;
-}
-
-#carousel_slider_1-container:hover .carousel_slider_1 {
-  animation-play-state: paused;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
-}
-.carousel_slider_2 {
-  display: flex;
-  width: max-content;
-  animation: scroll2 30s linear infinite;
-}
-
-/* .item img {
-  min-width: 200px;
-  padding: 0 30px;
-} */
-
-/* Wrapper for overflow */
-#carousel_slider_2-container {
-  overflow: hidden;
-  width: 100%;
-  padding: 1rem 0;
-}
-
-#carousel_slider_2-container:hover .carousel_slider_2 {
-  animation-play-state: paused;
-}
-
-@keyframes scroll2 {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(0%);
-  }
 }
 
 
@@ -282,37 +217,89 @@
   animation-delay: 0.2s;
 }
 
-/* Flip Animation */
-.flip-container {
-  perspective: 1000px;
-  display: inline-block;
-  height: 60px; /* Fixed height for square-like appearance */
+
+/* client logo aniamtion slider */
+.client-carousel-section {
+  padding: 20px 0;
+
+}
+
+/* Styles for the wrapper created by JavaScript */
+.carousel-wrapper {
   overflow: hidden;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  box-sizing: border-box;
 }
 
-.flip-text {
-  position: relative;
-  display: inline-block;
-  transform-origin: top;
-  animation: flip 2s ease-in-out;
-  backface-visibility: hidden;
+/* Styles for the animated flex container */
+.carousel_slider_1, .carousel-clone.carousel_slider_1 {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  flex-shrink: 0;
 }
 
-@keyframes flip {
+/* Item styles */
+.carousel_slider_1 .item, .carousel_slider_2 .item {
+  min-width: 260px;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 160px;
+}
+
+@media (max-width:768px){
+.carousel_slider_1 .item, .carousel_slider_2 .item {
+  min-width: 180px;
+  padding: 0 10px;
+  height: 140px;
+}
+}
+
+.carousel_slider_1 .item img, .carousel_slider_2 .item img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+
+/* Pause animation on hover */
+#carousel_slider_1-wrapper:hover .carousel_slider_1 {
+  animation-play-state: paused;
+}
+
+/* Animation for the first slider */
+@keyframes scroll {
   0% {
-    transform: rotateX(0);
-    opacity: 1;
-  }
-  50% {
-    transform: rotateX(-90deg);
-    opacity: 0;
-  }
-  51% {
-    transform: rotateX(90deg);
-    opacity: 0;
+      transform: translateX(0);
   }
   100% {
-    transform: rotateX(0);
-    opacity: 1;
+      transform: translateX(-50%); 
+  }
+}
+
+/* Styles for the animated flex container */
+.carousel_slider_2, .carousel-clone.carousel_slider_2 {
+  display: flex;
+  width: max-content;
+  animation: scroll2 30s linear infinite;
+  flex-shrink: 0;
+}
+
+/* Pause animation on hover */
+#carousel_slider_2-wrapper:hover .carousel_slider_2 {
+  animation-play-state: paused;
+}
+
+@keyframes scroll2 {
+  0% {
+      transform: translateX(-50%);
+  }
+  100% {
+      transform: translateX(0%);
   }
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Only Flip Text</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background: #f5f5f5;
+    }
+
+    #flip {
+      height: 45px;
+      overflow: hidden;
+    }
+
+    #flip > div > div {
+      height: 45px;
+      margin: 0;
+      color: brown;
+      font-size: 28px;
+      font-weight: bold;
+      line-height: 45px;
+      text-align: center;
+    }
+
+    #flip > div {
+      display: block;
+      animation: show 8s linear infinite;
+    }
+
+    @keyframes show {
+      0% { margin-top: -135px; }
+      5% { margin-top: -90px; }
+      33% { margin-top: -90px; }
+      38% { margin-top: -45px; }
+      66% { margin-top: -45px; }
+      71% { margin-top: 0px; }
+      99.99% { margin-top: 0px; }
+      100% { margin-top: -135px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div id="flip">
+    <div>
+      <div>Work</div>
+      <div>Lifestyle</div>
+      <div>Everything</div>
+      <div>Work</div> <!-- For looping smoothly -->
+    </div>
+  </div>
+
+</body>
+</html>

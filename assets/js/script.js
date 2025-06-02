@@ -1,44 +1,58 @@
-//  Hero section typing animation
+// Hero section scrolling text animation
 
-const texts = [
-  "Converting Ideas into Reality",
-  "IT Marketing",
-  "Consultation Solution",
-];
+document.addEventListener("DOMContentLoaded", () => {
+    const flipContainer = document.getElementById("flip");
+    const animatedDiv = flipContainer ? flipContainer.querySelector(".animate-flip") : null;
 
-let textIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
-let typingDelay = 100;
+    if (!animatedDiv) {
+        console.error("Flip animation elements not found.");
+        return;
+    }
 
-function typeEffect() {
-  const currentText = texts[textIndex];
-  const typingElement = document.getElementById("typing-text");
+    const textItems = animatedDiv.querySelectorAll("div");
+    if (textItems.length === 0) {
+        console.error("No text items found in flip animation.");
+        return;
+    }
+    
+    const itemHeight = textItems[0].offsetHeight; 
+    const style = window.getComputedStyle(textItems[0]);
+    const itemMarginBottom = parseFloat(style.marginBottom);
 
-  if (isDeleting) {
-    typingElement.textContent = currentText.substring(0, charIndex - 1);
-    charIndex--;
-    typingDelay = 50;
-  } else {
-    typingElement.textContent = currentText.substring(0, charIndex + 1);
-    charIndex++;
-    typingDelay = 100;
-  }
+    const stepDistance = itemHeight + itemMarginBottom;
 
-  if (!isDeleting && charIndex === currentText.length) {
-    isDeleting = true;
-    typingDelay = 2000; // Pause at the end
-  } else if (isDeleting && charIndex === 0) {
-    isDeleting = false;
-    textIndex = (textIndex + 1) % texts.length;
-    typingDelay = 500; // Pause before starting new text
-  }
 
-  setTimeout(typeEffect, typingDelay);
-}
+    const numTexts = textItems.length - 1; 
 
-// Start the typing animation when the page loads
-window.addEventListener("load", typeEffect);
+    let currentIndex = 0;
+    const scrollInterval = 3000;
+    const transitionDuration = 600;
+
+    function scrollText() {
+        currentIndex++;
+
+
+        const newMarginTop = -(currentIndex * stepDistance);
+        animatedDiv.style.marginTop = newMarginTop + "px";
+
+        if (currentIndex === numTexts) {
+
+            setTimeout(() => {
+                animatedDiv.style.transition = 'none';
+                animatedDiv.style.marginTop = '0';
+                currentIndex = 0; // Reset index
+                setTimeout(() => {
+                    animatedDiv.style.transition = `margin-top ${transitionDuration / 1000}s ease-in-out`;
+                }, 50); // Small delay
+            }, transitionDuration);
+        }
+    }
+    animatedDiv.style.marginTop = '0px';
+
+    setInterval(scrollText, scrollInterval);
+
+});
+
 
 // stats and achivment section count feature
 const counters = document.querySelectorAll(".count");
@@ -338,3 +352,4 @@ window.addEventListener("DOMContentLoaded", () => {
   initCarouselSlider1();
   initCarouselSlider2();
 });
+
